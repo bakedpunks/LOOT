@@ -3,8 +3,7 @@ import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 import Web3 from "web3";
 
-import CryptoPunks from "../abis/CryptoPunks.json";
-import CryptoPunksMarket from "../abis/CryptoPunksMarket.json";
+import Loot from "../abis/Loot.json";
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
 import FormAndPreview from "../components/FormAndPreview/FormAndPreview";
@@ -116,15 +115,15 @@ class App extends Component {
         this.setState({ accountBalance });
         this.setState({ loading: false });
         const networkId = await web3.eth.net.getId();
-        const networkData = CryptoPunks.networks[networkId];
+        const networkData = Loot.networks[networkId];
         if (networkData) {
           this.setState({ loading: true });
           const cryptoBoysContract = web3.eth.Contract(
-            CryptoPunks.abi,
+            Loot.abi,
             networkData.address
           );
   	const cryptoBoysMarketContract = web3.eth.Contract(
-            CryptoPunksMarket.abi,
+            Loot.abi,
             networkData.address
           );
 
@@ -153,23 +152,6 @@ class App extends Component {
           this.setState({punksforsalebuttonhtml:this.state.punksforsalebuttonhtml});
           this.setState({currentPage:this.state.currentPage});
 
-
-          for (let i = 0; i < 10000; i++) {
-              this.state.cryptoBoysForSale[i]=0x00;
-          }
-          for (let i = 0; i < 200; i++) {
-            (async () => {
-                await this.loadPunksForSale(i*50,(i*50)+50);
-            })();
-          }
-          for (let i = 0; i < 10000; i++) {
-              this.state.cryptoBoys[i]=0x00;
-          }
-          for (let i = 0; i < 200; i++) {
-            (async () => {
-                await this.loadMorePunks(i*50,(i*50)+50);
-            })();
-          }
 
   	       this.setState({ loading: false });
         } else {
