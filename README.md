@@ -3,3 +3,10 @@ Loot is randomized adventurer gear generated and stored on chain. Stats, images,
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
+npm install @truffle/hdwallet-provider
+
+npm install -D truffle-plugin-verify
+
+npm install @openzeppelin/contracts
