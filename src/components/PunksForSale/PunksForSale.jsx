@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { withRouter } from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 import {
