@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CryptoBoyNFTImage from "../CryptoBoyNFTImage/CryptoBoyNFTImage";
 import MyCryptoBoyNFTDetails from "../MyCryptoBoyNFTDetails/MyCryptoBoyNFTDetails";
 import Loading from "../Loading/Loading";
-import ReactPaginate from 'react-paginate';
 import {
   BrowserRouter as Router,
   Link,
