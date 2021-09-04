@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import InfiniteScroll from 'react-infinite-scroll-component';
 import queryString from 'query-string'
 import { HashRouter } from 'react-router-dom'
 import {
