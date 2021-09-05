@@ -281,7 +281,7 @@ loadMorePunks = async () => {
 loadMorePunks = async (from, to) => {
   for (let i = from; i < to; i++) {
     let punkOwner = await this.state.cryptoBoysContract.methods
-      .punkIndexToAddress(i)
+      .tokenByIndex(i)
       .call();
     this.state.cryptoBoys[i]=punkOwner;
   }
