@@ -4,15 +4,15 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-5">BakedPunks NFT Marketplace</h1>
+        <h1 className="display-5">Binance Loot NFT Marketplace</h1>
         <p className="lead">
-          This is an NFT marketplace where you can Claim, Sell, Buy and Transfer BakedPunks.
+          This is an NFT marketplace where you can Claim, Sell, Buy and Transfer Loot.
         </p>
         <hr className="my-4" />
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
-                Contract Address : 0xead759ec13b02c21ae87044f009ce97c1c72371f
+                Contract Address : 0x2041481B4484851d03DF3BdDD6127bCB44b01Bcf
             </p>
           </div>
         </div>
