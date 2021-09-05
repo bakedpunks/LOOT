@@ -151,9 +151,18 @@ class App extends Component {
           this.setState({cryptoBoysForSale:this.state.cryptoBoysForSale});
           this.setState({punksforsalebuttonhtml:this.state.punksforsalebuttonhtml});
           this.setState({currentPage:this.state.currentPage});
-
-
   	       this.setState({ loading: false });
+
+
+           for (let i = 0; i < totalTokensOwnedByAccount; i++) {
+               this.state.cryptoBoys[i]=0x00;
+           }
+
+           (async () => {
+               await this.loadMorePunks(0,totalTokensOwnedByAccount);
+           })();
+
+
         } else {
           this.setState({ contractDetected: false });
         }
