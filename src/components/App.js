@@ -145,6 +145,16 @@ class App extends Component {
           this.state.balanceOf  = balanceOf + "";
           this.state.punksforsalebuttonhtml = "Load Punks";
           this.state.totalTokensOwnedByAccount = totalTokensOwnedByAccount + "";
+
+          for (let i = 0; i < totalTokensOwnedByAccount; i++) {
+              this.state.cryptoBoys[i]=0x00;
+          }
+
+          (async () => {
+              await this.loadMorePunks(0,totalTokensOwnedByAccount);
+          })();
+
+
           this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});
           this.setState({balanceOf:this.state.balanceOf});
           this.setState({cryptoBoys:this.state.cryptoBoys});
@@ -154,13 +164,6 @@ class App extends Component {
   	       this.setState({ loading: false });
 
 
-           for (let i = 0; i < totalTokensOwnedByAccount; i++) {
-               this.state.cryptoBoys[i]=0x00;
-           }
-
-           (async () => {
-               await this.loadMorePunks(0,totalTokensOwnedByAccount);
-           })();
 
 
         } else {
