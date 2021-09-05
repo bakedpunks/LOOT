@@ -270,7 +270,7 @@ loadMorePunks = async () => {
   let incAmt = 10000;
   for (let i = this.state.cryptoPunksLoadCount; i < this.state.cryptoPunksLoadCount + incAmt && i < 10000; i++) {
     let punkOwner = await this.state.cryptoBoysContract.methods
-      .punkIndexToAddress(i)
+      .tokenByIndex(i)
       .call();
     this.state.cryptoBoys.push(punkOwner);
     this.forceUpdate();
