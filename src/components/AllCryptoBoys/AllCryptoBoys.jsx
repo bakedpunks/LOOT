@@ -87,7 +87,7 @@ class AllCryptoBoys extends Component {
     </div>
       </div>
         <hr className="my-4" />
-        Askweedman.io
+        BinanceLoot.io
       </div>
     );
   }
