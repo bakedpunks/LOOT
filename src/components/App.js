@@ -209,8 +209,8 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
 };
 claimPunk = async (punkIndex) => {
   this.setState({ loading: true });
-    this.state.cryptoBoysMarketContract.methods
-      .mint()
+    this.state.loot.methods
+      .mint("0.01")
       .send({ from: this.state.accountAddress})
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());

@@ -122,7 +122,7 @@ class FormAndPreview extends Component {
                 type="submit"
                 className="btn mt-4 btn-block btn-outline-primary"
               >
-                Claim Punk
+                Mint
               </button>
               </div>
             </div>
