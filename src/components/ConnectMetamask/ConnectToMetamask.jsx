@@ -26,7 +26,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <hr className="my-4" />
       Telegram : https://t.me/binancelootchat
-      Twitter : https://binanceloot.io
+      Twitter : https://twitter.com/Binanceloot
 
       <hr className="my-4" />
       #BinanceSmartChain
