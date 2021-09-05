@@ -48,18 +48,6 @@ class FormAndPreview extends Component {
     //this.props.punksOfferedForSale(punkid);
 
 
-  //  window.alert('Function ' + this.props.cryptoBoyPrice);
-    var s = punkid +"";
-    while (s.length < 4) s = "0" + s;
-
-
-    var newImageUrl = '/images/punks/punk-' + s + 'x8.png';
-    this.setState({
-      cryptoBunkImageURL : newImageUrl
-
-    })
-//    this.state.punkid = new URLSearchParams(useLocation().search).get("punkid")
-    await this.props.setMintBtnTimer();
   };
 
   callClaimPunkFromApp = (e) => {
@@ -69,22 +57,6 @@ class FormAndPreview extends Component {
     );
   };
 
-  callViewPunkDetail = (e) => {
-    var s = this.state.punkid +"";
-    while (s.length < 4) s = "0" + s;
-
-
-    var newImageUrl = '/images/punks.v2/punk-' + s + '.png';
-
-    if(newImageUrl === this.state.cryptoBunkImageURL){
-      newImageUrl = '/images/punks/punk-' + s + 'x8.png';
-    }
-    this.setState({
-      cryptoBunkImageURL : newImageUrl
-
-    })
-
-  };
 
 
 
@@ -99,15 +71,7 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-                          <img
-                              src={this.state.cryptoBunkImageURL}
-                              class="img-thumbnail col-md-6"
-                              onClick={this.callViewPunkDetail}
-                              />
-                              <hr className="my-4" />
-    <h5 class="card-title">Punk NO {this.state.punkid}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Price {this.state.cryptoBoyPrice} BNB</h6>
-    <p class="card-text">OWNER : {this.state.punkOwner}</p>
+    <h6 class="card-subtitle mb-2 text-muted">Mint Price 0.01 BNB</h6>
 
                     </div>
         </div>
