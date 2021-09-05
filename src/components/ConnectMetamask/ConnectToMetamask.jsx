@@ -60,12 +60,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         className="btn btn-primary d-flex align-items-center"
         style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
       >
-        Connect Metamask{" "}
-        <img
-          src={metamaskIcon}
-          alt="metamask-icon"
-          style={{ width: "2rem", marginLeft: "0.5rem" }}
-        />
+        Connect Wallet
       </button>
     </div>
   );
