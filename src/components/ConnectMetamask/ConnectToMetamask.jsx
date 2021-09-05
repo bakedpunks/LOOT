@@ -8,8 +8,7 @@ for (let i = 0; i < 10; i++) {
         const rand = Math.floor(Math.random() * 9999);;
         var index = rand;
         var s = index+"";
-        while (s.length < 4) s = "0" + s;
-        var newImageUrl = '/images/punks/punk-' + s + 'x4.png';
+        var newImageUrl = '/images/loot/' + s + '.png';
         items.push(<img src={newImageUrl} alt={rand} />)
 }
 
@@ -36,7 +35,7 @@ Feel free to use Loot in any way you want.
       </p>
       <hr className="my-4" />
       <p className="lead">
-          Contract Address : <a href="https://bscscan.com/token/0xead759ec13b02c21ae87044f009ce97c1c72371f" >0xea...371f</a>
+          Contract Address : <a href="https://bscscan.com/token/0x2041481B4484851d03DF3BdDD6127bCB44b01Bcf" >0x20...1Bcf</a>
       </p>
 
       <hr className="my-4" />
