@@ -211,8 +211,8 @@ claimPunk = async (punkIndex) => {
   const price = window.web3.utils.toWei("0.01", "Ether");
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
-      .mint(price)
-      .send({ from: this.state.accountAddress})
+      .mint()
+      .send({ from: this.state.accountAddress, value: price })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
         this.setState({ loading: false });
