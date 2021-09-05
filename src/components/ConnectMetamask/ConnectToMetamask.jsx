@@ -16,18 +16,34 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
     <div className="jumbotron">
       <h1 className="display-5">
-        Binance Loot NFT Marketplace
+        Binance Loot
       </h1>
       <p className="lead">
-        This is an NFT marketplace where you can claim, buy and sell your Binance Loot.
+      Binance Loot NFT First Project On #BinanceSmartChain  Smart Chain
+
+      <hr className="my-4" />
+      What is Loot? Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
+
+      <hr className="my-4" />
+      Telegram : https://t.me/binancelootchat
+      Twitter : https://binanceloot.io
+
+      <hr className="my-4" />
+      #BinanceSmartChain
+      #Binance
+      #BNB
+      #Ethereum
+      #NFTCommunity
+      #Lootproject
+      #mint
+      #cryptopunks
+
+      <hr className="my-4" />
+      Hurry up only 60k To Be  Minted
+      Only 0.01 bnb cost
+
       </p>
       <hr className="my-4" />
-      <p className="lead">
-      What is Loot?
-      Loot is randomized adventurer gear generated and stored on chain.
-Stats, images, and other functionality are intentionally omitted for others to interpret.
-Feel free to use Loot in any way you want.
-      </p>
       <p className="lead">
       <div>
         {items}
