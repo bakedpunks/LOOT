@@ -17,20 +17,17 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
     <div className="jumbotron">
       <h1 className="display-5">
-        BakedPunks NFT Marketplace
+        Binance Loot NFT Marketplace
       </h1>
       <p className="lead">
-        This is an NFT marketplace where you can claim, buy and sell your BakedPunks.
+        This is an NFT marketplace where you can claim, buy and sell your Binance Loot.
       </p>
       <hr className="my-4" />
       <p className="lead">
-      What is a BakedPunk?
-      BakedPunk is an unique one of a kind Non-Fungible Token (NFT) on Binance.
-      By minting a BakedPunk, you become the proud owner of the very first punk NFT on the Binance network.
-      What’s more is, there can only ever be 10,000 punks.
-      When you decide to mint one, you will receive a unique-one-of-a-kind
-      BakedPunk with proof of ownership stored on the Binance Smart Chain network. Who knows?
-      Your very first BakedPunk NFT may be worth your first house or car!
+      What is Loot?
+      Loot is randomized adventurer gear generated and stored on chain.
+Stats, images, and other functionality are intentionally omitted for others to interpret.
+Feel free to use Loot in any way you want.
       </p>
       <p className="lead">
       <div>
