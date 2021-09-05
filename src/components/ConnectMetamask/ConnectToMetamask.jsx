@@ -4,7 +4,7 @@ import metamaskIcon from "./metamask.svg";
 
 const items = []
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 2; i++) {
         const rand = Math.floor(Math.random() * 9999);;
         var index = rand;
         var s = index+"";
@@ -19,7 +19,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         Binance Loot
       </h1>
       <p className="lead">
-      Binance Loot NFT First Project On Binance Smart Chain
+      First Loot Project On Binance Smart Chain
 
       <hr className="my-4" />
       What is Loot? Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
