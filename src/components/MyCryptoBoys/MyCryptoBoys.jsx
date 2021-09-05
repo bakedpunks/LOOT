@@ -51,8 +51,7 @@ const MyCryptoBoys = ({
   for (const [index, value] of elements.entries()) {
     if(accountAddress == value){
           var s = index+"";
-          while (s.length < 4) s = "0" + s;
-          var newImageUrl = '/images/punks/punk-' + s + 'x4.png';
+          var newImageUrl = '/images/loot/' + s + '.png';
           var newLinkUrl = '/mint?punkid=' + index;
       items.push(<div class="card col-md-3" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">PUNK NO {index}</h5><p class="card-text"> PUNK OWNER {value}</p><Link to={newLinkUrl} className="nav-link" >Select</Link></div></div>)
     }
