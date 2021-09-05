@@ -53,7 +53,7 @@ const MyCryptoBoys = ({
           var s = index+"";
           var newImageUrl = '/images/loot/' + s + '.png';
           var newLinkUrl = '/mint?punkid=' + index;
-      items.push(<div class="card col-md-3" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">PUNK NO {index}</h5><p class="card-text"> PUNK OWNER {value}</p><Link to={newLinkUrl} className="nav-link" >Select</Link></div></div>)
+      items.push(<div class="card col-md-3" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5><p class="card-text">OWNER {value}</p></div></div>)
     }
   }
 

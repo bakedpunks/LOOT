@@ -20,11 +20,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/forsale" className="nav-link">
-                Loot For Sale
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link to="/marketplace" className="nav-link">
                 Loot Gallery
               </Link>
