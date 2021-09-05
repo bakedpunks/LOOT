@@ -136,11 +136,15 @@ class App extends Component {
             .balanceOf(this.state.accountAddress)
             .call();
 
+          const totalTokensOwnedByAccount = await cryptoBoysContract.methods
+            .totalSupply()
+            .call();
           let punkOwners = [];
           this.state.cryptoBoys = punkOwners;
           this.state.cryptoBoysForSale = [];
           this.state.balanceOf  = balanceOf + "";
           this.state.punksforsalebuttonhtml = "Load Punks";
+          this.state.totalTokensOwnedByAccount = totalTokensOwnedByAccount + "";
           this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});
           this.setState({balanceOf:this.state.balanceOf});
           this.setState({cryptoBoys:this.state.cryptoBoys});
