@@ -95,7 +95,7 @@ class FormAndPreview extends Component {
         </form>
 
         <hr className="my-4" />
-        Askweedman.io
+        BinanceLoot.io
       </div>
     );
   }
