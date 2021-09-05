@@ -61,7 +61,7 @@ class AllCryptoBoys extends Component {
       var s = index+"";
       var newImageUrl = '/images/loot/' + s + '.png';
       var newLinkUrl = '/mint?punkid=' + index;
-      items.push(<div class="card col-md-2" ><Link to={newLinkUrl} className="nav-link" ><img src={newImageUrl} /></Link><div class="card-body"> <h5 class="card-title">NO {index}</h5><p class="card-text"><small class="text-muted">OWNER {value}</small></p></div></div>)
+      items.push(<div class="card col-md-3" ><Link to={newLinkUrl} className="nav-link" ><img src={newImageUrl} /></Link><div class="card-body"> <h5 class="card-title">NO {index}</h5><p class="card-text"><small class="text-muted">OWNER {value}</small></p></div></div>)
 //      items.push(<Link to={newLinkUrl} className="nav-link" ><img src={newImageUrl} /></Link>)
     }
     const itemsPage = items.splice(this.state.currentPage*500, 500);
@@ -81,11 +81,11 @@ class AllCryptoBoys extends Component {
           </ul>
         </nav>
       </p>
-      <hr className="my-4" />
-      <div className="row">
-        {itemsPage}
+      <div class="container">
+    <div className="row">
+      {itemsPage}
+    </div>
       </div>
-
         <hr className="my-4" />
         Askweedman.io
       </div>
