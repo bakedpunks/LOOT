@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container">
         <Link to="/" className="navbar-brand ml-2">
-          BakedPunks
+          Binance Loot
         </Link>
         <div id="navbar" className="navbar">
           <ul
@@ -16,17 +16,17 @@ const Navbar = () => {
           >
             <li className="nav-item">
               <Link to="/forsale" className="nav-link">
-                For Sale
+                Loot For Sale
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/marketplace" className="nav-link">
-                Gallery
+                Loot Gallery
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/my-tokens" className="nav-link">
-                My Punks
+                My Loot
               </Link>
             </li>
           </ul>
