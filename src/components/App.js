@@ -208,9 +208,10 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
       });
 };
 claimPunk = async (punkIndex) => {
+  const price = window.web3.utils.toWei("0.01", "Ether");
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
-      .mint("0.01")
+      .mint(price)
       .send({ from: this.state.accountAddress})
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
