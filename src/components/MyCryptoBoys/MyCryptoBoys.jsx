@@ -64,14 +64,14 @@ const MyCryptoBoys = ({
       <div className="card mt-1">
         <div className="card-body align-items-center d-flex justify-content-center">
           <h5>
-            Total No. of BakedPunks remaining {totalTokensOwnedByAccount} / 10000
+            Total No. of Loot Minted {totalTokensOwnedByAccount} / 60000
           </h5>
         </div>
       </div>
       <hr className="my-4" />
       <div class="card col-md-12 text-center">
         <div class="card-body">
-          <h5 class="card-title">You Own {balanceOf} Punks</h5>
+          <h5 class="card-title">You Own {balanceOf} Loot Bag(s)</h5>
         </div>
       </div>
         <div class="container">
