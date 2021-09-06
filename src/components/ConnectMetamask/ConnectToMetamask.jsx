@@ -66,6 +66,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <div className="row">
           {items}
       </div>
+        <hr className="my-4" />
+            Binance Loot
     </div>
 
     </div>
