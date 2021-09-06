@@ -25,8 +25,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       What is Loot? Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
 
       <hr className="my-4" />
-      Telegram : https://t.me/binancelootchat
-      Twitter : https://twitter.com/Binanceloot
+      Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
+      Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
 
       <hr className="my-4" />
       #BinanceSmartChain
