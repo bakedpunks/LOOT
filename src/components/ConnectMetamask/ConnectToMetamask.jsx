@@ -47,8 +47,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </p>
       <hr className="my-4" />
       <p className="lead">
-      <div>
-        {items}
+      <div class="container">
+        <div className="row">
+            {items}
+        </div>
       </div>
       </p>
       <hr className="my-4" />
