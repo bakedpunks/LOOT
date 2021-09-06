@@ -26,8 +26,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <hr className="my-4" />
       Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
+      <hr className="my-4" />
       Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
-
+      <hr className="my-4" />
+      Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x2041481b4484851d03df3bddd6127bcb44b01bcf" >Marketplace</a>
       <hr className="my-4" />
       #BinanceSmartChain
       #Binance
