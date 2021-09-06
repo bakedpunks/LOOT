@@ -5,7 +5,7 @@ import metamaskIcon from "./metamask.svg";
 const items = []
 
 for (let i = 0; i < 2; i++) {
-        const rand = Math.floor(Math.random() * 9999);;
+        const rand = Math.floor(Math.random() * 2000);;
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/loot/' + s + '.png';
