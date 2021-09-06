@@ -106,7 +106,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <section >
         <div class="container text-center text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
@@ -192,7 +192,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
       </div>
       <!-- Copyright -->
-    </footer>    
+    </footer>
     </div>
 
   );
