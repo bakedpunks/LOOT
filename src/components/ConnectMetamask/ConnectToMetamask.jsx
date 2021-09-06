@@ -9,7 +9,7 @@ for (let i = 0; i < 2; i++) {
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/loot/' + s + '.png';
-        items.push(<img src={newImageUrl} alt={rand} />)
+        items.push(<div class="card col-md-4" ><img src={newImageUrl} alt={rand} /></div>)
 }
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
