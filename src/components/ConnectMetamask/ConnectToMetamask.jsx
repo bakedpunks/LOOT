@@ -4,7 +4,7 @@ import metamaskIcon from "./metamask.svg";
 
 const items = []
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 3; i++) {
         const rand = Math.floor(Math.random() * 2000);;
         var index = rand;
         var s = index+"";
@@ -14,6 +14,7 @@ for (let i = 0; i < 2; i++) {
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
+    <div>
     <div className="jumbotron">
       <h1 className="display-5">
         Binance Loot
@@ -47,14 +48,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </p>
       <hr className="my-4" />
       <p className="lead">
-      <div class="container">
-        <div className="row">
-            {items}
-        </div>
-      </div>
-      </p>
-      <hr className="my-4" />
-      <p className="lead">
           Contract Address : <a href="https://bscscan.com/token/0x2041481B4484851d03DF3BdDD6127bCB44b01Bcf" >0x20...1Bcf</a>
       </p>
 
@@ -66,6 +59,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       >
         Connect Wallet
       </button>
+    </div>
+    <div class="container">
+      <div className="row">
+          {items}
+      </div>
+    </div>
     </div>
   );
 };
