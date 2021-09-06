@@ -22,6 +22,10 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
             <h4>{accountAddress}</h4>
             <p className="lead">Account balance :</p>
             <h4>{accountBalance} BNB</h4>
+            <hr className="my-4" />
+            Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
+            <hr className="my-4" />
+            Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>            
           </div>
         </div>
       </div>
