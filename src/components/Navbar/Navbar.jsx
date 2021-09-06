@@ -20,8 +20,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="https://app.nftrade.com/assets/bsc/0x2041481b4484851d03df3bddd6127bcb44b01bcf" className="nav-link">
-              Marketplace
+              <Link to="nftrade" className="nav-link">
+                Marketplace
               </Link>
             </li>
             <li className="nav-item">
