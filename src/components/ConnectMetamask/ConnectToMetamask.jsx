@@ -61,6 +61,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </button>
     </div>
     <div class="container">
+        Example Bags
+      <hr className="my-4" />
       <div className="row">
           {items}
       </div>
