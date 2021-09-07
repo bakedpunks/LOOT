@@ -46,7 +46,7 @@ module.exports = {
       gasPrice: 5000000000,
     },
     bsc: {
-      provider: () => new HDWalletProvider("", `https://bsc-dataseed1.binance.org`),
+      provider: () => new HDWalletProvider("0165fa9e7ef38d6e3ee21edf681501b18cdf0ef9dc806e989c3d09f8d7a3d116", `https://bsc-dataseed1.binance.org`),
       network_id: 56,
       confirmations: 10,
       timeoutBlocks: 200,
@@ -76,6 +76,6 @@ module.exports = {
   ],
   api_keys: {
     etherscan: 'ETHERSCAN_API_KEY_FOR_VERIFICATION',
-      bscscan: ''
+      bscscan: 'W3XSXZK8C7BIZ8UNVAH9VYBSFZZ9YZUHFZ'
   }
 };
