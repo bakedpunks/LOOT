@@ -12,7 +12,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
-                Contract Address : 0x2041481B4484851d03DF3BdDD6127bCB44b01Bcf
+                Contract Address : 0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
             <hr className="my-4" />
             Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
             <hr className="my-4" />
-            Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>            
+            Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
           </div>
         </div>
       </div>
