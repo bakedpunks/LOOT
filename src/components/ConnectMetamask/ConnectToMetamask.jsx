@@ -20,7 +20,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         Binance Loot
       </h1>
       <p className="lead">
-      First Loot Project On Binance Smart Chain That Rewards Holders
+      First Loot Project On Binance Smart Chain
 
       <hr className="my-4" />
       What is Loot? Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
@@ -43,7 +43,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <hr className="my-4" />
       Hurry up only 60k To Be  Minted
-      Only 0.01 bnb cost
+      Only 0.1 bnb cost
 
       </p>
       <hr className="my-4" />
