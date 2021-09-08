@@ -72,7 +72,7 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-    <h6 class="card-subtitle mb-2">Mint Price 0.01 BNB</h6>
+    <h6 class="card-subtitle mb-2">Mint Price 0.1 BNB</h6>
 
                     </div>
         </div>
