@@ -449,7 +449,7 @@ getPunkOwner = async (punkIndex) => {
                   )}
               />
               <Route path='/nftrade' component={() => {
-                   window.location.href = 'https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d';
+                   window.location.href = 'https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae';
                    return null;
               }}/>
 		</HashRouter>
