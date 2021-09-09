@@ -25,6 +25,15 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
       What is Loot? Loot is randomized adventurer gear generated and stored on-chain or off-chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
       <hr className="my-4" />
+      Binance Loot Remaining
+      <hr className="my-2" />
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="212"
+        aria-valuemin="0" aria-valuemax="60000" style="width:70%">
+          <span class="sr-only">70% Complete</span>
+        </div>
+      </div>
+      <hr className="my-4" />
       Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
       <hr className="my-4" />
       Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
@@ -32,7 +41,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       Become a Binance Loot Collector. Buy, sell and trade safely.
       <hr className="my-2" />
       Off Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d" >NFTrade.com</a>
-      <hr className="my-4" />
+      <hr className="my-2" />
       On Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >NFTrade.com</a>
       <hr className="my-4" />
       #BinanceSmartChain
