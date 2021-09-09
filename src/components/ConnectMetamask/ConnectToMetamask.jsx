@@ -10,14 +10,14 @@ for (let i = 0; i < 3; i++) {
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/loot/' + s + '.png';
-        items.push(<div class="card col-md-4" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
+        items.push(<div class="card col-md-4" ><img class="img-fluid"  src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
 for (let i = 1; i < 4; i++) {
         const rand = i;;
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/loot' + s + '.png';
-        itemsonchain.push(<div class="card col-md-4" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
+        itemsonchain.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
