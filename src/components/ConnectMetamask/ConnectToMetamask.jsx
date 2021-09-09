@@ -25,10 +25,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
       What is Loot? Loot is randomized adventurer gear generated and stored on-chain or off-chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
       <hr className="my-4" />
-      Binance Loot Remaining
+      Binance Loot Remaining - Minted 212 of 60000
       <hr className="my-2" />
       <div class="progress">
-        <div class="progress-bar bg-info" role="progressbar" style={{width: "1%"}} aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+        aria-valuemin="0" aria-valuemax="100" style={{width: "1%"}} >
+          1% Complete (danger)
+        </div>
       </div>
       <hr className="my-4" />
       Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
