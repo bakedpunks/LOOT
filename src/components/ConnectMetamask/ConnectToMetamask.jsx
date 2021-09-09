@@ -30,9 +30,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
       Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
       <hr className="my-4" />
-      Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d" >Off Chain</a>
+      Off Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d" >NFTrade.com</a>
       <hr className="my-4" />
-      Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >On Chain</a>
+      On Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >NFTrade.com</a>
       <hr className="my-4" />
       #BinanceSmartChain
       #Binance
