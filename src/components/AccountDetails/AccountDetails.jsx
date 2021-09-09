@@ -12,7 +12,10 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
-                Contract Address : 0xda87c744715cb764545c2efc47b2bc48c8dd63ae
+                Mint Contract Address : 0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d
+            </p>
+            <p className="lead">
+                Loot Contract Address : 0xda87c744715cb764545c2efc47b2bc48c8dd63ae
             </p>
           </div>
         </div>
