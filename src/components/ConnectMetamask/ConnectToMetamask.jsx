@@ -66,11 +66,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     Binance Loot Remaining - Minted 212 of 60000
     <hr className="my-2" />
     <div class="progress">
-      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
-      aria-valuemin="0" aria-valuemax="100" style={{width: "1%"}} >
-        1% Complete (danger)
+      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+      aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style={{width: "1%"}} >
+        1% Complete
       </div>
-    </div>    
+    </div>
+    <hr className="my-4" />
     <div class="container">
         Example Bags
       <hr className="my-4" />
