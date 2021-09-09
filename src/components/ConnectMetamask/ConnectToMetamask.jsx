@@ -3,6 +3,7 @@ import metamaskIcon from "./metamask.svg";
 
 
 const items = []
+const itemsonchain = []
 
 for (let i = 0; i < 3; i++) {
         const rand = Math.floor(Math.random() * 2000);;
@@ -11,7 +12,13 @@ for (let i = 0; i < 3; i++) {
         var newImageUrl = '/images/loot/' + s + '.png';
         items.push(<div class="card col-md-4" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
-
+for (let i = 1; i < 4; i++) {
+        const rand = i;;
+        var index = rand;
+        var s = index+"";
+        var newImageUrl = '/images/loot' + s + '.png';
+        itemsonchain.push(<div class="card col-md-4" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
+}
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
     <div>
@@ -42,7 +49,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       #NFTCommunity
       #Lootproject
       #mint
-      #cryptopunks
+      #loot
 
       <hr className="my-4" />
       Hurry up only 60k To Be Minted. Only 0.02 bnb cost
@@ -73,13 +80,20 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     </div>
     <hr className="my-4" />
     <div class="container">
-        Example Bags
-      <hr className="my-4" />
+        Example Bags Off Chain
+      <hr className="my-2" />
       <div className="row">
           {items}
       </div>
+      <hr className="my-4" />
+        Example Bags On Chain
+      <hr className="my-2" />
+      <div className="row">
+          {itemsonchain}
+      </div>
         <hr className="my-4" />
             Binance Loot
+        <hr className="my-4" />
     </div>
 
     </div>
