@@ -78,6 +78,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         1% Complete
       </div>
     </div>
+    <hr className="my-2" />
+    <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
     <hr className="my-4" />
     <div class="container">
         Example Bags On Chain
