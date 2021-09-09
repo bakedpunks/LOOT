@@ -80,19 +80,19 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     </div>
     <hr className="my-4" />
     <div class="container">
-        Example Bags Off Chain
-      <hr className="my-2" />
-      <div className="row">
-          {items}
-      </div>
-      <hr className="my-4" />
         Example Bags On Chain
       <hr className="my-2" />
       <div className="row">
           {itemsonchain}
       </div>
+      <hr className="my-4" />
+        Example Bags Off Chain
+      <hr className="my-2" />
+      <div className="row">
+          {items}
+      </div>
         <hr className="my-4" />
-            Binance Loot
+            Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
         <hr className="my-4" />
     </div>
 
