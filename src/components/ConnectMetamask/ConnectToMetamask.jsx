@@ -29,8 +29,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-2" />
       <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuenow="212"
-        aria-valuemin="0" aria-valuemax="60000" style="width:70%">
-          <span class="sr-only">70% Complete</span>
+        aria-valuemin="0" aria-valuemax="60000" >
+          <span class="sr-only">1% Complete</span>
         </div>
       </div>
       <hr className="my-4" />
