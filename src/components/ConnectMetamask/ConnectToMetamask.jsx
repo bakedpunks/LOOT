@@ -28,7 +28,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       Binance Loot Remaining
       <hr className="my-2" />
       <div class="progress">
-        <div class="progress-bar w-1" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <hr className="my-4" />
       Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
