@@ -224,7 +224,7 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
       });
 };
 claimPunk = async (punkIndex) => {
-  const price = window.web3.utils.toWei("0.1", "Ether");
+  const price = window.web3.utils.toWei("0.02", "Ether");
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
       .mint()

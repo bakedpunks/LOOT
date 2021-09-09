@@ -43,7 +43,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <hr className="my-4" />
       Hurry up only 60k To Be  Minted
-      Only 0.1 bnb cost
+      Only 0.02 bnb cost
 
       </p>
       <hr className="my-4" />
