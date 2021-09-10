@@ -21,7 +21,7 @@ for (let i = 1; i < 4; i++) {
         itemsonchain.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
 for (let i = 1; i < 4; i++) {
-        const rand = i;;
+        const rand = Math.floor(Math.random() * 250);;
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/loot-characters/' + s + '.png';
