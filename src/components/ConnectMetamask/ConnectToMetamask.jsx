@@ -28,7 +28,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </h1>
       <p className="lead">
       First Loot Project On Binance Smart Chain With 60k Mint Limit.
-
+      <hr className="my-4" />
+      <img class="img-fluid" src="/images/banner.png" />
       <hr className="my-4" />
       What is Loot? Loot is randomized adventurer gear generated and stored on-chain or off-chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
       <hr className="my-4" />
@@ -56,7 +57,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       </p>
       <hr className="my-4" />
-      <a href="https://binanceloot.medium.com/how-to-mint-loot-nft-or-trade-on-nftrade-mint-your-very-first-loot-nft-on-binance-smart-chain-51c6fd1aceef">How ToMint Loot Nft or Trade On Nftrade Mint Your Very First Loot NFT On Binance Smart Chain</a>
+      <a href="https://binanceloot.medium.com/how-to-mint-loot-nft-or-trade-on-nftrade-mint-your-very-first-loot-nft-on-binance-smart-chain-51c6fd1aceef">How To Mint Loot Nft or Trade On Nftrade Mint Your Very First Loot NFT On Binance Smart Chain</a>
       <hr className="my-4" />
       <p className="lead">
           Contract Address : <a href="https://bscscan.com/token/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >0xda87c744715cb764545c2efc47b2bc48c8dd63ae</a>
