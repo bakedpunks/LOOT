@@ -24,7 +24,7 @@ for (let i = 1; i < 4; i++) {
         const rand = i;;
         var index = rand;
         var s = index+"";
-        var newImageUrl = '/images/loot-characters/loot' + s + '.png';
+        var newImageUrl = '/images/loot-characters/' + s + '.png';
         itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
 
