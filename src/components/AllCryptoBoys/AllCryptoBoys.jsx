@@ -55,9 +55,7 @@ class AllCryptoBoys extends Component {
     var newImageUrl = '/images/loot-characters/' + s + '.png';
 //    window.alert(e.target.src);
 //    window.alert(newImageUrl);
-    if(e.target.src.indexOf(newImageUrl) !== -1){
-      newImageUrl = "/images/punks/punk-" + s + "x8.png";
-    }
+
     e.target.src = newImageUrl;
   };
   render() {
