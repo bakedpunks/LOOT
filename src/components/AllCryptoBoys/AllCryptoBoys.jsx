@@ -52,7 +52,7 @@ class AllCryptoBoys extends Component {
   callViewPunkDetail = (e) => {
     var s = e.target.id +"";
 //    while (s.length < 4) s = "0" + s;
-    var newImageUrl = '/images/loot-characters/' + s + '.png';
+    var newImageUrl = '/images/loot/' + s + '.png';
 //    window.alert(e.target.src);
 //    window.alert(newImageUrl);
 
@@ -67,7 +67,7 @@ class AllCryptoBoys extends Component {
     for (const [index, value] of elements.entries()) {
 
       var s = index+"";
-      var newImageUrl = '/images/loot/' + s + '.png';
+      var newImageUrl = '/images/loot-characters/' + s + '.png';
       var newLinkUrl = '/mint?punkid=' + index;
       items.push(<div class="card col-md-4" ><img src={newImageUrl} id={index} onClick={this.callViewPunkDetail} /><div class="card-body"> <h5 class="card-title">NO {index}</h5><p class="card-text"><small class="text-muted">OWNER {value}</small></p></div></div>)
 //      items.push(<Link to={newLinkUrl} className="nav-link" ><img src={newImageUrl} /></Link>)
