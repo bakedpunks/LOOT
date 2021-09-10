@@ -4,6 +4,7 @@ import metamaskIcon from "./metamask.svg";
 
 const items = []
 const itemsonchain = []
+const itemschar = []
 
 for (let i = 0; i < 3; i++) {
         const rand = Math.floor(Math.random() * 2000);;
@@ -19,6 +20,14 @@ for (let i = 1; i < 4; i++) {
         var newImageUrl = '/images/loot' + s + '.png';
         itemsonchain.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
 }
+for (let i = 1; i < 4; i++) {
+        const rand = i;;
+        var index = rand;
+        var s = index+"";
+        var newImageUrl = '/images/loot-characters/loot' + s + '.png';
+        itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5></div></div>)
+}
+
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
     <div>
@@ -95,6 +104,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-2" />
       <div className="row">
           {items}
+      </div>
+      <hr className="my-4" />
+        Example Bags Binance Loot Characters
+      <hr className="my-2" />
+      <div className="row">
+          {itemschar}
       </div>
         <hr className="my-4" />
             Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
