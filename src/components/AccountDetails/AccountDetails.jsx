@@ -25,6 +25,9 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
             <h4>{accountAddress}</h4>
             <p className="lead">Account balance :</p>
             <h4>{accountBalance} BNB</h4>
+            <hr className="my-2" />
+            <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+
             <hr className="my-4" />
             Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
             <hr className="my-4" />
