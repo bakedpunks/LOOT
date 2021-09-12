@@ -33,7 +33,7 @@ for (let i = 1; i < 4; i++) {
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/mmaloot' + s + '.png';
-        itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title"><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186/"{index} >NO {index} </a></h5></div></div>)
+        itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title"><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" >NO {index} </a></h5></div></div>)
 }
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
