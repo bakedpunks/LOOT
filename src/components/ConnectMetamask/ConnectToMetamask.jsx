@@ -33,7 +33,7 @@ for (let i = 1; i < 4; i++) {
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/mmaloot' + s + '.png';
-        itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title"><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" >NO {index} </a></h5></div></div>)
+        itemschar.push(<div class="card col-md-4" ><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" ><img class="img-fluid" src={newImageUrl} /></a><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
 }
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
@@ -118,12 +118,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <div className="row">
           {items}
       </div>
+
       <hr className="my-4" />
         Example Bags Binance Loot Characters
       <hr className="my-2" />
       <div className="row">
           {itemschar}
       </div>
+
       <hr className="my-4" />
         Example Bags Mixed Martial Arts(MMA) Loot Characters
       <hr className="my-2" />
