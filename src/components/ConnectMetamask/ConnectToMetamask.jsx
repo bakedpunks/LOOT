@@ -38,7 +38,7 @@ for (let i = 1; i < 4; i++) {
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
-    <div>
+    <div class="container">
     <div className="jumbotron">
       <h1 className="display-5">
         Binance Loot
@@ -128,20 +128,21 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
     </div>
-        <div class="container">
-    Derivatives Binance Loot Projects
-    <hr className="my-4" />
-      Example Bags Mixed Martial Arts(MMA) Loot Characters
-    <hr className="my-2" />
-    <div className="row">
-        {itemsonchainmma}
     </div>
+    <div class="container">
+Derivatives Binance Loot Projects
+<hr className="my-4" />
+  Example Bags Mixed Martial Arts(MMA) Loot Characters
+<hr className="my-2" />
+<div className="row">
+    {itemsonchainmma}
+</div>
 
-      <hr className="my-4" />
-          Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
-      <hr className="my-4" />
+  <hr className="my-4" />
+      Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
+  <hr className="my-4" />
 
-        </div>
+    </div>
     </div>
 
   );
