@@ -120,15 +120,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <div className="row">
             {items}
         </div>
-      </div>
-      <div className="container">
-        Derivatives Binance Loot Projects
         <hr className="my-4" />
-        Example Bags Mixed Martial Arts MMA Loot Characters
+        Example Bags Binance Loot Characters
         <hr className="my-2" />
         <div className="row">
-            {itemsonchainmma}
+            {itemschar}
         </div>
+      </div>
+      <div className="container">
         <hr className="my-4" />
             Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
         <hr className="my-4" />
