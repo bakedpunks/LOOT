@@ -51,6 +51,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       Off Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d" >NFTrade.com</a>
       <hr className="my-2" />
       On Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >NFTrade.com</a>
+      <hr className="my-1" />
+      <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+      <hr className="my-2" />
+      On Chain Mixed Martial Arts(MMA) Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" >NFTrade.com</a>
+      <hr className="my-1" />
+      <a href="https://docs.google.com/spreadsheets/d/1aP2LCB5VbnVTuCbhKAsZTIz2NAvSYMbg0k8y5oI0w58/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+
       <hr className="my-4" />
       #BinanceSmartChain
       #Binance
@@ -90,8 +97,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         1% Complete
       </div>
     </div>
-    <hr className="my-2" />
-    <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
     <hr className="my-4" />
     <div class="container">
         Example Bags On Chain
