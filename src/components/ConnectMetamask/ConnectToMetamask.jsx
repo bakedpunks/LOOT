@@ -126,6 +126,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <div className="row">
             {itemschar}
         </div>
+        <hr className="my-4" />
         Example Bags On Chain Mixed Martial Arts(MMA) Loot
         <hr className="my-2" />
         <div className="row">
