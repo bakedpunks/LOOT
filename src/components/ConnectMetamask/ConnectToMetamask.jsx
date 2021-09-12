@@ -33,12 +33,12 @@ for (let i = 1; i < 4; i++) {
         var index = rand;
         var s = index+"";
         var newImageUrl = '/images/mmaloot' + s + '.png';
-        itemschar.push(<div class="card col-md-4" ><img class="img-fluid" src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
+        itemschar.push(<div class="card col-md-4" ><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" ><img class="img-fluid" src={newImageUrl} /></a><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
 }
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
-    <div class="container">
+    <div>
     <div className="jumbotron">
       <h1 className="display-5">
         Binance Loot
@@ -97,7 +97,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </button>
     </div>
     <hr className="my-4" />
-    Binance Loot Remaining - Minted 257 of 60000
+    Binance Loot Remaining - Minted 212 of 60000
     <hr className="my-2" />
     <div class="progress">
       <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
@@ -128,19 +128,18 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
     </div>
+    <div className="jumbotron">
+    Derivatives Binance Loot Projects
+    <hr className="my-4" />
+      Example Bags Mixed Martial Arts MMA Loot Characters
+    <hr className="my-2" />
+    <div className="row">
+        {itemsonchainmma}
     </div>
-    <div class="container">
-Derivatives Binance Loot Projects
-<hr className="my-4" />
-  Example Bags Mixed Martial Arts(MMA) Loot Characters
-<hr className="my-2" />
-<div className="row">
-    {itemsonchainmma}
-</div>
 
-  <hr className="my-4" />
-      Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
-  <hr className="my-4" />
+      <hr className="my-4" />
+          Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
+      <hr className="my-4" />
 
     </div>
     </div>
