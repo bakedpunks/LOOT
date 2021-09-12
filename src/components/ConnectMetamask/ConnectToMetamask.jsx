@@ -120,9 +120,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <div className="row">
             {items}
         </div>
-        <hr className="my-4" />
-        Example Bags Binance Loot Characters
-        <hr className="my-2" />
+        <div className="row">
+          <hr className="my-4" />
+          Example Bags Binance Loot Characters
+          <hr className="my-2" />
+        </div>
         <div className="row">
             {itemschar}
         </div>
