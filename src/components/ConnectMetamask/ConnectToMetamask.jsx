@@ -126,18 +126,22 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           {itemschar}
       </div>
 
-      <hr className="my-4" />
-        Example Bags Mixed Martial Arts(MMA) Loot Characters
-      <hr className="my-2" />
-      <div className="row">
-          {itemsonchainmma}
-      </div>
 
-        <hr className="my-4" />
-            Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
-        <hr className="my-4" />
+    </div>
+    <div className="jumbotron">
+    Derivatives Binance Loot Projects
+    <hr className="my-4" />
+      Example Bags Mixed Martial Arts(MMA) Loot Characters
+    <hr className="my-2" />
+    <div className="row">
+        {itemsonchainmma}
     </div>
 
+      <hr className="my-4" />
+          Binance Loot @ 2021 Binance Loot Project Inc. All rights reserved.
+      <hr className="my-4" />
+
+    </div>
     </div>
 
   );
