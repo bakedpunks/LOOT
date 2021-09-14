@@ -41,7 +41,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     <div>
       <div className="jumbotron">
         <h1 className="display-5">
-          Binance Loot
+          Loot
         </h1>
         <p className="lead">
         First Loot Project On Binance Smart Chain With 60k Mint Limit.
@@ -54,7 +54,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
         <hr className="my-4" />
-        Become a Binance Loot Collector. Buy, sell and trade safely.
+        Become a Loot Collector. Buy, sell and trade safely.
         <hr className="my-2" />
         Off Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d" >NFTrade.com</a>
         <hr className="my-2" />
@@ -69,6 +69,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         On Chain Binance MetaHuman Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x380af994527beb7e0fb12f81195fb6f02a07e125" >NFTrade.com</a>
         <hr className="my-1" />
         <a href="https://docs.google.com/spreadsheets/d/1k6HJZDNf4vDFJ9qkJspGn9jnd5mWYR6HkvE4m_3FL-k/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+        <hr className="my-2" />
+        On Chain Polygone MetaHuman Marketplace : <a href="https://opensea.io/collection/metahuman-v2" >Opensea.com</a>
+        <hr className="my-1" />
+        <a href="#">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
 
         <hr className="my-4" />
         #BinanceSmartChain
