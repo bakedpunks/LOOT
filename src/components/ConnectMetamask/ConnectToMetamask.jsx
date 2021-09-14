@@ -65,6 +65,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         On Chain Mixed Martial Arts(MMA) Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" >NFTrade.com</a>
         <hr className="my-1" />
         <a href="https://docs.google.com/spreadsheets/d/1aP2LCB5VbnVTuCbhKAsZTIz2NAvSYMbg0k8y5oI0w58/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+        On Chain Binance MetaHuman Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x380af994527beb7e0fb12f81195fb6f02a07e125" >NFTrade.com</a>
+        <hr className="my-1" />        
+        <a href="https://docs.google.com/spreadsheets/d/1k6HJZDNf4vDFJ9qkJspGn9jnd5mWYR6HkvE4m_3FL-k/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
 
         <hr className="my-4" />
         #BinanceSmartChain
