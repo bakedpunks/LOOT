@@ -61,6 +61,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         On Chain Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >NFTrade.com</a>
         <hr className="my-1" />
         <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+        <hr className="my-1" />
+        <p className="lead">
+            Contract Address : <a href="https://bscscan.com/token/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >0xda87c744715cb764545c2efc47b2bc48c8dd63ae</a>
+        </p>
         <hr className="my-2" />
         On Chain Mixed Martial Arts(MMA) Loot Marketplace : <a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" >NFTrade.com</a>
         <hr className="my-1" />
@@ -70,9 +74,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-1" />
         <a href="https://docs.google.com/spreadsheets/d/1k6HJZDNf4vDFJ9qkJspGn9jnd5mWYR6HkvE4m_3FL-k/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
         <hr className="my-2" />
-        On Chain Polygone MetaHuman Marketplace : <a href="https://opensea.io/collection/metahuman-v2" >Opensea.com</a>
+        On Chain Polygone MetaHuman Marketplace : <a href="https://opensea.io/collection/metahumanloot" >Opensea.com</a>
         <hr className="my-1" />
         <a href="#">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
+        <hr className="my-1" />
+        <p className="lead">
+            Contract Address : <a href="https://polygonscan.com/token/0x666659a8ca809c431ce9479a261b9f03cb372016" >0x666659a8ca809c431ce9479a261b9f03cb372016</a>
+        </p>
 
         <hr className="my-4" />
         #BinanceSmartChain
@@ -90,10 +98,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         </p>
         <hr className="my-4" />
         <a href="https://binanceloot.medium.com/how-to-mint-loot-nft-or-trade-on-nftrade-mint-your-very-first-loot-nft-on-binance-smart-chain-51c6fd1aceef">How To Mint Loot Nft or Trade On Nftrade Mint Your Very First Loot NFT On Binance Smart Chain</a>
-        <hr className="my-4" />
-        <p className="lead">
-            Contract Address : <a href="https://bscscan.com/token/0xda87c744715cb764545c2efc47b2bc48c8dd63ae" >0xda87c744715cb764545c2efc47b2bc48c8dd63ae</a>
-        </p>
 
         <hr className="my-4" />
         <button
