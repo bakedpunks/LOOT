@@ -130,8 +130,8 @@ class App extends Component {
             Loot.abi,
             networkData.address
           );
-
-    const metaHumanContract = web3.eth.Contract(Metahuman, "0x666659a8ca809c431ce9479a261b9f03cb372016");
+    const metaHumanContract = new Contract("0x666659a8ca809c431ce9479a261b9f03cb372016", Metahuman, web3.getSigner())
+//    const metaHumanContract = web3.eth.Contract(Metahuman, );
     const balanceOfMH = await metaHumanContract.methods
       .balanceOf(this.state.accountAddress)
       .call();
