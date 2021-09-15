@@ -5,6 +5,8 @@ import Web3 from "web3";
 
 import Loot from "../abis/Loot.json";
 
+import Metahuman from "../abis/Metahuman.json";
+
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
 import FormAndPreview from "../components/FormAndPreview/FormAndPreview";
 import AccountDetails from "./AccountDetails/AccountDetails";
@@ -123,10 +125,14 @@ class App extends Component {
             networkData.address
           );
   	const cryptoBoysMarketContract = web3.eth.Contract(
-            Loot.abi,
+            Loot.output.abi,
             networkData.address
           );
 
+    const metaHumanContract = web3.eth.Contract(Metahuman.abi, "0x666659a8ca809c431ce9479a261b9f03cb372016");
+    const balanceOfMH = await metaHumanContract.methods
+      .balanceOf(this.state.accountAddress)
+      .call();
 
 
           this.setState({ cryptoBoysContract });
