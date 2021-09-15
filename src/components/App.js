@@ -125,7 +125,7 @@ class App extends Component {
             networkData.address
           );
   	const cryptoBoysMarketContract = web3.eth.Contract(
-            Loot.output.abi,
+            Metahuman.output.abi,
             networkData.address
           );
 
