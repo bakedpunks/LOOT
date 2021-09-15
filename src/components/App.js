@@ -135,8 +135,7 @@ class App extends Component {
 //    const balanceOfMH = await metaHumanContract.methods
 //      .balanceOf(this.state.accountAddress)
 //      .call();
-
-      window.alert('Balance of MetaHuman' + balanceOfMH);
+//      window.alert('Balance of MetaHuman' + balanceOfMH);
 
           this.setState({ cryptoBoysContract });
           this.setState({ cryptoBoysMarketContract });
