@@ -125,11 +125,11 @@ class App extends Component {
             networkData.address
           );
   	const cryptoBoysMarketContract = web3.eth.Contract(
-            Metahuman.output.abi,
+            Loot.abi,
             networkData.address
           );
 
-    const metaHumanContract = web3.eth.Contract(Metahuman.abi, "0x666659a8ca809c431ce9479a261b9f03cb372016");
+    const metaHumanContract = web3.eth.Contract(Metahuman.output.abi, "0x666659a8ca809c431ce9479a261b9f03cb372016");
     const balanceOfMH = await metaHumanContract.methods
       .balanceOf(this.state.accountAddress)
       .call();
