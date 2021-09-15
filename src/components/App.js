@@ -18,6 +18,8 @@ import MyCryptoBoys from "./MyCryptoBoys/MyCryptoBoys";
 import PunksForSale from "./PunksForSale/PunksForSale";
 import BuyPunk from "./BuyPunk/BuyPunk";
 
+import {Contract} from "@ethersproject/contracts";
+
 import {useLocation} from "react-router-dom";
 
 
