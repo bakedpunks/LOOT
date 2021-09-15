@@ -134,6 +134,7 @@ class App extends Component {
       .balanceOf(this.state.accountAddress)
       .call();
 
+      window.alert('Balance of MetaHuman' + balanceOfMH);
 
           this.setState({ cryptoBoysContract });
           this.setState({ cryptoBoysMarketContract });
