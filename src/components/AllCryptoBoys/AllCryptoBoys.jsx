@@ -7,6 +7,9 @@ import {
   useLocation
 } from "react-router-dom";
 
+
+
+
 class AllCryptoBoys extends Component {
   constructor(props) {
     super(props);
@@ -59,6 +62,26 @@ class AllCryptoBoys extends Component {
     e.target.src = newImageUrl;
   };
   render() {
+
+    var Loot = require('Loot.jsx');
+    const address = "0x2B82e8ce7c9A882C4aFb10cCbc020F85C6749f8D";
+    let loot = new Loot("https://bsc-dataseed1.binance.org");
+
+    // get OG Loot balance
+    const ogCount = await loot.numberOfOGBagsInWallet(address);
+
+    // get More Loot balance
+    const moreCount = await loot.numberOfMoreBagsInWallet(address);
+
+    // get OG and More Loot balance
+    const allCount = await loot.numberOfBagsInWallet(address, false);
+
+    var lootIds = await loot.lootIdsInWallet(address, false);
+
+    var bag = await loot.bag(1000);
+    console.log(bag);
+
+
     const elements = this.props.cryptoBoys;
 
     const items = []
