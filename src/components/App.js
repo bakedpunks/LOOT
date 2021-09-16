@@ -5,7 +5,6 @@ import Web3 from "web3";
 
 import Loot from "../abis/Loot.json";
 
-import Metahuman from "../abis/Metahuman.json";
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
 import FormAndPreview from "../components/FormAndPreview/FormAndPreview";
