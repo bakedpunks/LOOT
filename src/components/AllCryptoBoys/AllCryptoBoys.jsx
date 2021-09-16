@@ -7,10 +7,6 @@ import {
   useLocation
 } from "react-router-dom";
 
-import Loot from './index.js';
-
-
-
 class AllCryptoBoys extends Component {
   constructor(props) {
     super(props);
@@ -64,24 +60,6 @@ class AllCryptoBoys extends Component {
   };
   render() {
 
-    const address = "0x2B82e8ce7c9A882C4aFb10cCbc020F85C6749f8D";
-    let loot = new Loot("https://bsc-dataseed1.binance.org");
-
-    // get OG Loot balance
-    const ogCount = loot.numberOfOGBagsInWallet(address);
-
-    // get More Loot balance
-    const moreCount = loot.numberOfMoreBagsInWallet(address);
-
-    // get OG and More Loot balance
-    const allCount = loot.numberOfBagsInWallet(address, false);
-
-    var lootIds =  loot.lootIdsInWallet(address, false);
-
-    var bag =  loot.bag(1000);
-    console.log(bag);
-
-
     const elements = this.props.cryptoBoys;
 
     const items = []
@@ -105,7 +83,6 @@ class AllCryptoBoys extends Component {
 
     return (
       <div class="container">
-      {bag.neck}
       <p className="lead">
         <nav aria-label="Page navigation example">
           <ul class="pagination pagination-sm justify-content-center">
