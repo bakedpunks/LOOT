@@ -70,7 +70,7 @@ const MyCryptoBoys = ({
   let parsedABI = JSON.parse(stringABI);
   let contract = web3.eth.Contract(parsedABI, '0xda87c744715cb764545c2efc47b2bc48c8dd63ae');
 
-  const totalTokensOwnedByAccountLoot = cryptoBoysContract.methods
+  const totalTokensOwnedByAccountLoot = contract.methods
     .totalSupply()
     .call();
 
