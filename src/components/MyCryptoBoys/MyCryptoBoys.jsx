@@ -8,7 +8,6 @@ import {
   useLocation
 } from "react-router-dom";
 
-import ERC20TransferABI from "./ERC20TransferABI.jsx"
 import Web3 from "web3";
 
 const MyCryptoBoys = ({
