@@ -71,7 +71,7 @@ const MyCryptoBoys = ({
   const rpc = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org");
   const loot = new ethers.Contract("0xda87c744715cb764545c2efc47b2bc48c8dd63ae", stringABI, rpc);
 
-  loot.methods.totalSupply().call(function (err, res) {
+  loot.totalSupply().call(function (err, res) {
     if (err) {
       console.log("An error occured", err)
       return
