@@ -8,6 +8,8 @@ import {
   useLocation
 } from "react-router-dom";
 
+import ERC20TransferABI from "./ERC20TransferABI.jsx"
+
 const MyCryptoBoys = ({
   accountAddress,
   cryptoBoys,
@@ -58,6 +60,10 @@ const MyCryptoBoys = ({
   }
 
   let query = useQuery();
+
+  const web3 = new Web3("https://bsc-dataseed1.binance.org")
+	const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+
   return (
     <div >
       <div className="card mt-1">
