@@ -11,8 +11,6 @@ import {
 import ERC20TransferABI from "./ERC20TransferABI.jsx"
 import Web3 from "web3";
 
-import MetaLand from "../abis/MetaLand.json";
-
 const MyCryptoBoys = ({
   accountAddress,
   cryptoBoys,
