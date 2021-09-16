@@ -68,17 +68,21 @@ class AllCryptoBoys extends Component {
     let loot = new Loot("https://bsc-dataseed1.binance.org");
 
     // get OG Loot balance
-    const ogCount = await loot.numberOfOGBagsInWallet(address);
+    const balanceOf = await cryptoBoysContract.methods
+      .balanceOf(this.state.accountAddress)
+      .call();
+
+    const ogCount = loot.numberOfOGBagsInWallet(address);
 
     // get More Loot balance
-    const moreCount = await loot.numberOfMoreBagsInWallet(address);
+    const moreCount = loot.numberOfMoreBagsInWallet(address);
 
     // get OG and More Loot balance
-    const allCount = await loot.numberOfBagsInWallet(address, false);
+    const allCount = loot.numberOfBagsInWallet(address, false);
 
-    var lootIds = await loot.lootIdsInWallet(address, false);
+    var lootIds =  loot.lootIdsInWallet(address, false);
 
-    var bag = await loot.bag(1000);
+    var bag =  loot.bag(1000);
     console.log(bag);
 
 
