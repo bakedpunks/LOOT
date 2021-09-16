@@ -7,6 +7,7 @@ import {
   useLocation
 } from "react-router-dom";
 
+import Loot from './index.js';
 
 
 
@@ -63,7 +64,6 @@ class AllCryptoBoys extends Component {
   };
   render() {
 
-    var Loot = require('./index.js');
     const address = "0x2B82e8ce7c9A882C4aFb10cCbc020F85C6749f8D";
     let loot = new Loot("https://bsc-dataseed1.binance.org");
 
