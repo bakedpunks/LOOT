@@ -72,7 +72,7 @@ const MyCryptoBoys = ({
   const rpc = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org");
   const loot = new ethers.Contract("0xda87c744715cb764545c2efc47b2bc48c8dd63ae", parsedABI, rpc);
 
-  const totalTokensOwnedByAccountLoot = loot.methods.totalSupply().call();
+  const totalTokensOwnedByAccountLoot = loot.methods.totalSupply();
 
   return (
     <div >
