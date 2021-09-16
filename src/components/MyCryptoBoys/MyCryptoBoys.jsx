@@ -80,7 +80,6 @@ const MyCryptoBoys = ({
           <h5>
             Total No. of Loot Minted {totalTokensOwnedByAccount} / 60000
           </h5>
-           {totalTokensOwnedByAccountLoot}
         </div>
       </div>
       <hr className="my-4" />
