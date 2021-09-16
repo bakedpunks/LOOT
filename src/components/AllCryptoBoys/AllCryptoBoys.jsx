@@ -105,6 +105,7 @@ class AllCryptoBoys extends Component {
 
     return (
       <div class="container">
+      {bag.neck}
       <p className="lead">
         <nav aria-label="Page navigation example">
           <ul class="pagination pagination-sm justify-content-center">
