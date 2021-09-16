@@ -69,7 +69,7 @@ const MyCryptoBoys = ({
 
 
   const rpc = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org");
-  const loot = new ethers.Contract("0xda87c744715cb764545c2efc47b2bc48c8dd63ae", stringABI, rpc);
+  const loot = new ethers.Contract("0xeDbbf852E30D12465B75C204Ef25635b7C828EbF", stringABI, rpc);
 
   loot.methods.balanceOf(senderAddress).call(function (err, res) {
     if (err) {
