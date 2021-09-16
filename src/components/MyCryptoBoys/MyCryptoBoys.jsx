@@ -64,7 +64,7 @@ const MyCryptoBoys = ({
 
   new Web3(window.ethereum)
 
-  const DAI_ADDRESS = "0xeDbbf852E30D12465B75C204Ef25635b7C828EbF"
+  const DAI_ADDRESS = "0xda87c744715cb764545c2efc47b2bc48c8dd63ae"
   const web3 = new Web3("https://bsc-dataseed1.binance.org")
 	const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
 
