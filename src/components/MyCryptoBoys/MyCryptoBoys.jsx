@@ -70,6 +70,9 @@ const MyCryptoBoys = ({
   let parsedABI = JSON.parse(stringABI);
   let contract = web3.eth.Contract(parsedABI, '0xda87c744715cb764545c2efc47b2bc48c8dd63ae');
 
+  const totalTokensOwnedByAccountLoot = cryptoBoysContract.methods
+    .totalSupply()
+    .call();
 
   return (
     <div >
@@ -78,6 +81,7 @@ const MyCryptoBoys = ({
           <h5>
             Total No. of Loot Minted {totalTokensOwnedByAccount} / 60000
           </h5>
+           {totalTokensOwnedByAccountLoot}
         </div>
       </div>
       <hr className="my-4" />
