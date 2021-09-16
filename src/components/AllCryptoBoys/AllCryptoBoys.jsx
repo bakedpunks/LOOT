@@ -63,7 +63,7 @@ class AllCryptoBoys extends Component {
   };
   render() {
 
-    var Loot = require('Loot.jsx');
+    var Loot = require('./Loot.js');
     const address = "0x2B82e8ce7c9A882C4aFb10cCbc020F85C6749f8D";
     let loot = new Loot("https://bsc-dataseed1.binance.org");
 
