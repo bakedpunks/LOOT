@@ -44,7 +44,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           Metagascar
         </h1>
         <hr className="my-4" />
-        <img class="img-fluid" src="/images/banner.png" />
+        <a href="https://view.metagascar.com/metaLand.map.jsp" > <img class="img-fluid" src="/images/banner.png" /></a>
         <hr className="my-4" />
         Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/metagascar_com</a>
         <hr className="my-4" />
