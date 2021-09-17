@@ -41,18 +41,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     <div>
       <div className="jumbotron">
         <h1 className="display-5">
-          Loot
+          Metagascar
         </h1>
-        <p className="lead">
-        First Loot Project On Binance Smart Chain With 60k Mint Limit.
         <hr className="my-4" />
         <img class="img-fluid" src="/images/banner.png" />
         <hr className="my-4" />
-        What is Loot? Loot is randomized adventurer gear generated and stored on-chain or off-chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want.
-        <hr className="my-4" />
-        Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
-        <hr className="my-4" />
-        Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
+        Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/metagascar_com</a>
         <hr className="my-4" />
         Become a Loot Collector. Buy, sell and trade safely.
         <hr className="my-2" />
@@ -91,6 +85,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         #Lootproject
         #mint
         #loot
+        #Polygone
+        #metagascar
 
         <hr className="my-4" />
         Hurry up only 60k To Be Minted. Only 0.02 bnb cost
