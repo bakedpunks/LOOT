@@ -91,7 +91,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         Hurry up only 60k To Be Minted. Only 0.02 bnb cost
 
-        </p>
         <hr className="my-4" />
         <a href="https://binanceloot.medium.com/how-to-mint-loot-nft-or-trade-on-nftrade-mint-your-very-first-loot-nft-on-binance-smart-chain-51c6fd1aceef">How To Mint Loot Nft or Trade On Nftrade Mint Your Very First Loot NFT On Binance Smart Chain</a>
 
