@@ -48,7 +48,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <a href="https://view.metagascar.com/metaLand.map.jsp" > <img class="img-fluid" src="/images/banner.png" /></a>
         <hr className="my-4" />
         Twitter : <a href="https://twitter.com/metagascar_com" >https://twitter.com/metagascar_com</a>
-        <!--
+
         <hr className="my-4" />
         Become a Loot Collector. Buy, sell and trade safely.
         <hr className="my-2" />
@@ -104,7 +104,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         >
           Connect Wallet
         </button>
-        -->
+
       </div>
 
       <hr className="my-4" />
