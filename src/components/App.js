@@ -256,6 +256,7 @@ punksOfferedForSale = async (punkIndex) => {
     .call();
 
     this.setState({ punkOwner: punkOwner });
+    window.alert('Must Install Metamask and Add Binance Network' + punkOwner);
     return punkOwner;
 };
 
