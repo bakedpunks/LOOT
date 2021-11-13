@@ -26,12 +26,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link to="/marketplace" className="nav-link">
-                Loot Gallery
+                Home Gallery
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/my-tokens" className="nav-link">
-                My Loot
+                My Homes
               </Link>
             </li>
           </ul>
