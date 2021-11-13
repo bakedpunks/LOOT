@@ -1,6 +1,10 @@
 import React from "react";
 import metamaskIcon from "./metamask.svg";
 
+import Web3 from 'web3';
+const web3 = new Web3(window.web3.currentProvider);
+const { abi } = require('../abis/Metagascar.json');
+var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
 
 const items = []
 const itemsonchain = []
@@ -45,10 +49,18 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         </h1>
         The Metaverse is open, and the rocketships of explorers have been dispatched! The first MetaIsland to be discovered by the Alpha Explorer "Meta" has been dubbed Metagascar. Here you will find a thriving community of unique MetaHumans who reside in their equally unique MetaHomes. On the island of Metagascar you will find various facet's of social activity including friendship, dating, and of course what island would be complete without messages in a bottle!
         <hr className="my-4" />
-        <a href="https://view.metagascar.com/metaLand.map.jsp" > <img class="img-fluid" src="/images/banner.png" /></a>
+        <img class="img-fluid" src="/images/banner.png" />
         <hr className="my-4" />
         Twitter : <a href="https://twitter.com/metagascar_com" >https://twitter.com/metagascar_com</a>
 
+        <hr className="my-4" />
+        <button
+          onClick={connectToMetamask}
+          className="btn btn-primary d-flex align-items-center"
+          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
+        >
+          Connect Wallet
+        </button>
       </div>
 
       <div className="container">
