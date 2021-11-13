@@ -118,8 +118,8 @@ class App extends Component {
         this.setState({ accountBalance });
         this.setState({ loading: false });
         const networkId = await web3.eth.net.getId();
-        const networkData = Loot.networks[networkId];
-        if (networkData) {
+//        const networkData = Loot.networks[networkId];
+//        if (networkData) {
           this.setState({ loading: true });
 
           const { abi } = require('../abis/Metagascar.json');
@@ -181,8 +181,8 @@ class App extends Component {
 
 
 
-        } else {
-          this.setState({ contractDetected: false });
+        //} else {
+          //this.setState({ contractDetected: false });
         }
       }
     } else {
