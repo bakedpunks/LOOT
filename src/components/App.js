@@ -252,12 +252,11 @@ claimPunk = async (punkIndex) => {
 punksOfferedForSale = async (punkIndex) => {
 
   let punkOwner = await this.state.cryptoBoysContract.methods
-    .punksOfferedForSale(punkIndex)
+    .ownerOf(punkIndex)
     .call();
 
-    const price = window.web3.utils.fromWei(punkOwner.minValue +'', "Ether");
-    this.setState({ cryptoBoyPrice: price });
-    return price;
+    this.setState({ punkOwner: punkOwner });
+    return punkOwner;
 };
 
 buyPunk = async (punkIndex, punkPrice) => {

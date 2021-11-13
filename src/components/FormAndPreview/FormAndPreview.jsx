@@ -22,8 +22,8 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-//      this.props.punksOfferedForSale(this.state.punkid);
-      this.state.cryptoBoyPrice = this.state.salePrice
+      this.props.punksOfferedForSale(this.state.punkid);
+      this.state.punkOwner = this.state.punkOwner
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
 
@@ -73,7 +73,7 @@ class FormAndPreview extends Component {
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
-  
+
           <img
               src={this.state.cryptoBunkImageURL}
               class="img-thumbnail col-md-6"
