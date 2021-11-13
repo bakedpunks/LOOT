@@ -183,7 +183,7 @@ class App extends Component {
 
         //} else {
           //this.setState({ contractDetected: false });
-        }
+        //}
       }
     } else {
       //window.alert('Must Install Metamask and Add Binance Network');
