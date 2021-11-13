@@ -79,28 +79,23 @@ class FormAndPreview extends Component {
         </div>
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
-            <div className="col-md-12">
-            <div className="form-group">
-              <label htmlFor="newCryptoBoyPrice">
-                <span className="font-weight-bold">NFT Number</span> :
-              </label>{" "}
+          <div className="col-md-12">
+            <div>
+              <label htmlFor="punkId">Enter Punk ID</label>
               <input
                 required
                 type="number"
-                name="newCryptoBoyPrice"
-                id="newCryptoBoyPrice"
-                value={this.state.newCryptoBoyPrice}
-                className="form-control w-50"
-                placeholder="Enter NFT Number 1001 - 8000"
+                name="punkid"
+                id="punkid"
+                value={this.state.punkid}
+                className="form-control"
+                placeholder="Enter Punk Id"
                 onChange={(e) =>
-                  this.setState({
-                    newCryptoBoyPrice: e.target.value,
-                  })
+                  this.Load_New_Image(e)
                 }
               />
             </div>
-
-              <div>
+            <div>
               <button
                 id="mintBtn22"
                 style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
