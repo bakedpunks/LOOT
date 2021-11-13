@@ -259,7 +259,7 @@ punksOfferedForSale = async (punkIndex) => {
     this.setState({ punkOwner: punkOwner });
     this.state.punkOwner = punkOwner;
     window.alert('Must Install Metamask and Add Binance Network' + punkOwner);
-    return punkOwner;
+    //return punkOwner;
 };
 
 buyPunk = async (punkIndex, punkPrice) => {
@@ -392,7 +392,7 @@ getPunkOwner = async (punkIndex) => {
                     cryptoBoyPrice={this.state.cryptoBoyPrice}
                     getPunkOwner={this.getPunkOwner}
                     getMyPunks={this.getMyPunks}
-                    punkOwner={this.punkOwner}
+                    punkOwner={this.state.punkOwner}
                     />
                   )}
               />
