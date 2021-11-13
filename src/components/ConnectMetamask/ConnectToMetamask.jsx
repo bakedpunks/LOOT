@@ -3,17 +3,7 @@ import metamaskIcon from "./metamask.svg";
 
 import Web3 from 'web3';
 
-if (window.ethereum) {
-  window.web3 = new Web3(window.ethereum);
-} else if (window.web3) {
-  window.web3 = new Web3(window.web3.currentProvider);
-} else {
-  //window.alert("Non-Ethereum browser detected. You should consider trying MetaMask!");
-}
 
-const web3 = new Web3(window.web3.currentProvider);
-const { abi } = require('../../abis/Metagascar.json');
-var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
 
 const items = []
 const itemsonchain = []

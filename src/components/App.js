@@ -4,6 +4,7 @@ import "./App.css";
 import Web3 from "web3";
 
 import Loot from "../abis/Loot.json";
+const { abi } = require('../abis/Metagascar.json');
 
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
@@ -121,6 +122,9 @@ class App extends Component {
         const networkData = Loot.networks[networkId];
         if (networkData) {
           this.setState({ loading: true });
+          var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
+
+/*
           const cryptoBoysContract = web3.eth.Contract(
             Loot.abi,
             networkData.address
@@ -129,6 +133,7 @@ class App extends Component {
             Loot.abi,
             networkData.address
           );
+*/
 //    const metaHumanContract = new Contract("0x666659a8ca809c431ce9479a261b9f03cb372016", Metahuman, web3.getSigner())
 //    const metaHumanContract = web3.eth.Contract(Metahuman, );
 //    const balanceOfMH = await metaHumanContract.methods
@@ -136,12 +141,12 @@ class App extends Component {
 //      .call();
 //      window.alert('Balance of MetaHuman' + balanceOfMH);
 
-          this.setState({ cryptoBoysContract });
-          this.setState({ cryptoBoysMarketContract });
+//          this.setState({ cryptoBoysContract });
+//          this.setState({ cryptoBoysMarketContract });
   	      this.setState({ contractDetected: true });
 
 
-          const balanceOf = await cryptoBoysContract.methods
+          const balanceOf = await smart_contract_interface.methods
             .balanceOf(this.state.accountAddress)
             .call();
 
