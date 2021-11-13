@@ -33,7 +33,7 @@ class FormAndPreview extends Component {
 
       })
 
-
+      this.state.punkOwner = tmp;
 
     }
 
