@@ -125,11 +125,9 @@ class App extends Component {
           const { abi } = require('../abis/Metagascar.json');
           var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
 
-/*
-          const cryptoBoysContract = web3.eth.Contract(
-            Loot.abi,
-            networkData.address
-          );
+
+          const cryptoBoysContract = smart_contract_interface;
+/*          
   	const cryptoBoysMarketContract = web3.eth.Contract(
             Loot.abi,
             networkData.address
@@ -242,7 +240,7 @@ claimPunk = async (punkIndex) => {
   const price = window.web3.utils.toWei("0.02", "Ether");
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
-      .mint()
+      .claim(this.state.newCryptoBoyPrice)
       .send({ from: this.state.accountAddress, value: price })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
