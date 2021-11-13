@@ -237,10 +237,12 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
       });
 };
 claimPunk = async (punkIndex) => {
-  const price = window.web3.utils.toWei("0.02", "Ether");
+  let uint256Id = window.web3.eth.abi.encodeParameter('uint256',this.state.newCryptoBoyPrice)
+
+  const price = window.web3.utils.toWei("0.1", "Ether");
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
-      .claim(this.state.newCryptoBoyPrice)
+      .claim(uint256Id)
       .send({ from: this.state.accountAddress, value: price })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
