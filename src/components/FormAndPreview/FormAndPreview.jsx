@@ -73,7 +73,7 @@ class FormAndPreview extends Component {
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
-    <div class="card-body">
+  
           <img
               src={this.state.cryptoBunkImageURL}
               class="img-thumbnail col-md-6"
