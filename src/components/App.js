@@ -252,7 +252,7 @@ claimPunk = async (punkIndex) => {
 };
 punksOfferedForSale = async (punkIndex) => {
 
-  let punkOwner = await this.state.cryptoBoysContract.methods
+  let punkOwner = this.state.cryptoBoysContract.methods
     .ownerOf(punkIndex)
     .call();
 
