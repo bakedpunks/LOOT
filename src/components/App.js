@@ -165,9 +165,9 @@ class App extends Component {
               this.state.cryptoBoys[i]=0x00;
           }
 
-          (async () => {
-              await this.loadMorePunks(0,totalTokensOwnedByAccount);
-          })();
+//          (async () => {
+//              await this.loadMorePunks(0,totalTokensOwnedByAccount);
+//          })();
 
 
           this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});
