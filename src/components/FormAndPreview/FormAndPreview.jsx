@@ -33,7 +33,7 @@ class FormAndPreview extends Component {
         cryptoBunkImageURL : newImageUrl
 
       })
-
+      this.state.punkOwner = "test";
 
 
     }
