@@ -4,18 +4,15 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-5">Binance Loot NFT Marketplace</h1>
+        <h1 className="display-5">Metagascar NFT Marketplace</h1>
         <p className="lead">
-          This is an NFT marketplace where you can Mint, Sell, Buy and Transfer Loot.
+          This is an NFT marketplace where you can Mint, Sell, Buy and Transfer Metagascar Homes.
         </p>
         <hr className="my-4" />
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
-                Off Chain Loot Contract Address : 0xfcca24751641d16fb1b5c8cadc4f7ddaad9e841d
-            </p>
-            <p className="lead">
-                On Chain Loot Contract Address : 0xda87c744715cb764545c2efc47b2bc48c8dd63ae
+                Metagascar Contract Address : 0xf286e4955557361a7d245358b0d47a3f5c735b2e
             </p>
           </div>
         </div>
@@ -24,14 +21,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
             <p className="lead">Account address :</p>
             <h4>{accountAddress}</h4>
             <p className="lead">Account balance :</p>
-            <h4>{accountBalance} BNB</h4>
-            <hr className="my-2" />
-            <a href="https://docs.google.com/spreadsheets/d/1bZ0pilH90pMiXZgzkofQTg57nqiE1m9Jp1gnH9UeHLA/edit?usp=sharing">Loot Rarity</a> — Loot attributes and rarities sheet by @AustinGreen
-
-            <hr className="my-4" />
-            Telegram : <a href="https://t.me/binancelootchat" >https://t.me/binancelootchat</a>
-            <hr className="my-4" />
-            Twitter : <a href="https://twitter.com/Binanceloot" >https://twitter.com/Binanceloot</a>
+            <h4>{accountBalance} ETH</h4>
           </div>
         </div>
       </div>
