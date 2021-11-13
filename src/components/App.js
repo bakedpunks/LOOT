@@ -127,7 +127,7 @@ class App extends Component {
 
 
           const cryptoBoysContract = smart_contract_interface;
-/*          
+/*
   	const cryptoBoysMarketContract = web3.eth.Contract(
             Loot.abi,
             networkData.address
@@ -140,7 +140,7 @@ class App extends Component {
 //      .call();
 //      window.alert('Balance of MetaHuman' + balanceOfMH);
 
-//          this.setState({ cryptoBoysContract });
+          this.setState({ cryptoBoysContract });
 //          this.setState({ cryptoBoysMarketContract });
   	      this.setState({ contractDetected: true });
 
