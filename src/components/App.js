@@ -4,7 +4,6 @@ import "./App.css";
 import Web3 from "web3";
 
 import Loot from "../abis/Loot.json";
-const { abi } = require('../abis/Metagascar.json');
 
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
@@ -122,6 +121,8 @@ class App extends Component {
         const networkData = Loot.networks[networkId];
         if (networkData) {
           this.setState({ loading: true });
+
+          const { abi } = require('../abis/Metagascar.json');
           var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
 
 /*
