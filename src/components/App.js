@@ -52,6 +52,7 @@ class App extends Component {
       lastMintTime: null,
       cryptoBoyPrice: 0,
       currentPage: 0,
+      punkOwner: null,
     };
   }
 
@@ -390,6 +391,7 @@ getPunkOwner = async (punkIndex) => {
                     cryptoBoyPrice={this.state.cryptoBoyPrice}
                     getPunkOwner={this.getPunkOwner}
                     getMyPunks={this.getMyPunks}
+                    punkOwner={this.punkOwner}
                     />
                   )}
               />
