@@ -23,17 +23,16 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-      this.props.punksOfferedForSale(this.state.punkid);
+
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
-
 
       var newImageUrl = '/images/punks/punk-' + s + 'x8.png';
       this.setState({
         cryptoBunkImageURL : newImageUrl
 
       })
-      this.state.punkOwner = "test";
+      this.state.punkOwner = this.props.punksOfferedForSale(this.state.punkid);
 
 
     }
