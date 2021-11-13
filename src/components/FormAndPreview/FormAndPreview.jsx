@@ -22,7 +22,7 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-      this.props.punksOfferedForSale(this.state.punkid);
+//      this.props.punksOfferedForSale(this.state.punkid);
       this.state.cryptoBoyPrice = this.state.salePrice
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
