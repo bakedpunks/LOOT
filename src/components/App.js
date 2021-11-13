@@ -463,7 +463,7 @@ getPunkOwner = async (punkIndex) => {
                   )}
               />
               <Route path='/nftrade' component={() => {
-                   window.location.href = 'https://app.nftrade.com/assets/bsc/0xda87c744715cb764545c2efc47b2bc48c8dd63ae';
+                   window.location.href = 'https://opensea.io/collection/metagascar-eth';
                    return null;
               }}/>
 		</HashRouter>
