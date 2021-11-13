@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container">
         <Link to="/" className="navbar-brand ml-2">
-          Binance Loot
+          Metagascar
         </Link>
         <div id="navbar" className="navbar">
           <ul
