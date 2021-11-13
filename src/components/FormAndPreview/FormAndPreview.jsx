@@ -73,10 +73,21 @@ class FormAndPreview extends Component {
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
+    <div class="card-body">
+          <img
+              src={this.state.cryptoBunkImageURL}
+              class="img-thumbnail col-md-6"
+              onClick={this.callViewPunkDetail}
+              />
+              <hr className="my-4" />
+<h5 class="card-title">Home NO {this.state.punkid}</h5>
+<h6 class="card-subtitle mb-2 text-muted">Price {this.state.cryptoBoyPrice} BNB</h6>
+<p class="card-text">OWNER : {this.state.punkOwner}</p>
 
                     </div>
         </div>
         </div>
+
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
           <div className="col-md-12">
