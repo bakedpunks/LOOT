@@ -34,7 +34,7 @@ class FormAndPreview extends Component {
       })
       this.state.punkOwner = tmp + "";
       tmp.then(
-        function(value) {this.state.punkOwner = value;},
+        function(value) {this.state.punkOwner = value + "";},
         function(error) {}
       );
 
