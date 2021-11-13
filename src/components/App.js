@@ -150,7 +150,7 @@ class App extends Component {
             .balanceOf(this.state.accountAddress)
             .call();
 
-          const totalTokensOwnedByAccount = await cryptoBoysContract.methods
+          const totalTokensOwnedByAccount = await smart_contract_interface.methods
             .totalSupply()
             .call();
           let punkOwners = [];
