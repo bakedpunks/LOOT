@@ -52,7 +52,7 @@ class App extends Component {
       lastMintTime: null,
       cryptoBoyPrice: 0,
       currentPage: 0,
-      punkOwner: null,
+      punkOwner: "",
     };
   }
 

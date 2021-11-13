@@ -15,7 +15,7 @@ class FormAndPreview extends Component {
       cryptoBoyPrice: "",
       maxForThisRun: 0,
       addressTo: "",
-      punkOwner: null,
+      punkOwner: "",
     };
   }
 
