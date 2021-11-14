@@ -250,9 +250,9 @@ claimPunk = async (punkIndex) => {
         window.location.reload();
       });
 };
-punksOfferedForSale = (punkIndex) => {
+punksOfferedForSale = async (punkIndex) => {
 
-  let punkOwner = this.state.cryptoBoysContract.methods
+  let punkOwner = await this.state.cryptoBoysContract.methods
     .ownerOf(punkIndex)
     .call();
 

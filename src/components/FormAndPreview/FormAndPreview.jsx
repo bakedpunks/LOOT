@@ -20,9 +20,9 @@ class FormAndPreview extends Component {
 
 
 
-  Load_New_Image= (e)=>{
+  Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-      var tmp = this.props.punksOfferedForSale(this.state.punkid);
+      let tmp = await this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
 
@@ -33,7 +33,7 @@ class FormAndPreview extends Component {
       })
     //  window.alert('Not Available: Home Owner ' + tmp);
 
-     this.state.punkOwner =  tmp + "Test ";
+     this.state.punkOwner =  "Test ";
     }
 
   componentDidMount = async () => {
