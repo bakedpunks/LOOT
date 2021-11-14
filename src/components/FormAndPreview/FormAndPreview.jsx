@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
+import db  from "../../database";
 
 class FormAndPreview extends Component {
   constructor(props) {
@@ -47,6 +48,11 @@ class FormAndPreview extends Component {
         this.state.punkid = 1
         //window.alert('Select Home Number From 1001 to 8000');
       }
+
+      const home = db[punkIndex]
+      this.props.homeUrl =  home.homeurl;
+      this.props.homeAddress = home.address;
+      this.props.gasScore = home.lotsize.substring(9,home.lotsize.indexOf(" Square Feet"));
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
@@ -55,6 +61,8 @@ class FormAndPreview extends Component {
       this.setState({
         cryptoBunkImageURL : newImageUrl
       })
+
+
 
 //      this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //this.state.gasScore = (8000/this.state.punkid) * 3;
@@ -105,6 +113,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
+<p >Gas Score {this.props.gasScore}</p>
 <p >
   <button
     id="mintBtn22"

@@ -277,12 +277,13 @@ punksOfferedForSale = async (punkIndex) => {
     let punkOwner = await this.state.cryptoBoysContract.methods
       .ownerOf(punkIndex)
       .call();
+      
     if(punkOwner != 0x00){
       this.setState({ punkOwner: punkOwner});
     }
     //this.state.punkOwner = "TEST VALUE";
     //window.alert('Not Available: Home Owner ' + punkOwner);
-    return punkOwner;
+    //return punkOwner;
 };
 
 buyPunk = async (punkIndex, punkPrice) => {
