@@ -79,6 +79,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">Home Owner {this.props.punkOwner}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
+<h5 class="card-title">{this.props.homeSize}</h5>
 
                     </div>
         </div>
