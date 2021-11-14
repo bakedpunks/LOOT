@@ -254,17 +254,19 @@ claimPunk = async (punkIndex) => {
 punksOfferedForSale = async (punkIndex) => {
 
       this.setState({ punkOwner: "Unassigned"});
-  let punkOwner = await this.state.cryptoBoysContract.methods
-    .ownerOf(punkIndex)
-    .call();
 
-  let lotSize = await this.state.cryptoBoysContract.methods
+
+    let lotSize = await this.state.cryptoBoysContract.methods
     .getLand(punkIndex)
     .call();
+    this.setState({ lotSize: lotSize});
+
+    let punkOwner = await this.state.cryptoBoysContract.methods
+      .ownerOf(punkIndex)
+      .call();
     if(punkOwner != 0x00){
       this.setState({ punkOwner: punkOwner});
     }
-    this.setState({ lotSize: lotSize});
     //this.state.punkOwner = "TEST VALUE";
     //window.alert('Not Available: Home Owner ' + punkOwner);
     return punkOwner;
