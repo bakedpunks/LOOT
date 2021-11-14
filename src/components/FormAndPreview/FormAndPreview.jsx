@@ -33,7 +33,7 @@ class FormAndPreview extends Component {
       })
     //  window.alert('Not Available: Home Owner ' + tmp);
 
-     this.state.punkOwner =  "Test ";
+     this.state.punkOwner =  tmp + "Test ";
     }
 
   componentDidMount = async () => {
