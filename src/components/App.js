@@ -261,8 +261,9 @@ punksOfferedForSale = async (punkIndex) => {
   let lotSize = await this.state.cryptoBoysContract.methods
     .getLand(punkIndex)
     .call();
-
-    this.setState({ punkOwner: punkOwner});
+    if(price != 0x00){
+      this.setState({ punkOwner: punkOwner});
+    }
     this.setState({ lotSize: lotSize});
     //this.state.punkOwner = "TEST VALUE";
     //window.alert('Not Available: Home Owner ' + punkOwner);
