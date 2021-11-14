@@ -160,13 +160,13 @@ class App extends Component {
           this.state.punksforsalebuttonhtml = "Load Punks";
           this.state.totalTokensOwnedByAccount = totalTokensOwnedByAccount + "";
 
-          for (let i = 0; i < totalTokensOwnedByAccount; i++) {
+          for (let i = 0; i < 8000; i++) {
               this.state.cryptoBoys[i]=0x00;
           }
 
-//          (async () => {
-//              await this.loadMorePunks(0,totalTokensOwnedByAccount);
-//          })();
+          (async () => {
+              await this.loadMorePunks(0,8000);
+          })();
 
 
           this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});
@@ -252,7 +252,7 @@ claimPunk = async (punkIndex) => {
 };
 punksOfferedForSale = async (punkIndex) => {
 
-      this.setState({ punkOwner: "Available"});
+      this.setState({ punkOwner: "Unassigned"});
   let punkOwner = await this.state.cryptoBoysContract.methods
     .ownerOf(punkIndex)
     .call();
@@ -287,10 +287,10 @@ transferPunk = async (addressTo, punkIndex) => {
       });
 };
 loadMorePunks = async () => {
-  let incAmt = 10000;
-  for (let i = this.state.cryptoPunksLoadCount; i < this.state.cryptoPunksLoadCount + incAmt && i < 10000; i++) {
+  let incAmt = 8000;
+  for (let i = this.state.cryptoPunksLoadCount; i < this.state.cryptoPunksLoadCount + incAmt && i < 8000; i++) {
     let punkOwner = await this.state.cryptoBoysContract.methods
-      .tokenByIndex(i)
+      .ownerOf(i)
       .call();
     this.state.cryptoBoys.push(punkOwner);
     this.forceUpdate();
