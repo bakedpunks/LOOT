@@ -15,7 +15,6 @@ class FormAndPreview extends Component {
       cryptoBoyPrice: "",
       maxForThisRun: 0,
       addressTo: "",
-      punkOwner: "",
     };
   }
 
@@ -34,7 +33,7 @@ class FormAndPreview extends Component {
       })
       window.alert('Not Available: Home Owner ' + tmp);
 
-      this.state.punkOwner = tmp + "";
+    //  this.state.punkOwner = tmp + "";
     }
 
   componentDidMount = async () => {
