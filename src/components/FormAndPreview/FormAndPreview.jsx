@@ -55,8 +55,8 @@ class FormAndPreview extends Component {
       this.setState({
         cryptoBunkImageURL : newImageUrl
       })
-      var tmpLotSize = this.props.lotSize + "";
-      this.state.gasScore = tmpLotSize.substring(10, tmpLotSize.indexOf(" Square Feet"));
+
+//      this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //this.state.gasScore = (8000/this.state.punkid) * 3;
     //  window.alert('Not Available: Home Owner ' + tmp);
 
@@ -103,7 +103,6 @@ class FormAndPreview extends Component {
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
-<p>{this.state.gasScore}</p>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
 <p >
