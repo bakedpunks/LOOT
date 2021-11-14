@@ -93,6 +93,7 @@ class FormAndPreview extends Component {
     style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
     type="submit"
     className="btn mt-4 btn-block btn-outline-primary"
+    value={this.props.homeUrl}
     onClick={(e) =>
       this.Load_New_URL(e)
     }
