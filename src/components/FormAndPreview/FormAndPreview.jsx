@@ -25,7 +25,7 @@ class FormAndPreview extends Component {
     if(newUrl == "Undeveloped"){
       window.alert('Virtual Reality Undeveloped');
     }else{
-      window.open(newUrl, "_blank");
+      window.open(newUrl);
     }
   }
 
