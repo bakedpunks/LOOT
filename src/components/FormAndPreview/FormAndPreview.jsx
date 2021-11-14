@@ -76,13 +76,12 @@ class FormAndPreview extends Component {
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
 
               <hr className="my-4" />
+<h5 class="card-title">{this.props.homeAddress}, Metagascar</h5>
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">Home Owner {this.props.punkOwner}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
-<h5 class="card-title">{this.props.homeAddress}, Metagascar</h5>
-<h5 class="card-title"><a target="_blank" href="{this.props.homeUrl}" >{this.props.homeUrl}</a></h5>
-
+<h5 class="card-title">{this.props.homeUrl}</h5>
                     </div>
         </div>
         </div>
