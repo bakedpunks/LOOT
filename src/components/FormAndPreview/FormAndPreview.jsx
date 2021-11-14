@@ -31,7 +31,7 @@ class FormAndPreview extends Component {
         cryptoBunkImageURL : newImageUrl
 
       })
-      window.alert('Not Available: Home Owner ' + tmp);
+    //  window.alert('Not Available: Home Owner ' + tmp);
 
     //  this.state.punkOwner = tmp + "";
     }
