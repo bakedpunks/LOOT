@@ -49,7 +49,7 @@ class FormAndPreview extends Component {
         //window.alert('Select Home Number From 1001 to 8000');
       }
 
-      const home = db[punkIndex]
+      const home = db[this.state.punkid];
       this.props.homeUrl =  home.homeurl;
       this.props.homeAddress = home.address;
       this.props.gasScore = home.lotsize.substring(9,home.lotsize.indexOf(" Square Feet"));
