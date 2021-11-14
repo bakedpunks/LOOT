@@ -22,10 +22,10 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-      //if(this.state.punkid<1001 || this.state.punkid>8000){
-        //this.state.punkid = 1001
+      if(this.state.punkid<1 || this.state.punkid>8000){
+        this.state.punkid = 1
         //window.alert('Select Home Number From 1001 to 8000');
-      //}
+      }
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
@@ -44,7 +44,7 @@ class FormAndPreview extends Component {
     window.scrollTo(0, 0);
     console.log(this.props);
     let punkid = new URLSearchParams(this.props.location.search).get( "punkid" );
-    if(punkid === '' || punkid === null || punkid === undefined)punkid = "1001";
+    if(punkid === '' || punkid === null || punkid === undefined)punkid = "1";
     this.setState({ punkid });
     this.props.punksOfferedForSale(punkid);
 
