@@ -35,7 +35,7 @@ class App extends Component {
       cryptoBoysContract: null,
       cryptoBoysMarketContract: null,
       cryptoBoysCount: 0,
-      cryptoPunksLoadCount: 0,
+      cryptoPunksLoadCount: 1,
       cryptoPunksBuyLoadCount: 0,
       cryptoBoys: [],
       cryptoBoysForSale: [],
@@ -164,9 +164,9 @@ class App extends Component {
               this.state.cryptoBoys[i]=0x00;
           }
 
-          (async () => {
-              await this.loadMorePunks(0,8000);
-          })();
+//          (async () => {
+//              await this.loadMorePunks(0,8000);
+//          })();
 
 
           this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});

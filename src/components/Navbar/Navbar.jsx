@@ -23,12 +23,7 @@ const Navbar = () => {
               <Link to="nftrade" className="nav-link">
                 Marketplace
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/marketplace" className="nav-link">
-                Home Gallery
-              </Link>
-            </li>
+            </li>            
             <li className="nav-item">
               <Link to="/my-tokens" className="nav-link">
                 My Homes
