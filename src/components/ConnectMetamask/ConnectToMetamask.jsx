@@ -54,13 +54,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
         <hr className="my-4" />
 
-        Activities
+        Activities :
         Education, Entertainment, Business Meeting, Physical Training, Art Show, Date Night, Building, Designing …
         <hr className="my-4" />
-        Jobs
+        Jobs :
         Educator, Physical Trainer, Judge, Lawyer, Juror, Accountant, Entertainer, Metagascar Home Shopping Network, News Reporter ...
         <hr className="my-4" />
         Smart Contracts
+        <hr className="my-1" />
         Metagascar Properties on Ethereum
         https://etherscan.io/token/0xf286e4955557361a7d245358b0d47a3f5c735b2e
         <hr className="my-4" />
@@ -86,6 +87,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c
         <hr className="my-4" />
         Google Sheets
+        <hr className="my-1" />
         Metagascar Properties with street names and URL link to Social Virtual Reality Experience hosted on Mozilla Hubs, developed using Spoke, Blender and Sketchfab.
         https://docs.google.com/spreadsheets/d/15F9EiYA7qVLy1OwwIACgJmLK0K6Kkr4t92C3FJlIAX8/edit?usp=sharing
         <hr className="my-4" />
@@ -96,6 +98,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         https://docs.google.com/spreadsheets/d/1oRtiBK7-KLgEXgOIO8YjxZbdtPVX1waHSbhKlnJJMY4/edit?usp=sharing
         <hr className="my-4" />
         Social Media
+        <hr className="my-1" />        
         Twitter : https://twitter.com/metagascar_com
         Twitter : https://twitter.com/metagascar_
         Discord : https://discord.gg/p6y2v8xQp3
