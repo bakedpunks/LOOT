@@ -22,6 +22,10 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
+      if(this.state.punkid<1001 || this.state.punkid>8000){
+        this.state.punkid = 1001
+        window.alert('Select Home Number From 1001 to 8000');
+      }
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
