@@ -73,7 +73,7 @@ class FormAndPreview extends Component {
 
               <hr className="my-4" />
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
-<h5 class="card-title">Punk OWNER {this.state.punkOwner}</h5>
+<h5 class="card-title">Punk OWNER {this.props.punkOwner}</h5>
 
                     </div>
         </div>
