@@ -30,6 +30,16 @@ class FormAndPreview extends Component {
     }
   }
 
+  Load_New_URLOpensea= async (e)=>{
+    var newUrl  = e.target.value;
+    if(newUrl == "Unassigned"){
+      window.alert('Home Owner Unassigned');
+    }else{
+      const newWindow = window.open('https://opensea.io/' + newUrl, '_blank', 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
+    }
+  }
+
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
       if(this.state.punkid<1 || this.state.punkid>8000){
@@ -101,7 +111,21 @@ class FormAndPreview extends Component {
       this.Load_New_URL(e)
     }
   >
-    Open Metaverse
+    Metaverse
+  </button>
+</p>
+<p >
+  <button
+    id="mintBtn22"
+    style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
+    type="submit"
+    className="btn mt-4 btn-block btn-outline-primary"
+    value={this.props.punkOwner}
+    onClick={(e) =>
+      this.Load_New_URLOpensea(e)
+    }
+  >
+    Opensea Owner
   </button>
 </p>
 <p >Metaverse Link {this.props.homeUrl}</p>

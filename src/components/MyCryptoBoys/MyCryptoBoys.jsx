@@ -88,7 +88,7 @@ const MyCryptoBoys = ({
         </div>
 
       <hr className="my-4" />
-      BinanceLoot.io
+      Metagascar.com
     </div>
   );
 };
