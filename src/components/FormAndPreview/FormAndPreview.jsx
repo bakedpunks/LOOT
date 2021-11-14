@@ -20,6 +20,12 @@ class FormAndPreview extends Component {
   }
 
 
+  Load_New_URL= async (e)=>{
+    var newUrl  = e.target.value;
+    if(newUrl == "Undeveloped"){
+      window.alert('Not Available');
+    }
+  }
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
@@ -88,7 +94,7 @@ class FormAndPreview extends Component {
     type="submit"
     className="btn mt-4 btn-block btn-outline-primary"
     onClick={(e) =>
-      this.Load_New_Image(e)
+      this.Load_New_URL(e)
     }
   >
     Virtual Reality URL {this.props.homeUrl}
