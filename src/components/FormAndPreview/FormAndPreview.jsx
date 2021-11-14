@@ -22,7 +22,7 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
-      let tmp = this.props.punksOfferedForSale(this.state.punkid);
+      this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
 
@@ -41,9 +41,9 @@ class FormAndPreview extends Component {
     window.scrollTo(0, 0);
     console.log(this.props);
     let punkid = new URLSearchParams(this.props.location.search).get( "punkid" );
-    if(punkid === '' || punkid === null || punkid === undefined)punkid = "0";
+    if(punkid === '' || punkid === null || punkid === undefined)punkid = "1";
     this.setState({ punkid });
-    //this.props.punksOfferedForSale(punkid);
+    this.props.punksOfferedForSale(punkid);
 
 
   };
