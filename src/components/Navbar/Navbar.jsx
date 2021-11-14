@@ -16,7 +16,7 @@ const Navbar = () => {
           >
             <li className="nav-item">
               <Link to="/mint" className="nav-link">
-                View Home
+                View Property
               </Link>
             </li>
             <li className="nav-item">
@@ -26,7 +26,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link to="/my-tokens" className="nav-link">
-                My Homes
+                My Properties
               </Link>
             </li>
           </ul>
