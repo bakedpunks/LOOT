@@ -23,7 +23,9 @@ class FormAndPreview extends Component {
   Load_New_URL= async (e)=>{
     var newUrl  = e.target.value;
     if(newUrl == "Undeveloped"){
-      window.alert('Not Available');
+      window.alert('Virtual Reality Undeveloped');
+    }else{
+      window.open(newUrl, "_blank");
     }
   }
 
