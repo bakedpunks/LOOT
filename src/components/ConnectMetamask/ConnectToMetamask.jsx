@@ -98,12 +98,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         https://docs.google.com/spreadsheets/d/1oRtiBK7-KLgEXgOIO8YjxZbdtPVX1waHSbhKlnJJMY4/edit?usp=sharing
         <hr className="my-4" />
         Social Media
-        <hr className="my-1" />        
+        <hr className="my-1" />
         Twitter : https://twitter.com/metagascar_com
         Twitter : https://twitter.com/metagascar_
         Discord : https://discord.gg/p6y2v8xQp3
-
-
+        <hr className="my-4" />
         <button
           onClick={connectToMetamask}
           className="btn btn-primary d-flex align-items-center"
