@@ -271,7 +271,7 @@ punksOfferedForSale = async (punkIndex) => {
     this.setState({ homeSize: homeSize});
 
     const home = db[punkIndex]
-    this.setState({ homeUrl: home.name});
+    this.setState({ homeUrl: home.homeurl});
     this.setState({ homeAddress: home.address});
 
     let punkOwner = await this.state.cryptoBoysContract.methods
