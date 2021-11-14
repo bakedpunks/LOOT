@@ -256,7 +256,7 @@ punksOfferedForSale = async (punkIndex) => {
     .ownerOf(punkIndex)
     .call();
 
-    this.setState({ punkOwner: "TEST VALUE" });
+    this.setState({ punkOwner: punkOwner});
     //this.state.punkOwner = "TEST VALUE";
     window.alert('Not Available: Home Owner ' + punkOwner);
     return punkOwner;
