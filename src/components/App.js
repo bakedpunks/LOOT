@@ -53,6 +53,7 @@ class App extends Component {
       cryptoBoyPrice: 0,
       currentPage: 0,
       punkOwner: "",
+      lotSize: "",
     };
   }
 
@@ -257,7 +258,12 @@ punksOfferedForSale = async (punkIndex) => {
     .ownerOf(punkIndex)
     .call();
 
+  let lotSize = await this.state.cryptoBoysContract.methods
+    .getLand(punkIndex)
+    .call();
+
     this.setState({ punkOwner: punkOwner});
+    this.setState({ lotSize: lotSize});
     //this.state.punkOwner = "TEST VALUE";
     //window.alert('Not Available: Home Owner ' + punkOwner);
     return punkOwner;
@@ -394,6 +400,7 @@ getPunkOwner = async (punkIndex) => {
                     getPunkOwner={this.getPunkOwner}
                     getMyPunks={this.getMyPunks}
                     punkOwner={this.state.punkOwner}
+                    lotSize={this.state.lotSize}
                     />
                   )}
               />
