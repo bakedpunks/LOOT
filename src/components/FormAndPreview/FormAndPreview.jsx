@@ -81,7 +81,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
 <h5 class="card-title">{this.props.homeAddress}, Metagascar</h5>
-<h5 class="card-title"><a href="{this.props.homeUrl}" >{this.props.homeUrl}</a></h5>
+<h5 class="card-title"><a target="_blank" href="{this.props.homeUrl}" >{this.props.homeUrl}</a></h5>
 
                     </div>
         </div>
