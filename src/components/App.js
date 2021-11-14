@@ -22,6 +22,8 @@ import {Contract} from "@ethersproject/contracts";
 import {useLocation} from "react-router-dom";
 
 
+import db = from "../database";
+
 
 
 class App extends Component {
