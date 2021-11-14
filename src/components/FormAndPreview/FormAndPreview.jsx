@@ -83,7 +83,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Virtual Reality URL {this.props.homeUrl}</p>
-<Link to={{ pathname:`${this.props.homeUrl}`}} target="_blank" >{this.props.homeUrl}</Link>
+<Link to={{ pathname:"${this.props.homeUrl}"}} target="_blank" >{this.props.homeUrl}</Link>
 
                     </div>
         </div>
