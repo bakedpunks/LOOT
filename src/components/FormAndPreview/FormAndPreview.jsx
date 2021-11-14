@@ -72,14 +72,8 @@ class FormAndPreview extends Component {
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
 
-          <img
-              src={this.state.cryptoBunkImageURL}
-              class="img-thumbnail col-md-6"
-              onClick={this.callViewPunkDetail}
-              />
               <hr className="my-4" />
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
-<p class="card-text">OWNER : {this.state.punkOwner}</p>
 
                     </div>
         </div>
