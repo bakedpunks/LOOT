@@ -56,7 +56,7 @@ class FormAndPreview extends Component {
         cryptoBunkImageURL : newImageUrl
       })
       var tmpLotSize = this.props.lotSize + "";
-      this.state.gasScore = tmpLotSize.substring(10, tmpLotSize.indexOf(" SQUARE FEET"));
+      this.state.gasScore = tmpLotSize.substring(10, tmpLotSize.indexOf(" Square Feet"));
       //this.state.gasScore = (8000/this.state.punkid) * 3;
     //  window.alert('Not Available: Home Owner ' + tmp);
 
