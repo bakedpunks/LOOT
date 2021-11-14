@@ -114,7 +114,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <div className="container">
         <hr className="my-4" />
-            Metagascar @ 2021 Metagascar Project Inc. All rights reserved.
+            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
         <hr className="my-4" />
       </div>
     </div>
