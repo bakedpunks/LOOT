@@ -100,6 +100,8 @@ class FormAndPreview extends Component {
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
+<p >Metaverse Link {this.props.homeUrl}</p>
+<p >Home Owner {this.props.punkOwner}</p>
 <p >
   <button
     id="mintBtn22"
@@ -128,8 +130,6 @@ class FormAndPreview extends Component {
     Opensea Owner
   </button>
 </p>
-<p >Metaverse Link {this.props.homeUrl}</p>
-<p >Home Owner {this.props.punkOwner}</p>
 
                     </div>
         </div>
