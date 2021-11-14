@@ -33,7 +33,6 @@ class FormAndPreview extends Component {
       })
     //  window.alert('Not Available: Home Owner ' + tmp);
 
-     this.state.punkOwner =  "Test ";
     }
 
   componentDidMount = async () => {
@@ -74,6 +73,7 @@ class FormAndPreview extends Component {
 
               <hr className="my-4" />
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
+<h5 class="card-title">Punk OWNER {this.state.punkOwner}</h5>
 
                     </div>
         </div>
