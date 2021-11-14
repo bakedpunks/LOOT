@@ -100,9 +100,10 @@ class FormAndPreview extends Component {
       this.Load_New_URL(e)
     }
   >
-    Virtual Reality URL {this.props.homeUrl}
+    Open Metaverse
   </button>
 </p>
+<p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
 
                     </div>
