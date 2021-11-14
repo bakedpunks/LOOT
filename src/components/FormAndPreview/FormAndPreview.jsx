@@ -79,11 +79,10 @@ class FormAndPreview extends Component {
               <hr className="my-4" />
 <h5 class="card-title">{this.props.homeAddress}, Metagascar</h5>
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
-<h5 class="card-title">Home Owner {this.props.punkOwner}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Virtual Reality URL {this.props.homeUrl}</p>
-<Link to={{ pathname:${this.props.homeUrl}}} target="_blank" >{this.props.homeUrl}</Link>
+<p >Home Owner {this.props.punkOwner}</p>
 
                     </div>
         </div>
