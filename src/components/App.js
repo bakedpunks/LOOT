@@ -58,6 +58,7 @@ class App extends Component {
       lotSize: "",
       homeSize: "",
       homeUrl: "",
+      homeAddress: "",
     };
   }
 
@@ -269,8 +270,9 @@ punksOfferedForSale = async (punkIndex) => {
     .call();
     this.setState({ homeSize: homeSize});
 
-    const person = db[punkIndex]
-    this.setState({ homeUrl: person.name});
+    const home = db[punkIndex]
+    this.setState({ homeUrl: home.name});
+    this.setState({ homeAddress: home.address});
 
     let punkOwner = await this.state.cryptoBoysContract.methods
       .ownerOf(punkIndex)
@@ -417,6 +419,7 @@ getPunkOwner = async (punkIndex) => {
                     lotSize={this.state.lotSize}
                     homeSize={this.state.homeSize}
                     homeUrl={this.state.homeUrl}
+                    homeAddress={this.state.homeAddress}
                     />
                   )}
               />
