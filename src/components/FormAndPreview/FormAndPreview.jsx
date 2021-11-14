@@ -81,7 +81,19 @@ class FormAndPreview extends Component {
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
-<p >Virtual Reality URL {this.props.homeUrl}</p>
+<p >
+  <button
+    id="mintBtn22"
+    style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
+    type="submit"
+    className="btn mt-4 btn-block btn-outline-primary"
+    onClick={(e) =>
+      this.Load_New_Image(e)
+    }
+  >
+    Virtual Reality URL {this.props.homeUrl}
+  </button>
+</p>
 <p >Home Owner {this.props.punkOwner}</p>
 
                     </div>
