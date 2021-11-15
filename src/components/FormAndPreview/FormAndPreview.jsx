@@ -53,7 +53,7 @@ class FormAndPreview extends Component {
       var tmpLotSize = home.lotsize + "";
       this.state.gasScore = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
       var tmpGasLot  = this.state.gasScore * 2;
-      this.state.gasScore = (8000/this.state.punkid) * 6;
+      this.state.gasScore = (8000-this.state.punkid) * 6;
       this.state.gasScore = this.state.gasScore + tmpGasLot;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
