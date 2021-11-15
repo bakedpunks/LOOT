@@ -120,12 +120,12 @@ class FormAndPreview extends Component {
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
 <hr className="my-4" />
-<h5 class="card-title">$GAS Rewards</h5>
+<h5 class="card-title">Metagascar $GAS Rewards</h5>
 <hr className="my-4" />
-<p >Neighborhood $Gas {this.state.gasScore}</p>
-<p >Lot Size $Gas {this.state.gasScoreLot}</p>
-<p >Home Size $Gas {this.state.gasScoreHome}</p>
-<p >Total $Gas {this.state.gasTotal}</p>
+<p >Neighborhood {this.state.gasScore}</p>
+<p >Lot Size {this.state.gasScoreLot}</p>
+<p >Home Size {this.state.gasScoreHome}</p>
+<p >Total {this.state.gasTotal}</p>
 <p >
   <button
     id="mintBtn22"
