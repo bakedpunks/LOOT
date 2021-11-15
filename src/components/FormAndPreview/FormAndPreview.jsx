@@ -65,7 +65,7 @@ class FormAndPreview extends Component {
 
 //      this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //this.state.gasScore = (8000/this.state.punkid) * 3;
-    //  window.alert('Not Available: Home Owner ' + tmp);
+      window.alert('Not Available: Home Owner ' + home.lotsize);
 
     }
 
