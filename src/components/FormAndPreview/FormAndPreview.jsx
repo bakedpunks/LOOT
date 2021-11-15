@@ -63,8 +63,8 @@ class FormAndPreview extends Component {
 
       var tmpGasLot  = this.state.gasScore * 2;
 
-      this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
-      this.state.gasScore = (8000/this.state.punkid) * 3;
+      //this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
+      this.state.gasScore = (8000/this.state.punkid) * 6;
 
       this.state.gasScore = this.state.gasScore + tmpGasLot;
       //window.alert('Not Available: Home Owner ' + home.lotsize);
@@ -114,7 +114,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
-<p >Gas Score {this.state.gasScore}</p>
+<p >$Gas Score {this.state.gasScore}</p>
 <p >
   <button
     id="mintBtn22"
