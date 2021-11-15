@@ -50,7 +50,8 @@ class FormAndPreview extends Component {
       }
 
       const home = db[this.state.punkid];
-      this.props.gasScore = home.lotsize.substring(9,home.lotsize.indexOf(" Square Feet"));
+      var tmpLotSize = home.lotsize + "";
+      this.props.gasScore = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
