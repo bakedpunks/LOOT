@@ -56,7 +56,7 @@ class FormAndPreview extends Component {
       this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
       this.state.gasScoreLot = this.state.gasScoreLot * 2;
 
-      this.state.gasScoreHome = hom.homesize.substring(9,hom.homesize.indexOf(" Square Feet"));
+      this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
 
       this.state.gasScore = (8000-this.state.punkid) * 6;
       this.props.punksOfferedForSale(this.state.punkid);
