@@ -58,7 +58,7 @@ class FormAndPreview extends Component {
 
       this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
 
-      this.state.gasScore = (8000-this.state.punkid) * 6;
+      this.state.gasScore = (8001-this.state.punkid) * 8;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
@@ -117,9 +117,12 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
-<p >$Gas Score {this.state.gasScore}</p>
-<p >$Gas Score Lot Size {this.state.gasScoreLot}</p>
-<p >$Gas Score Home Size {this.state.gasScoreHome}</p>
+<hr className="my-4" />
+<h5 class="card-title">$GAS Rewards</h5>
+<hr className="my-4" />
+<p >Neighborhood $Gas {this.state.gasScore}</p>
+<p >Lot Size $Gas {this.state.gasScoreLot}</p>
+<p >Home Size $Gas {this.state.gasScoreHome}</p>
 <p >
   <button
     id="mintBtn22"
