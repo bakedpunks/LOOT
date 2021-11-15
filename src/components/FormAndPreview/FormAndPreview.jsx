@@ -18,6 +18,8 @@ class FormAndPreview extends Component {
       maxForThisRun: 0,
       addressTo: "",
       gasScore: "",
+      gasScoreLot: "",
+      gasScoreHome: "",
     };
   }
 
@@ -51,10 +53,10 @@ class FormAndPreview extends Component {
 
       const home = db[this.state.punkid];
       var tmpLotSize = home.lotsize + "";
-      this.state.gasScore = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
-      var tmpGasLot  = this.state.gasScore * 2;
+      this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
+      this.state.gasScoreLot = this.state.gasScoreLot * 2;
+
       this.state.gasScore = (8000-this.state.punkid) * 6;
-      this.state.gasScore = this.state.gasScore + tmpGasLot;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
@@ -114,6 +116,7 @@ class FormAndPreview extends Component {
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
 <p >$Gas Score {this.state.gasScore}</p>
+<p >$Gas Score Lot Size {this.state.gasScoreLot}</p>
 <p >
   <button
     id="mintBtn22"
