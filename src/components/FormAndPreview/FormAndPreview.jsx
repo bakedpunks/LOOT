@@ -52,6 +52,7 @@ class FormAndPreview extends Component {
       const home = db[this.state.punkid];
       var tmpLotSize = home.lotsize + "";
       this.state.gasScore = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
+      var tmpGasLot  = this.state.gasScore * 2;
       this.state.gasScore = (8000/this.state.punkid) * 6;
       this.state.gasScore = this.state.gasScore + tmpGasLot;
       this.props.punksOfferedForSale(this.state.punkid);
@@ -63,7 +64,6 @@ class FormAndPreview extends Component {
         cryptoBunkImageURL : newImageUrl
       })
 
-      var tmpGasLot  = this.state.gasScore * 2;
 
       //this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //window.alert('Not Available: Home Owner ' + home.lotsize);
