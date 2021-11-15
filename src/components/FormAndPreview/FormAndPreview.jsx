@@ -112,7 +112,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.props.homeSize}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
-<p >Gas Score {this.props.gasScore}</p>
+<p >Gas Score {this.state.gasScore}</p>
 <p >
   <button
     id="mintBtn22"
