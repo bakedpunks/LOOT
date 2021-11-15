@@ -51,7 +51,11 @@ class FormAndPreview extends Component {
         this.state.punkid = 1
         //window.alert('Select Home Number From 1001 to 8000');
       }
+      var developedLand = 1;
 
+      if (home.homeurl != "Undeveloped"){
+          developedLand = 6;
+      }
       const home = db[this.state.punkid];
       var tmpLotSize = home.lotsize + "";
       this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
@@ -60,7 +64,7 @@ class FormAndPreview extends Component {
       this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
       this.state.gasScoreHome = this.state.gasScoreHome * 2
 
-      this.state.gasScore = (8001-this.state.punkid) * 18;
+      this.state.gasScore = (8001-this.state.punkid) * 18 * developedLand;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
