@@ -56,6 +56,8 @@ class FormAndPreview extends Component {
       this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
       this.state.gasScoreLot = this.state.gasScoreLot * 2;
 
+      this.state.gasScoreHome = hom.homesize.substring(9,hom.homesize.indexOf(" Square Feet"));
+
       this.state.gasScore = (8000-this.state.punkid) * 6;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
@@ -117,6 +119,7 @@ class FormAndPreview extends Component {
 <p >Home Owner {this.props.punkOwner}</p>
 <p >$Gas Score {this.state.gasScore}</p>
 <p >$Gas Score Lot Size {this.state.gasScoreLot}</p>
+<p >$Gas Score Home Size {this.state.gasScoreHome}</p>
 <p >
   <button
     id="mintBtn22"
