@@ -20,6 +20,7 @@ class FormAndPreview extends Component {
       gasScore: "",
       gasScoreLot: "",
       gasScoreHome: "",
+      gasTotal: "",
     };
   }
 
@@ -68,7 +69,7 @@ class FormAndPreview extends Component {
         cryptoBunkImageURL : newImageUrl
       })
 
-
+      this.state.gasTotal = this.state.gasScoreLot + this.state.gasScore  + this.state.gasScoreHome;
       //this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //window.alert('Not Available: Home Owner ' + home.lotsize);
 
@@ -123,6 +124,7 @@ class FormAndPreview extends Component {
 <p >Neighborhood $Gas {this.state.gasScore}</p>
 <p >Lot Size $Gas {this.state.gasScoreLot}</p>
 <p >Home Size $Gas {this.state.gasScoreHome}</p>
+<p >Total $Gas {this.state.gasTotal}</p>
 <p >
   <button
     id="mintBtn22"
