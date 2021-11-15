@@ -55,11 +55,12 @@ class FormAndPreview extends Component {
       const home = db[this.state.punkid];
       var tmpLotSize = home.lotsize + "";
       this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
-      this.state.gasScoreLot = this.state.gasScoreLot * 2;
+      this.state.gasScoreLot = this.state.gasScoreLot * 3;
 
       this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
+      this.state.gasScoreHome = this.state.gasScoreHome * 2
 
-      this.state.gasScore = (8001-this.state.punkid) * 8;
+      this.state.gasScore = (8001-this.state.punkid) * 18;
       this.props.punksOfferedForSale(this.state.punkid);
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
