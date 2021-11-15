@@ -52,11 +52,11 @@ class FormAndPreview extends Component {
         //window.alert('Select Home Number From 1001 to 8000');
       }
       var developedLand = 1;
+      const home = db[this.state.punkid];
 
       if (home.homeurl != "Undeveloped"){
           developedLand = 6;
       }
-      const home = db[this.state.punkid];
       var tmpLotSize = home.lotsize + "";
       this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
       this.state.gasScoreLot = this.state.gasScoreLot * 3;
