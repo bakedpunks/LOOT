@@ -201,7 +201,7 @@ class App extends Component {
       this.setState({ metamaskConnected: true });
       window.location.reload();
     } else {
-      window.alert('Must Install Metamask and Add Binance Network');
+      window.alert('Must Install Metamask Extension for Chrome');
     }
   };
 
@@ -277,7 +277,7 @@ punksOfferedForSale = async (punkIndex) => {
     let punkOwner = await this.state.cryptoBoysContract.methods
       .ownerOf(punkIndex)
       .call();
-      
+
     if(punkOwner != 0x00){
       this.setState({ punkOwner: punkOwner});
     }
