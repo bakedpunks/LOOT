@@ -115,7 +115,25 @@ class FormAndPreview extends Component {
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
-
+    
+    <div className="row">
+    <div className="col-md-12">
+      <div>
+        <label htmlFor="punkId">Enter Home ID</label>
+        <input
+          required
+          type="number"
+          name="punkid"
+          id="punkid"
+          value={this.state.punkid}
+          className="form-control"
+          placeholder="Enter Punk Id"
+          onChange={(e) =>
+            this.Load_New_Image(e)
+          }
+        />
+      </div>
+      <div>
               <hr className="my-4" />
 <h5 class="card-title">{this.props.homeAddress}, Metagascar</h5>
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
@@ -164,24 +182,7 @@ class FormAndPreview extends Component {
         </div>
 
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
-          <div className="row">
-          <div className="col-md-12">
-            <div>
-              <label htmlFor="punkId">Enter Home ID</label>
-              <input
-                required
-                type="number"
-                name="punkid"
-                id="punkid"
-                value={this.state.punkid}
-                className="form-control"
-                placeholder="Enter Punk Id"
-                onChange={(e) =>
-                  this.Load_New_Image(e)
-                }
-              />
-            </div>
-            <div>
+
               <button
                 id="mintBtn22"
                 style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
