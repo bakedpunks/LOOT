@@ -36,7 +36,9 @@ Metagascar Metaperson - simple description of avatar stored on-chain https://doc
 # Social Media
 
 Twitter : https://twitter.com/metagascar_com
+
 Twitter : https://twitter.com/metagascar_
+
 Discord : https://discord.gg/p6y2v8xQp3
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
