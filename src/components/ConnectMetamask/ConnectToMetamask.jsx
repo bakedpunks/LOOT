@@ -83,7 +83,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         Gastonian Punks OG on Polygon, The owner of Gastonian Punks OG are natives of Metagascar, they are also Citizens of Metagascar and can participate in  Jury Trials as a Juror. As a Gastonian Punks OG you can run for president of Metagascar. As a Gastonian Punks OG you can also Vote for Presidential elections in Metagascar.
         https://opensea.io/collection/gastonian-punks-1
         <hr className="my-4" />
-        Metagascar $GAS Token Binance Smart Chain available on Pancake Swap
+        Metagascar $GAS Token Binance Smart Chain available on <a href="https://pancakeswap.finance/" >Pancake Swap</a> &nbsp;
         <a href="https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c" >https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c</a>
         <hr className="my-4" />
         Charts
