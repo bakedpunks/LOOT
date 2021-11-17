@@ -62,11 +62,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         Smart Contracts
         <hr className="my-1" />
-        Metagascar Properties on Ethereum
-        https://etherscan.io/token/0xf286e4955557361a7d245358b0d47a3f5c735b2e
+        Metagascar Properties on Ethereum &nbsp;
+        <a href="https://etherscan.io/token/0xf286e4955557361a7d245358b0d47a3f5c735b2e" >https://etherscan.io/token/0xf286e4955557361a7d245358b0d47a3f5c735b2e</a>
         <hr className="my-4" />
-        Metagascar Properties on Polygon
-        https://polygonscan.com/token/0xff0d44586aa09047e32b28f0452e40c90bd679fe
+        Metagascar Properties on Polygon &nbsp;
+        <a href="https://polygonscan.com/token/0xff0d44586aa09047e32b28f0452e40c90bd679fe" >https://polygonscan.com/token/0xff0d44586aa09047e32b28f0452e40c90bd679fe</a>
         <hr className="my-4" />
         Metahuman on Polygon
         https://polygonscan.com/token/0x666659a8ca809c431ce9479a261b9f03cb372016
