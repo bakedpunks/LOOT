@@ -249,7 +249,7 @@ claimPunk = async (punkIndex) => {
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
       .claim(punkIndex)
-      .send({ from: this.state.accountAddress, value: "0.1" })
+      .send({ from: this.state.accountAddress, value: price })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
         this.setState({ loading: false });
