@@ -75,18 +75,18 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         https://polygonscan.com/token/0x0bb090051e2f3da6271edab60a6daa9806c58a90
         <hr className="my-4" />
         LA Punks on Polygon - the role attribute of “LA Punks” indicates the type of job the owner of this NFT can perform in Metagascar. If you own more than one “LA Punk” with a specific role, you are considered to be a hiring manager.
-        https://opensea.io/collection/la-punks
+        &nbsp;<a href="https://opensea.io/collection/la-punks" >https://opensea.io/collection/la-punks</a>
         <hr className="my-4" />
         Gastonian Punks on Polygon, The owner of Gastonian Punks NFT is considered to be a naturalized Citizen of Metagascar, Citizens of Metagascar are called Gastonians. All Gasntonians can participate in Jury Trials as a Juror.  As a Gastonian Punk you can also Vote in a Presidential primary election in Metagascar.
-        https://opensea.io/collection/gastonian-punks
+        &nbsp;<a href="https://opensea.io/collection/gastonian-punks" >https://opensea.io/collection/gastonian-punks</a>
         <hr className="my-4" />
         Gastonian Punks OG on Polygon, The owner of Gastonian Punks OG are natives of Metagascar, they are also Citizens of Metagascar and can participate in  Jury Trials as a Juror. As a Gastonian Punks OG you can run for president of Metagascar. As a Gastonian Punks OG you can also Vote for Presidential elections in Metagascar.
-        https://opensea.io/collection/gastonian-punks-1
+        &nbsp;<a href="https://opensea.io/collection/gastonian-punks-1" >https://opensea.io/collection/gastonian-punks-1</a>
         <hr className="my-4" />
         Metagascar $GAS Token Binance Smart Chain available on <a href="https://pancakeswap.finance/" >Pancake Swap</a> &nbsp;
         <a href="https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c" >https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c</a>
         <hr className="my-4" />
-        Charts
+        Charts &nbsp;
         <a href="https://charts.bogged.finance/0x9183278e4c99bf2178c9Ec0C06897D06e579F82C" >https://charts.bogged.finance/0x9183278e4c99bf2178c9Ec0C06897D06e579F82C</a>
         <hr className="my-4" />
         Google Sheets
