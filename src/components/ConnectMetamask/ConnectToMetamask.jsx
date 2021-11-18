@@ -50,7 +50,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         <a href="https://t.co/BZfzuZR3M4?amp=1" ><img class="img-fluid" src="/images/main.logo.jpeg" /></a>
         <hr className="my-4" />
-        Twitter : <a href="https://twitter.com/metagascar_com" >https://twitter.com/metagascar_com</a>
+        Twitter : <a href="https://twitter.com/metagascarnft" >https://twitter.com/metagascarnft</a>
 
         <hr className="my-4" />
 
