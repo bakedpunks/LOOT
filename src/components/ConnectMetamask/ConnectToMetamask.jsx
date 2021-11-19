@@ -49,6 +49,15 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         The Metaverse is open, and the rocketships of explorers have been dispatched! The first MetaIsland to be discovered by the Alpha Explorer "Meta" has been dubbed Metagascar. Here you will find a thriving community of unique MetaHumans who reside in their equally unique MetaHomes. On the island of Metagascar you will find various facet's of social activity including friendship, dating, and of course what island would be complete without messages in a bottle!
         <hr className="my-4" />
         <a href="https://t.co/BZfzuZR3M4?amp=1" ><img class="img-fluid" src="/images/main.logo.jpeg" /></a>
+
+        <hr className="my-4" />
+        <button
+          onClick={connectToMetamask}
+          className="btn btn-primary d-flex align-items-center"
+          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
+        >
+          Connect Wallet
+        </button>
         <hr className="my-4" />
         Twitter : <a href="https://twitter.com/metagascarnft" >https://twitter.com/metagascarnft</a>
 
