@@ -114,14 +114,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         Twitter : https://twitter.com/metagascarnft
         Twitter : https://twitter.com/metagascar_
         Discord : https://discord.gg/p6y2v8xQp3
-        <hr className="my-4" />
-        <button
-          onClick={connectToMetamask}
-          className="btn btn-primary d-flex align-items-center"
-          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
-        >
-          Connect Wallet
-        </button>
       </div>
 
       <div className="container">
