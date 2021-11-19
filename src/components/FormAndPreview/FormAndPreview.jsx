@@ -96,7 +96,7 @@ class FormAndPreview extends Component {
     e.preventDefault();
     if(this.state.punkid < 1001){
       window.alert('Minting Not Available for Home NO ' + this.state.punkid);
-    }else if(this.props.punkOwner != 'Unassigned'){  
+    }else if(this.props.punkOwner != 'Unassigned'){
       window.alert('Minting Not Available for Home NO ' + this.state.punkid);
     }else{
       this.props.claimPunk(
@@ -122,7 +122,7 @@ class FormAndPreview extends Component {
                     <div class="card-body">
     <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
     <div>
-      <label htmlFor="punkId">Enter Home ID</label>
+      <label htmlFor="punkId">Enter Home NO</label>
       <input
         required
         type="number"
@@ -130,7 +130,7 @@ class FormAndPreview extends Component {
         id="punkid"
         value={this.state.punkid}
         className="form-control"
-        placeholder="Enter Punk Id"
+        placeholder="Enter Home NO"
         onChange={(e) =>
           this.Load_New_Image(e)
         }
