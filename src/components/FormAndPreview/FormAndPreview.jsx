@@ -68,7 +68,7 @@ class FormAndPreview extends Component {
       this.state.gasScore = (8001-this.state.punkid) * 18 * developedLand;
       this.props.punksOfferedForSale(this.state.punkid);
 
-      this.props.homeStyle = home.homestyle;
+      this.state.homeStyle = home.homestyle;
 
       var s = this.state.punkid+"";
       while (s.length < 4) s = "0" + s;
@@ -145,7 +145,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">Home NO {this.state.punkid}</h5>
 <h5 class="card-title">{this.props.lotSize}</h5>
 <h5 class="card-title">{this.props.homeSize}</h5>
-<h5 class="card-title">{this.props.homeStyle}</h5>
+<h5 class="card-title">{this.state.homeStyle}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
 <hr className="my-4" />
