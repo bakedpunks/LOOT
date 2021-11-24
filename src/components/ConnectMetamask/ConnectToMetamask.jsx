@@ -59,9 +59,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           Connect Wallet
         </button>
         <hr className="my-4" />
-        Twitter : <a href="https://twitter.com/metagascarnft" >https://twitter.com/metagascarnft</a>
-        <hr className="my-4" />
-        <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Solution Architecture Document</a>
+        Metagascar
+        &nbsp;
+        <a href="https://twitter.com/metagascarnft" >Twitter</a>
+        &nbsp;
+        <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Whitepaper</a>
         <hr className="my-4" />
 
         Activities :
