@@ -62,14 +62,15 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         Metagascar
         &nbsp;
         <a href="https://twitter.com/metagascarnft" >Twitter</a>
+        <hr className="my-4" />
+        Metagascar
         &nbsp;
         <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Whitepaper</a>
         <hr className="my-4" />
-
-        Activities :
+        Metagascar Activities :
         Education, Entertainment, Business Meeting, Physical Training, Art Show, Date Night, Building, Designing …
         <hr className="my-4" />
-        Jobs :
+        Metagascar Jobs :
         Educator, Physical Trainer, Judge, Lawyer, Juror, Accountant, Entertainer, Metagascar Home Shopping Network, News Reporter ...
         <hr className="my-4" />
         Smart Contracts
