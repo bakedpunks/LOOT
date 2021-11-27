@@ -115,9 +115,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
         Social Media
         <hr className="my-1" />
-        Twitter : https://twitter.com/metagascarnft
-        Twitter : https://twitter.com/metagascar_
-        Discord : https://discord.gg/p6y2v8xQp3
+         <a href="https://twitter.com/metagascarnft" >Metagasacr Twitter</a>&nbsp;|&nbsp;
+         <a href="https://twitter.com/metagascar_" >President Twitter</a>&nbsp;|&nbsp;
+         <a href="https://discord.gg/p6y2v8xQp3" >Metagascar Discord</a>&nbsp;|&nbsp;
       </div>
 
       <div className="container">
