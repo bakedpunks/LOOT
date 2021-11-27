@@ -122,7 +122,6 @@ class FormAndPreview extends Component {
     var startHouse = this.state.punkid/20;
 
     if (startHouse==0)startHouse=1;
-    else startHouse = startHouse * 20;
 
     for (var j=startHouse;j < startHouse+20 ; j++) {
         items.push(<div class="card col-md-4" >{j}</div>)
