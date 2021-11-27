@@ -115,11 +115,20 @@ class FormAndPreview extends Component {
 
   render() {
 
+    const elements = this.props.cryptoBoys;
 
+    const items = []
+
+    for (const [index, value] of elements.entries()) {
+      if (index == this.state.punkid){
+        items.push(<div class="card col-md-4" >{index}</div>)
+      }
+    }
 
     return (
       <div>
-
+      <hr className="my-4" />
+      {items}
       <hr className="my-4" />
         <div class="container">
         <div class="card col-md-12 text-center" >
