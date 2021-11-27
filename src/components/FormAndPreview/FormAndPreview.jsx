@@ -119,7 +119,7 @@ class FormAndPreview extends Component {
 
     const items = []
 
-    let startHouse = this.state.punkid/20;
+    let startHouse = (this.state.punkid/20).valueOf();;
 
     if (startHouse==0)startHouse=1;
 
