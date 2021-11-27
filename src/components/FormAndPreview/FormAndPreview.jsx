@@ -123,7 +123,7 @@ class FormAndPreview extends Component {
 
     if (startHouse==0)startHouse=1;
 
-    for (var j=startHouse;j < startHouse+20 ; j++) {
+    for (let j = startHouse; j< (startHouse+20).valueOf(); j++) {
         items.push(<div class="card col-md-4" >{j}</div>)
     }
 
