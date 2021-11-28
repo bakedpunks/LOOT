@@ -243,10 +243,9 @@ class FormAndPreview extends Component {
             </div>
           </div>
         </form>
-
-
-        <hr className="my-4" />
-        metagascar.com
+          <hr className="my-4" />
+              Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
+          <hr className="my-4" />
       </div>
     );
   }
