@@ -147,11 +147,13 @@ class FormAndPreview extends Component {
     }
     houseNumber = 1;
     for (let j = startHouse; j< (startHouse+10).valueOf(); j++) {
+
+        var newLinkUrl = '/mint?punkid=' + startHouse;
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        itemsHomes.push(<div class="col-sm m-0 p-0 bottom" ><img width="100%" src={metalandImag} title={title} /></div>)
+        itemsHomes.push(<div class="col-sm m-0 p-0 bottom" ><Link to={newLinkUrl} className="nav-link" ><img width="100%" src={metalandImag} title={title} /></Link></div>)
         houseNumber +=1;
     }
     houseNumber = 11;
