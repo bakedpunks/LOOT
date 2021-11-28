@@ -131,7 +131,7 @@ class FormAndPreview extends Component {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
         let metalandImag = "/images/metaLand.nort." + home.drivewayStyle.replaceAll(" ", "_") + ".png";
-        items.push(<div class="col-sm" >NFT NO {nftNumber} {home.lotsize} {home.address} <img src='{metalandImag}' /></div>)
+        items.push(<div class="col-sm" >NFT NO {nftNumber} {home.lotsize} {home.address} <img src={metalandImag} /></div>)
         houseNumber +=1;
     }
     for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
