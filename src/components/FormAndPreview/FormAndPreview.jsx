@@ -124,7 +124,7 @@ class FormAndPreview extends Component {
 
     let startHouse = Math.floor(this.state.punkid/20);
 
-    if (startHouse==0)startHouse=1;
+    if (startHouse==0)startHouse=0;
     else startHouse = (startHouse * 20);
 
 
@@ -155,7 +155,7 @@ class FormAndPreview extends Component {
         houseNumber +=1;
     }
 
-    houseNumber = 11;
+    houseNumber = 10;
     for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
