@@ -118,6 +118,7 @@ class FormAndPreview extends Component {
     //const elements = this.props.cryptoBoys;
 
     const items = []
+    const itemsBottom = []
 
     let startHouse = Math.floor(this.state.punkid/20);
 
@@ -126,10 +127,16 @@ class FormAndPreview extends Component {
 
 
     let houseNumber = 1;
-    for (let j = startHouse; j< (startHouse+20).valueOf(); j++) {
+    for (let j = startHouse; j< (startHouse+10).valueOf(); j++) {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
         items.push(<div class="col-sm" >NFT {nftNumber} House {houseNumber} Lot Size {home.lotsize} Lot Size {home.address}</div>)
+        houseNumber +=1;
+    }
+    for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
+        let nftNumber = (startHouse + houseNumber).valueOf();
+        const home = db[nftNumber];
+        itemsBottom.push(<div class="col-sm" >NFT {nftNumber} House {houseNumber} Lot Size {home.lotsize} Lot Size {home.address}</div>)
         houseNumber +=1;
     }
 
@@ -225,6 +232,13 @@ class FormAndPreview extends Component {
 <div class="container">
   <div class="row">
         {items}
+  </div>
+</div>
+
+        <hr className="my-4" />
+<div class="container">
+  <div class="row">
+        {itemsBottom}
   </div>
 </div>
         <hr className="my-4" />
