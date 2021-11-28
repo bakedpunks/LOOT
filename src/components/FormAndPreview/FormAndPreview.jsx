@@ -131,7 +131,7 @@ class FormAndPreview extends Component {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
-        items.push(<div class="col-sm m-0 p-0" >NFT NO {nftNumber} <hr className="my-1" /> {home.lotsize} <hr className="my-1" /> <hr className="my-1" /> {home.address} <img width="100%" src={metalandImag} /></div>)
+        items.push(<div class="col-sm m-0 p-0" >NFT NO {nftNumber} <hr className="my-1" /> {home.lotsize} <hr className="my-1" /> {home.address} <img width="100%" src={metalandImag} /></div>)
         houseNumber +=1;
     }
     for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
@@ -145,6 +145,18 @@ class FormAndPreview extends Component {
     return (
       <div>
       <hr className="my-4" />
+<div class="container  m-0 p-0">
+<div class="row m-0 p-0">
+      {items}
+</div>
+</div>
+<div class="container m-0 p-0">
+<div class="row m-0 p-0">
+      {itemsBottom}
+</div>
+</div>
+      <hr className="my-4" />
+
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
@@ -230,17 +242,7 @@ class FormAndPreview extends Component {
           </div>
         </form>
 
-        <hr className="my-4" />
-<div class="container  m-0 p-0">
-  <div class="row m-0 p-0">
-        {items}
-  </div>
-</div>
-<div class="container m-0 p-0">
-  <div class="row m-0 p-0">
-        {itemsBottom}
-  </div>
-</div>
+
         <hr className="my-4" />
         metagascar.com
       </div>
