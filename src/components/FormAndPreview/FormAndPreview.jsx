@@ -48,6 +48,9 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
+      if (e.target.value ==undefined) {
+        this.state.punkid =e.target.id;        
+      }
       window.alert(this.state.punkid);
       if(this.state.punkid<1 || this.state.punkid>8000){
         this.state.punkid = 1
