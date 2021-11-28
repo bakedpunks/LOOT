@@ -127,7 +127,6 @@ class FormAndPreview extends Component {
 
     let houseNumber = 1;
     for (let j = startHouse; j< (startHouse+20).valueOf(); j++) {
-        let nftNumber = ((startHouse * 20) + houseNumber).valueOf();
         items.push(<div class="card col-md-4" >NFT {nftNumber} House {houseNumber}</div>)
         houseNumber +=1;
     }
