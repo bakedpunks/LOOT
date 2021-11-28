@@ -128,7 +128,7 @@ class FormAndPreview extends Component {
 
     }
 
-    if (startHouse==0 || this.state.punkid%20 ==0)startHouse=0;
+    if (startHouse==0)startHouse=0;
     else startHouse = (startHouse * 20);
 
 
