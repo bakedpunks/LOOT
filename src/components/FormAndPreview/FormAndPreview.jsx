@@ -129,7 +129,7 @@ class FormAndPreview extends Component {
     for (let j = startHouse; j< (startHouse+20).valueOf(); j++) {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
-        items.push(<div class="card col-md-4" >NFT {nftNumber} House {houseNumber} Lot Size {home.lotsize} Lot Size {home.address}</div>)
+        items.push(<div class="col-sm" >NFT {nftNumber} House {houseNumber} Lot Size {home.lotsize} Lot Size {home.address}</div>)
         houseNumber +=1;
     }
 
@@ -222,7 +222,11 @@ class FormAndPreview extends Component {
         </form>
 
         <hr className="my-4" />
+<div class="container">
+  <div class="row">
         {items}
+  </div>
+</div>
         <hr className="my-4" />
         metagascar.com
       </div>
