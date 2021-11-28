@@ -235,7 +235,7 @@ class FormAndPreview extends Component {
         {items}
   </div>
 </div>
-
+<img class="img-fluid" src="/images/main.logo.jpeg" />
         <hr className="my-4" />
 <div class="container">
   <div class="row">
