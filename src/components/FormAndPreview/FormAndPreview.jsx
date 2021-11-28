@@ -161,7 +161,7 @@ class FormAndPreview extends Component {
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        itemsBottom.push(<div class="col-sm m-0 p-0" ><hr className="my-1" /> NFT {nftNumber} </small></div>)
+        itemsBottom.push(<div class="col-sm m-0 p-0" ><hr className="my-1" /> <small>NFT {nftNumber} </small></div>)
         houseNumber +=1;
     }
     return (
