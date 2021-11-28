@@ -48,9 +48,9 @@ class FormAndPreview extends Component {
 
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
+      window.alert(this.state.punkid);
       if(this.state.punkid<1 || this.state.punkid>8000){
         this.state.punkid = 1
-        //window.alert('Select Home Number From 1001 to 8000');
       }
       var developedLand = 1;
       const home = db[this.state.punkid];
