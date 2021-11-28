@@ -129,7 +129,10 @@ class FormAndPreview extends Component {
     }
 
     if (startHouse==0 )startHouse=0;
-    else if(this.state.punkid%20 ==0 )startHouse = startHouse-1;
+    else if(this.state.punkid%20 ==0 ){
+      startHouse = startHouse-1;
+      startHouse = (startHouse * 20);
+    }
     else startHouse = (startHouse * 20);
 
 
