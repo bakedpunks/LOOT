@@ -148,8 +148,8 @@ class FormAndPreview extends Component {
     houseNumber = 1;
     for (let j = startHouse; j< (startHouse+10).valueOf(); j++) {
 
-        var newLinkUrl = '/mint?punkid=' + startHouse;
         let nftNumber = (startHouse + houseNumber).valueOf();
+        var newLinkUrl = '/mint?punkid=' + nftNumber;
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
