@@ -119,6 +119,7 @@ class FormAndPreview extends Component {
 
     const items = []
     const itemsHomes = []
+    const itemsBottomHomes = []
     const itemsBottom = []
 
     let startHouse = Math.floor(this.state.punkid/20);
@@ -145,16 +146,24 @@ class FormAndPreview extends Component {
         itemsHomes.push(<div class="col-sm m-0 p-0 bottom" ><img width="100%" src={metalandImag} title={title} /></div>)
         houseNumber +=1;
     }
-
     for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        itemsBottom.push(<div class="col-sm m-0 p-0" ><img width="100%" src={metalandImag} title={title} /> <small><hr className="my-1" /> {home.address} <hr className="my-1" /> NFT {nftNumber} </small></div>)
+        itemsBottomHomes.push(<div class="col-sm m-0 p-0" ><img width="100%" src={metalandImag} title={title} /> <small><hr className="my-1" /> {home.address} <hr className="my-1" /> NFT {nftNumber} </small></div>)
         houseNumber +=1;
     }
 
+    houseNumber = 10;
+    for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
+        let nftNumber = (startHouse + houseNumber).valueOf();
+        const home = db[nftNumber];
+        var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+        var title = 'Lot Size ' + home.lotsize;
+        itemsBottom.push(<div class="col-sm m-0 p-0" ><hr className="my-1" /> NFT {nftNumber} </small></div>)
+        houseNumber +=1;
+    }
     return (
       <div>
       <hr className="my-4" />
@@ -167,6 +176,9 @@ class FormAndPreview extends Component {
 </div>
 </div>
 <div class="container m-0 p-0">
+<div class="row m-0 p-0">
+      {itemsBottomHomes}
+</div>
 <div class="row m-0 p-0">
       {itemsBottom}
 </div>
