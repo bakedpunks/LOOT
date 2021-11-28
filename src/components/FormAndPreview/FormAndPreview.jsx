@@ -121,8 +121,9 @@ class FormAndPreview extends Component {
 
     let startHouse = (this.state.punkid/20).valueOf();
 
-    if (startHouse==0)startHouse=0;
-    else startHouse = this.state.punkid -(this.state.punkid - ((this.state.punkid/20)*20));
+    if (startHouse==0)startHouse=1;
+    else startHouse = (startHouse * 20)-1;
+
 
     let houseNumber = 1;
     for (let j = startHouse; j< (startHouse+20).valueOf(); j++) {
