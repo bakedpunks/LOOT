@@ -49,9 +49,9 @@ class FormAndPreview extends Component {
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
       if (e.target.value ==undefined) {
-        this.state.punkid =e.target.id;        
+        this.state.punkid =e.target.id;
       }
-      window.alert(this.state.punkid);
+//      window.alert(this.state.punkid);
       if(this.state.punkid<1 || this.state.punkid>8000){
         this.state.punkid = 1
       }
@@ -165,7 +165,7 @@ class FormAndPreview extends Component {
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        itemsBottomHomes.push(<div class="col-sm m-0 p-0" ><img width="100%" src={metalandImag} title={title} /> <small><hr className="my-1" /> {home.address} </small></div>)
+        itemsBottomHomes.push(<div class="col-sm m-0 p-0" ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} /> <small><hr className="my-1" /> {home.address} </small></div>)
         houseNumber +=1;
     }
 
