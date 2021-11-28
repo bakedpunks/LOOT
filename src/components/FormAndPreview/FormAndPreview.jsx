@@ -155,7 +155,7 @@ class FormAndPreview extends Component {
         houseNumber +=1;
     }
 
-    houseNumber = 10;
+    houseNumber = 11;
     for (let j = startHouse+10; j< (startHouse+20).valueOf(); j++) {
         let nftNumber = (startHouse + houseNumber).valueOf();
         const home = db[nftNumber];
