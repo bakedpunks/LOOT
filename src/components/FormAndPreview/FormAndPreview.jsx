@@ -124,7 +124,7 @@ class FormAndPreview extends Component {
 
     let startHouse = Math.floor(this.state.punkid/20);
 
-    if (startHouse==0)startHouse=0;
+    if (startHouse==0)startHouse=1;
     else startHouse = (startHouse * 20);
 
 
