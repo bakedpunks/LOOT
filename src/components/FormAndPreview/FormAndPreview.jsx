@@ -186,7 +186,6 @@ class FormAndPreview extends Component {
     }
     return (
       <div>
-      <hr className="my-4" />
 <div class="container  m-0 p-0">
 <div class="row m-0 p-0">
       {items}
@@ -203,7 +202,6 @@ class FormAndPreview extends Component {
       {itemsBottom}
 </div>
 </div>
-      <hr className="my-4" />
 
         <div class="container">
         <div class="card col-md-12 text-center" >
