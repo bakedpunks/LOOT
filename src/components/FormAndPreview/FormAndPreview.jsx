@@ -181,6 +181,7 @@ class FormAndPreview extends Component {
     }
     return (
       <div>
+      <p class="text-primary">.text-primaryf dsf</p>
       <hr className="my-4" />
 <div class="container  m-0 p-0">
 <div class="row m-0 p-0">
