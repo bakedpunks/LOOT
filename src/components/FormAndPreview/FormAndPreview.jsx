@@ -47,42 +47,41 @@ class FormAndPreview extends Component {
   }
 
   Load_New_Image= async (e)=>{
+      this.state.punkid =e.target.value;
       if (e.target.value ==undefined) {
-        return;
-      }else{
-          this.state.punkid =e.target.value;
-//      window.alert(this.state.punkid);
-        if(this.state.punkid<1 || this.state.punkid>8000){
-          this.state.punkid = 1
-        }
-        var developedLand = 1;
-        const home = db[this.state.punkid];
-
-        if (home.homeurl != "Undeveloped"){
-            developedLand = 6;
-        }
-        var tmpLotSize = home.lotsize + "";
-        this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
-        this.state.gasScoreLot = this.state.gasScoreLot * 3;
-
-        this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
-        this.state.gasScoreHome = this.state.gasScoreHome * 2
-
-        this.state.gasScore = (8001-this.state.punkid) * 18 * developedLand;
-        this.props.punksOfferedForSale(this.state.punkid);
-
-        this.state.homeStyle = home.homestyle;
-
-        var s = this.state.punkid+"";
-        while (s.length < 4) s = "0" + s;
-
-        var newImageUrl = '/images/punks/punk-' + s + 'x8.png';
-        this.setState({
-          cryptoBunkImageURL : newImageUrl
-        })
-
-        this.state.gasTotal = this.state.gasScoreLot + this.state.gasScore  + this.state.gasScoreHome;
+        this.state.punkid =e.target.id;
       }
+//      window.alert(this.state.punkid);
+      if(this.state.punkid<1 || this.state.punkid>8000){
+        this.state.punkid = 1
+      }
+      var developedLand = 1;
+      const home = db[this.state.punkid];
+
+      if (home.homeurl != "Undeveloped"){
+          developedLand = 6;
+      }
+      var tmpLotSize = home.lotsize + "";
+      this.state.gasScoreLot = tmpLotSize.substring(9,tmpLotSize.indexOf(" Square Feet"));
+      this.state.gasScoreLot = this.state.gasScoreLot * 3;
+
+      this.state.gasScoreHome = home.homesize.substring(9,home.homesize.indexOf(" Square Feet"));
+      this.state.gasScoreHome = this.state.gasScoreHome * 2
+
+      this.state.gasScore = (8001-this.state.punkid) * 18 * developedLand;
+      this.props.punksOfferedForSale(this.state.punkid);
+
+      this.state.homeStyle = home.homestyle;
+
+      var s = this.state.punkid+"";
+      while (s.length < 4) s = "0" + s;
+
+      var newImageUrl = '/images/punks/punk-' + s + 'x8.png';
+      this.setState({
+        cryptoBunkImageURL : newImageUrl
+      })
+
+      this.state.gasTotal = this.state.gasScoreLot + this.state.gasScore  + this.state.gasScoreHome;
       //this.state.gasScore = this.props.lotSize.substring(9, this.props.lotSize.indexOf(" Square Feet"));
       //window.alert('Not Available: Home Owner ' + home.lotsize);
 
