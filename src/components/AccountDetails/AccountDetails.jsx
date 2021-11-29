@@ -4,11 +4,7 @@ const AccountDetails = ({ accountAddress, accountBalance }) => {
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-5">Metagascar NFT Marketplace</h1>
-        <p className="lead">
-          This is an NFT marketplace where you can Mint, Sell, Buy and Transfer Metagascar Homes.
-        </p>
-        <hr className="my-4" />
+        <h1 className="display-5">Metagascar Metaverse</h1>
         <div class="card col-md-12" >
           <div class="card-body">
             <p className="lead">
