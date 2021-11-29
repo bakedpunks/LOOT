@@ -50,6 +50,7 @@ class FormAndPreview extends Component {
       this.state.punkid =e.target.value;
       if (e.target.value ==undefined) {
         this.state.punkid =e.target.id;
+        return;
       }
 //      window.alert(this.state.punkid);
       if(this.state.punkid<1 || this.state.punkid>8000){
@@ -206,7 +207,7 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-    <h6 class="card-subtitle mb-2">Enter Home NO</h6>
+    <h6 class="card-subtitle mb-2">Enter NFT NO</h6>
     <div>
       <input
         required
