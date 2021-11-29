@@ -146,7 +146,7 @@ class FormAndPreview extends Component {
         var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
         var fontColor = 'text-primary';
-        items.push(<div class="col-sm m-0 p-0 bottom bg-primary" ><p class={fontColor}><small>NFT NO {nftNumber} <hr className="my-1" /> {home.address} </small></p></div>)
+        items.push(<div class="col-sm m-0 p-0 bottom bg-primary bg-secondary text-white" ><small>NFT NO {nftNumber} <hr className="my-1" /> {home.address} </small></div>)
         houseNumber +=1;
     }
     houseNumber = 1;
