@@ -208,9 +208,8 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-    <h6 class="card-subtitle mb-2">Mint Price 0.1 ETH</h6>
+    <h6 class="card-subtitle mb-2">Enter Home NO</h6>
     <div>
-      <label htmlFor="punkId">Enter Home NO</label>
       <input
         required
         type="number"
@@ -275,7 +274,7 @@ class FormAndPreview extends Component {
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
           <div className="col-md-12">
-
+            Mint Price 0.1 ETH
             <div>
               <button
                 id="mintBtn22"
