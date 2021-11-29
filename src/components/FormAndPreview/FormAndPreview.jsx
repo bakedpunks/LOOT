@@ -145,8 +145,9 @@ class FormAndPreview extends Component {
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        var fontColor = 'text-primary';
-        items.push(<div class="col-sm m-0 p-0 bottom bg-primary bg-secondary text-white" ><small>NFT NO {nftNumber} <hr className="my-1" /> {home.address} </small></div>)
+        var divClass = 'col-sm m-0 p-0 bottom bg-primary';
+        if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white';
+        items.push(<div class={divClass} ><small>NFT NO {nftNumber} <hr className="my-1" /> {home.address} </small></div>)
         houseNumber +=1;
     }
     houseNumber = 1;
