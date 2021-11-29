@@ -167,8 +167,8 @@ class FormAndPreview extends Component {
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        var divClass = 'col-sm m-0 p-0 bottom bg-primary';
-        if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white';
+        var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+        if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
         itemsBottomHomes.push(<div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /> <small><hr className="my-1" /> {home.address} </small></div>)
         houseNumber +=1;
     }
@@ -179,8 +179,8 @@ class FormAndPreview extends Component {
         const home = db[nftNumber];
         var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
         var title = 'Lot Size ' + home.lotsize;
-        var divClass = 'col-sm m-0 p-0 bottom bg-primary';
-        if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white';
+        var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+        if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
         itemsBottom.push(<div class={divClass} ><hr className="my-1" /> <small>NFT {nftNumber} </small></div>)
         houseNumber +=1;
     }
