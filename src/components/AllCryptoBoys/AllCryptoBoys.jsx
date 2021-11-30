@@ -77,7 +77,7 @@ class AllCryptoBoys extends Component {
             let nftNumber = j;
             const home = db[j];
             var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
-            var title = 'Lot Size ' + home.lotsize + ' Address ' + home.address;
+            var title = home.address + ' Lot Size ' + home.lotsize;
             var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pages[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
@@ -87,7 +87,7 @@ class AllCryptoBoys extends Component {
             let nftNumber = j;
             const home = db[j];
             var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
-            var title = 'Lot Size ' + home.lotsize + ' Address ' + home.address;
+            var title = home.address + ' Lot Size ' + home.lotsize;
             var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pagesTwo[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
@@ -97,7 +97,7 @@ class AllCryptoBoys extends Component {
             let nftNumber = j;
             const home = db[j];
             var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
-            var title = 'Lot Size ' + home.lotsize + ' Address ' + home.address;
+            var title = home.address + ' Lot Size ' + home.lotsize;
             var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pages3[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
@@ -107,7 +107,7 @@ class AllCryptoBoys extends Component {
             let nftNumber = j;
             const home = db[j];
             var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
-            var title = 'Lot Size ' + home.lotsize + ' Address ' + home.address;
+            var title = home.address + ' Lot Size ' + home.lotsize;
             var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pages4[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
