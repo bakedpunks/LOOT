@@ -121,15 +121,19 @@ class AllCryptoBoys extends Component {
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
       </div>
       <div class="row m-0 p-0">
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.i.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
             {pagesTwo}
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.i.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
       </div>
       <div class="row m-0 p-0">
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
             {pages3}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
       </div>
       <div class="row m-0 p-0">
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
             {pages4}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
       </div>
       </div>
         <hr className="my-4" />
