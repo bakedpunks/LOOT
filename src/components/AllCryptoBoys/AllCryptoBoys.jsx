@@ -69,6 +69,8 @@ class AllCryptoBoys extends Component {
     const itemsPage = items.splice(this.state.currentPage*500, 500);
     const pages = []
     const pagesTwo = []
+    const pages3 = []
+    const pages4 = []
     const numberofPages = this.props.cryptoBoys.length/500;
         for (let j=1;j<11;j++) {
             var newLinkUrl = 'loadPage';
@@ -90,6 +92,26 @@ class AllCryptoBoys extends Component {
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pagesTwo[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
         }
+        for (let j=21;j<31;j++) {
+            var newLinkUrl = 'loadPage';
+            let nftNumber = j;
+            const home = db[j];
+            var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+            var title = 'Lot Size ' + home.lotsize;
+            var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+            if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
+            pages3[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
+        }
+        for (let j=31;j<41;j++) {
+            var newLinkUrl = 'loadPage';
+            let nftNumber = j;
+            const home = db[j];
+            var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+            var title = 'Lot Size ' + home.lotsize;
+            var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+            if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
+            pages4[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
+        }
     return (
       <div class="container">
       <div class="container  m-0 p-0">
@@ -98,6 +120,12 @@ class AllCryptoBoys extends Component {
       </div>
       <div class="row m-0 p-0">
             {pagesTwo}
+      </div>
+      <div class="row m-0 p-0">
+            {pages3}
+      </div>
+      <div class="row m-0 p-0">
+            {pages4}
       </div>
       </div>
         <hr className="my-4" />
