@@ -167,9 +167,10 @@ class AllCryptoBoys extends Component {
             {pages6}
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
       </div>
-      </div>
+      </div>      
         <hr className="my-4" />
-        BinanceLoot.io
+            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
+        <hr className="my-4" />
       </div>
     );
   }
