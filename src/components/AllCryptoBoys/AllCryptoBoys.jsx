@@ -68,6 +68,7 @@ class AllCryptoBoys extends Component {
 
     const itemsPage = items.splice(this.state.currentPage*500, 500);
     const pages = []
+    const pagesTwo = []
     const numberofPages = this.props.cryptoBoys.length/500;
         for (let j=1;j<11;j++) {
             var newLinkUrl = 'loadPage';
@@ -87,14 +88,16 @@ class AllCryptoBoys extends Component {
             var title = 'Lot Size ' + home.lotsize;
             var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
-            pages[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
+            pagesTwo[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
         }
-
     return (
       <div class="container">
       <div class="container  m-0 p-0">
       <div class="row m-0 p-0">
             {pages}
+      </div>
+      <div class="row m-0 p-0">
+            {pagesTwo}
       </div>
       </div>
         <hr className="my-4" />
