@@ -7,6 +7,8 @@ import {
   useLocation
 } from "react-router-dom";
 
+import db  from "../../database";
+
 class AllCryptoBoys extends Component {
   constructor(props) {
     super(props);
@@ -78,7 +80,17 @@ class AllCryptoBoys extends Component {
     const numberofPages = this.props.cryptoBoys.length/500;
         for (let j=0;j<numberofPages;j++) {
           var newLinkUrl = 'loadPage';
-          pages[j] = <li class="page-item"><form onSubmit={this.loadPage} value={j} className="pt-4 mt-1" id={j} ><button  id={j} >{j}</button></form></li>;
+          var k = j+10;
+          for ( j; j< k;j++) {
+              let nftNumber = j;
+              const home = db[j];
+              var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+              var title = 'Lot Size ' + home.lotsize;
+              var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+              if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
+              pages[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /> <small><hr className="my-1" /> {home.address} </small></div>
+
+          }
         }
 
     return (
