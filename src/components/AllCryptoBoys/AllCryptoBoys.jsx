@@ -71,6 +71,8 @@ class AllCryptoBoys extends Component {
     const pagesTwo = []
     const pages3 = []
     const pages4 = []
+    const pages5 = []
+    const pages6 = []
     const numberofPages = this.props.cryptoBoys.length/500;
         for (let j=1;j<11;j++) {
             var newLinkUrl = 'loadPage';
@@ -112,6 +114,26 @@ class AllCryptoBoys extends Component {
             if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
             pages4[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
         }
+        for (let j=41;j<51;j++) {
+            var newLinkUrl = 'loadPage';
+            let nftNumber = j;
+            const home = db[j];
+            var metalandImag = '/images/metaLand.north.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+            var title = home.address + ' ' + home.lotsize;
+            var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+            if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
+            pages5[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
+        }
+        for (let j=51;j<61;j++) {
+            var newLinkUrl = 'loadPage';
+            let nftNumber = j;
+            const home = db[j];
+            var metalandImag = '/images/metaLand.south.' + home.drivewayStyle.replaceAll(" ", "") + '.png';
+            var title = home.address + ' ' + home.lotsize;
+            var divClass = 'col-sm m-0 p-0 bottom bg-primary text-center';
+            if(nftNumber ==this.state.punkid )divClass = 'col-sm m-0 p-0 bottom bg-primary bg-secondary text-white text-center';
+            pages6[j] = <div class={divClass} ><img width="100%" src={metalandImag} title={title} id={nftNumber} value={nftNumber} onClick={this.Load_New_Image} /></div>
+        }
     return (
       <div class="container">
       <div class="container  m-0 p-0">
@@ -133,6 +155,16 @@ class AllCryptoBoys extends Component {
       <div class="row m-0 p-0">
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
             {pages4}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
+      </div>
+      <div class="row m-0 p-0">
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.l.png"  /></div>
+            {pages5}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
+      </div>
+      <div class="row m-0 p-0">
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
+            {pages6}
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
       </div>
       </div>
