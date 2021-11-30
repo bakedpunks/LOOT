@@ -20,6 +20,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/marketplace" className="nav-link">
+                Neighborhood
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="nftrade" className="nav-link">
                 Marketplace
               </Link>
