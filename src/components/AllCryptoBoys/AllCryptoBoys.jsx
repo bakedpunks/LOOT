@@ -116,24 +116,24 @@ class AllCryptoBoys extends Component {
       <div class="container">
       <div class="container  m-0 p-0">
       <div class="row m-0 p-0">
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.top.l.png"  /></div>
             {pages}
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.l.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.top.png"  /></div>
       </div>
       <div class="row m-0 p-0">
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.l.png"  /></div>
             {pagesTwo}
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.png"  /></div>
       </div>
       <div class="row m-0 p-0">
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
-            {pages3}
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.l.png"  /></div>
+            {pages3}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.top.png"  /></div>
       </div>
       <div class="row m-0 p-0">
-            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
-            {pages4}
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.l.png"  /></div>
+            {pages4}
+            <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
       </div>
       </div>
         <hr className="my-4" />
