@@ -78,7 +78,7 @@ class AllCryptoBoys extends Component {
     const itemsPage = items.splice(this.state.currentPage*500, 500);
     const pages = []
     const numberofPages = this.props.cryptoBoys.length/500;
-        for (let j=0;j<numberofPages;j++) {
+        for (let j=1;j<numberofPages;j++) {
           var newLinkUrl = 'loadPage';
           var k = j+10;
           for ( j; j< k;j++) {
