@@ -63,7 +63,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         &nbsp;
         <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Whitepaper</a>
         <hr className="my-4" />
-        <a href="https://www.openstreetmap.org/search?query=metagascar#map=15/35.2053/-116.1401" >Metagascar Map View</a>
+        <a href="https://www.openstreetmap.org/#map=16/35.2026/-116.1401" >Metagascar Map View</a>
 
         <hr className="my-4" />
 
