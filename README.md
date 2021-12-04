@@ -54,4 +54,4 @@ npm install -D truffle-plugin-verify
 
 npm install @openzeppelin/contracts
 
-edit front end settings
+edit front end settings second time
