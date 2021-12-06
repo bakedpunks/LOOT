@@ -504,6 +504,7 @@ class App extends Component {
   }
 }
 const wrapper = styled.div`
+ 
   display: inline-block;
   align-items: center;
   justify-items: center;

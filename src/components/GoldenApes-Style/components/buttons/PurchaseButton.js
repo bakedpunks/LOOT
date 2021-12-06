@@ -98,6 +98,7 @@ const Icon = styled.img`
 // Styled Components allow you to select a parent component via its child component.
 // We're setting position to absolute
 const Ring = styled.img`
+  opacity: 0;
   position: absolute;
   top: -10px;
   left: -16px;

@@ -27,16 +27,19 @@ function HeroSection() {
           </Title>
           <card>
             <cardWrapper>
-              <p className="mainText">
-                The Metaverse is open, and the rocketships of explorers have
-                been dispatched!The first MetaIsland to be discovered by the
-                Alpha Explorer "Meta" has been dubbed Metagascar.Here you will
-                find a thriving community of unique MetaHumans who reside in
-                their equally unique MetaHomes.On the island of Metagascar you
-                will find various facet 's of social activity including
-                friendship, dating, and of course what island would be complete
-                without messages in a bottle!
-              </p>
+              <container>
+                <MockupAnimation />
+                <p className="mainText">
+                  The Metaverse is open, and the rocketships of explorers have
+                  been dispatched!The first MetaIsland to be discovered by the
+                  Alpha Explorer "Meta" has been dubbed Metagascar.Here you will
+                  find a thriving community of unique MetaHumans who reside in
+                  their equally unique MetaHomes.On the island of Metagascar you
+                  will find various facet 's of social activity including
+                  friendship, dating, and of course what island would be
+                  complete without messages in a bottle!
+                </p>
+              </container>
             </cardWrapper>
           </card>
           <span> SPAN </span> <Description> DESCRIPTION </Description>
@@ -51,7 +54,6 @@ function HeroSection() {
             Connect Wallet
           </PurchaseButton>
         </TextWrapper>
-        {/* <MockupAnimation /> */}
       </ContentWrapper>
     </Wrapper>
   );
@@ -91,6 +93,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   max-width: 1234px;
+  max-height: 100vh;
   margin: 0 auto;
   padding: 200px 30px;
   display: grid;
