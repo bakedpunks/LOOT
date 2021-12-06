@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     border: 0.5px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     backdrop-filter: blur(27.3844px);
-    /* Note: backdrop-filter has minimal browser support */
+
     border-radius: 14px;
   }
 `;

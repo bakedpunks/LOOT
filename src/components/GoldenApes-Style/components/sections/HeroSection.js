@@ -14,8 +14,6 @@ function HeroSection() {
   //TO HAVE JAVASCRIPT MIXED WITH YOUR HTML RETURN FUNCTION
 
   return (
-    // YOUR CONTENT WILL ALWAYS NEED A PARENT CONTAINER
-    // YOU CAN USE DIV "<div></div>" or MT brackets "<></>"
     <Wrapper>
       <ImageWrapper>
         <img class="img-fluid" src={Image} />
@@ -42,8 +40,8 @@ function HeroSection() {
               </container>
             </cardWrapper>
           </card>
-          <span> SPAN </span> <Description> DESCRIPTION </Description>
-          {/* Pass in Props */}
+          <span> </span>
+          <Description> </Description>
           <PurchaseButton
             title="CLICK TO"
             subtile="CONNECT TO WALLET"
@@ -58,14 +56,11 @@ function HeroSection() {
     </Wrapper>
   );
 }
-
-//NEED TO EXPORT COMPONENT TO USE IN THE WEBSITE
 export default HeroSection;
 
-// declaring all the styles
 const animation = keyframes`
   0% { opacity: 0; transform: translateY(-10px); filter:blur(10px);}
-  /* 80% { opacity: 0.5; transform: translateY(-10px); filter:blur(10px);} */
+  80% { opacity: 0.5; transform: translateY(-10px); filter:blur(10px);}
  100% { opacity: 1; transform: translateY(0px); filter: blur(0px); }
 `;
 
@@ -77,7 +72,7 @@ const ImageWrapper = styled.div`
   width: 102vw;
   margin: 0;
   padding: 0;
-  z-index: -1;
+  z-index: 0;
   opacity: 1;
   img {
     z-index: 2;
@@ -111,9 +106,6 @@ const TextWrapper = styled.div`
   max-width: 360px;
   display: grid; //set grid display
   gap: 30px; //setting gapping "border-spacing"
-
-  /* only select immediate children, we're using '>' */
-  /* set different properties to specific elements, we're using ':nth-child(n)'. */
   > * {
     opacity: 0;
     animation: ${animation} 1s forwards;
