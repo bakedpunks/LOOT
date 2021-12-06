@@ -1,0 +1,25 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* https://clrs.cc/  */
+/* theme colors */
+/*Navy-Blue =  #001f3fd3 */
+/*Gold =  #d4af37d3  */
+
+
+/* resets margin and padding on layout */
+/* BORDER BACKGROUND */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}

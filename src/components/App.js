@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
+import styled, { keyframes } from "styled-components";
 import Web3 from "web3";
 
 import Loot from "../abis/Loot.json";
-
 
 import AllCryptoBoys from "./AllCryptoBoys/AllCryptoBoys";
 import FormAndPreview from "../components/FormAndPreview/FormAndPreview";
@@ -17,14 +17,11 @@ import MyCryptoBoys from "./MyCryptoBoys/MyCryptoBoys";
 import PunksForSale from "./PunksForSale/PunksForSale";
 import BuyPunk from "./BuyPunk/BuyPunk";
 
-import {Contract} from "@ethersproject/contracts";
+import { Contract } from "@ethersproject/contracts";
 
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-
-import db  from "../database";
-
-
+import db from "../database";
 
 class App extends Component {
   constructor(props) {
@@ -125,69 +122,70 @@ class App extends Component {
         this.setState({ accountBalance });
         this.setState({ loading: false });
         const networkId = await web3.eth.net.getId();
-//        const networkData = Loot.networks[networkId];
-//        if (networkData) {
-          this.setState({ loading: true });
+        //        const networkData = Loot.networks[networkId];
+        //        if (networkData) {
+        this.setState({ loading: true });
 
-          const { abi } = require('../abis/Metagascar.json');
-          var smart_contract_interface = new web3.eth.Contract(abi, '0xf286e4955557361a7d245358b0d47a3f5c735b2e')
+        const { abi } = require("../abis/Metagascar.json");
+        var smart_contract_interface = new web3.eth.Contract(
+          abi,
+          "0xf286e4955557361a7d245358b0d47a3f5c735b2e"
+        );
 
-
-          const cryptoBoysContract = smart_contract_interface;
-/*
+        const cryptoBoysContract = smart_contract_interface;
+        /*
   	const cryptoBoysMarketContract = web3.eth.Contract(
             Loot.abi,
             networkData.address
           );
 */
-//    const metaHumanContract = new Contract("0x666659a8ca809c431ce9479a261b9f03cb372016", Metahuman, web3.getSigner())
-//    const metaHumanContract = web3.eth.Contract(Metahuman, );
-//    const balanceOfMH = await metaHumanContract.methods
-//      .balanceOf(this.state.accountAddress)
-//      .call();
-//      window.alert('Balance of MetaHuman' + balanceOfMH);
+        //    const metaHumanContract = new Contract("0x666659a8ca809c431ce9479a261b9f03cb372016", Metahuman, web3.getSigner())
+        //    const metaHumanContract = web3.eth.Contract(Metahuman, );
+        //    const balanceOfMH = await metaHumanContract.methods
+        //      .balanceOf(this.state.accountAddress)
+        //      .call();
+        //      window.alert('Balance of MetaHuman' + balanceOfMH);
 
-          this.setState({ cryptoBoysContract });
-//          this.setState({ cryptoBoysMarketContract });
-  	      this.setState({ contractDetected: true });
+        this.setState({ cryptoBoysContract });
+        //          this.setState({ cryptoBoysMarketContract });
+        this.setState({ contractDetected: true });
 
+        const balanceOf = await smart_contract_interface.methods
+          .balanceOf(this.state.accountAddress)
+          .call();
 
-          const balanceOf = await smart_contract_interface.methods
-            .balanceOf(this.state.accountAddress)
-            .call();
+        const totalTokensOwnedByAccount = await smart_contract_interface.methods
+          .totalSupply()
+          .call();
+        let punkOwners = [];
+        this.state.cryptoBoys = punkOwners;
+        this.state.cryptoBoysForSale = [];
+        this.state.balanceOf = balanceOf + "";
+        this.state.punksforsalebuttonhtml = "Load Punks";
+        this.state.totalTokensOwnedByAccount = totalTokensOwnedByAccount + "";
 
-          const totalTokensOwnedByAccount = await smart_contract_interface.methods
-            .totalSupply()
-            .call();
-          let punkOwners = [];
-          this.state.cryptoBoys = punkOwners;
-          this.state.cryptoBoysForSale = [];
-          this.state.balanceOf  = balanceOf + "";
-          this.state.punksforsalebuttonhtml = "Load Punks";
-          this.state.totalTokensOwnedByAccount = totalTokensOwnedByAccount + "";
+        for (let i = 0; i < 8000; i++) {
+          this.state.cryptoBoys[i] = 0x00;
+        }
 
-          for (let i = 0; i < 8000; i++) {
-              this.state.cryptoBoys[i]=0x00;
-          }
+        //          (async () => {
+        //              await this.loadMorePunks(0,8000);
+        //          })();
 
-//          (async () => {
-//              await this.loadMorePunks(0,8000);
-//          })();
-
-
-          this.setState({totalTokensOwnedByAccount:this.state.totalTokensOwnedByAccount});
-          this.setState({balanceOf:this.state.balanceOf});
-          this.setState({cryptoBoys:this.state.cryptoBoys});
-          this.setState({cryptoBoysForSale:this.state.cryptoBoysForSale});
-          this.setState({punksforsalebuttonhtml:this.state.punksforsalebuttonhtml});
-          this.setState({currentPage:this.state.currentPage});
-  	       this.setState({ loading: false });
-
-
-
+        this.setState({
+          totalTokensOwnedByAccount: this.state.totalTokensOwnedByAccount,
+        });
+        this.setState({ balanceOf: this.state.balanceOf });
+        this.setState({ cryptoBoys: this.state.cryptoBoys });
+        this.setState({ cryptoBoysForSale: this.state.cryptoBoysForSale });
+        this.setState({
+          punksforsalebuttonhtml: this.state.punksforsalebuttonhtml,
+        });
+        this.setState({ currentPage: this.state.currentPage });
+        this.setState({ loading: false });
 
         //} else {
-          //this.setState({ contractDetected: false });
+        //this.setState({ contractDetected: false });
         //}
       }
     } else {
@@ -201,12 +199,12 @@ class App extends Component {
       this.setState({ metamaskConnected: true });
       window.location.reload();
     } else {
-      window.alert('Must Install Metamask Extension for Chrome');
+      window.alert("Must Install Metamask Extension for Chrome");
     }
   };
 
-mintMyNFT = async (punkIndex, punkPrice) => {
-  this.setState({ loading: true });
+  mintMyNFT = async (punkIndex, punkPrice) => {
+    this.setState({ loading: true });
     this.state.cryptoBoysMarketContract.methods
       .offerPunkForSale(punkIndex, punkPrice)
       .send({ from: this.state.accountAddress })
@@ -215,25 +213,23 @@ mintMyNFT = async (punkIndex, punkPrice) => {
         this.setState({ loading: false });
         window.location.reload();
       });
-};
+  };
 
+  reservePunksForOwner = async (maxForThisRun) => {
+    this.state.cryptoBoysContract.methods
+      .reservePunksForOwner(maxForThisRun)
+      .send({ from: this.state.accountAddress })
+      .on("confirmation", () => {
+        localStorage.setItem(this.state.accountAddress, new Date().getTime());
+        this.setState({ loading: false });
+        window.location.reload();
+      });
+  };
 
-reservePunksForOwner = async (maxForThisRun) => {
-  this.state.cryptoBoysContract.methods
-    .reservePunksForOwner(maxForThisRun)
-    .send({ from: this.state.accountAddress })
-    .on("confirmation", () => {
-      localStorage.setItem(this.state.accountAddress, new Date().getTime());
-      this.setState({ loading: false });
-      window.location.reload();
-    });
-}
+  offerPunkForSale = async (punkIndex, punkPrice) => {
+    this.setState({ loading: true });
 
-offerPunkForSale = async (punkIndex, punkPrice) => {
-  this.setState({ loading: true });
-
-
-  const price = window.web3.utils.toWei(punkPrice.toString(), "Ether");
+    const price = window.web3.utils.toWei(punkPrice.toString(), "Ether");
     this.state.cryptoBoysMarketContract.methods
       .offerPunkForSale(punkIndex, price)
       .send({ from: this.state.accountAddress })
@@ -242,11 +238,10 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
         this.setState({ loading: false });
         window.location.reload();
       });
-};
-claimPunk = async (punkIndex) => {
-
-  const price = window.web3.utils.toWei("0.1", "Ether");
-  this.setState({ loading: true });
+  };
+  claimPunk = async (punkIndex) => {
+    const price = window.web3.utils.toWei("0.1", "Ether");
+    this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
       .claim(punkIndex)
       .send({ from: this.state.accountAddress, value: price })
@@ -255,40 +250,39 @@ claimPunk = async (punkIndex) => {
         this.setState({ loading: false });
         window.location.reload();
       });
-};
-punksOfferedForSale = async (punkIndex) => {
-
-    this.setState({ punkOwner: "Unassigned"});
+  };
+  punksOfferedForSale = async (punkIndex) => {
+    this.setState({ punkOwner: "Unassigned" });
 
     let lotSize = await this.state.cryptoBoysContract.methods
-    .getLand(punkIndex)
-    .call();
-    this.setState({ lotSize: lotSize});
+      .getLand(punkIndex)
+      .call();
+    this.setState({ lotSize: lotSize });
 
     let homeSize = await this.state.cryptoBoysContract.methods
-    .getHomeSize(punkIndex)
-    .call();
-    this.setState({ homeSize: homeSize});
+      .getHomeSize(punkIndex)
+      .call();
+    this.setState({ homeSize: homeSize });
 
-    const home = db[punkIndex]
-    this.setState({ homeUrl: home.homeurl});
-    this.setState({ homeAddress: home.address});
+    const home = db[punkIndex];
+    this.setState({ homeUrl: home.homeurl });
+    this.setState({ homeAddress: home.address });
 
     let punkOwner = await this.state.cryptoBoysContract.methods
       .ownerOf(punkIndex)
       .call();
 
-    if(punkOwner != 0x00){
-      this.setState({ punkOwner: punkOwner});
+    if (punkOwner != 0x00) {
+      this.setState({ punkOwner: punkOwner });
     }
     //this.state.punkOwner = "TEST VALUE";
     //window.alert('Not Available: Home Owner ' + punkOwner);
     //return punkOwner;
-};
+  };
 
-buyPunk = async (punkIndex, punkPrice) => {
-  this.setState({ loading: true });
-  const price = window.web3.utils.toWei(punkPrice.toString(), "Ether");
+  buyPunk = async (punkIndex, punkPrice) => {
+    this.setState({ loading: true });
+    const price = window.web3.utils.toWei(punkPrice.toString(), "Ether");
     this.state.cryptoBoysMarketContract.methods
       .buyPunk(punkIndex)
       .send({ from: this.state.accountAddress, value: price })
@@ -297,212 +291,223 @@ buyPunk = async (punkIndex, punkPrice) => {
         this.setState({ loading: false });
         window.location.reload();
       });
-};
-transferPunk = async (addressTo, punkIndex) => {
-  this.setState({ loading: true });
+  };
+  transferPunk = async (addressTo, punkIndex) => {
+    this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
       .transferPunk(addressTo, punkIndex)
-      .send({ from: this.state.accountAddress})
+      .send({ from: this.state.accountAddress })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
         this.setState({ loading: false });
         window.location.reload();
       });
-};
-loadMorePunks = async () => {
-  let incAmt = 8000;
-  for (let i = this.state.cryptoPunksLoadCount; i < this.state.cryptoPunksLoadCount + incAmt && i < 8000; i++) {
-    let punkOwner = await this.state.cryptoBoysContract.methods
-      .ownerOf(i)
-      .call();
-    this.state.cryptoBoys.push(punkOwner);
+  };
+  loadMorePunks = async () => {
+    let incAmt = 8000;
+    for (
+      let i = this.state.cryptoPunksLoadCount;
+      i < this.state.cryptoPunksLoadCount + incAmt && i < 8000;
+      i++
+    ) {
+      let punkOwner = await this.state.cryptoBoysContract.methods
+        .ownerOf(i)
+        .call();
+      this.state.cryptoBoys.push(punkOwner);
+      this.forceUpdate();
+    }
+    this.state.cryptoPunksLoadCount += incAmt;
+  };
+
+  loadMorePunks = async (from, to) => {
+    for (let i = from; i < to; i++) {
+      let punkOwner = await this.state.cryptoBoysContract.methods
+        .ownerOf(i)
+        .call();
+      this.state.cryptoBoys[i] = punkOwner;
+    }
     this.forceUpdate();
-  }
-  this.state.cryptoPunksLoadCount += incAmt;
-};
+  };
 
-loadMorePunks = async (from, to) => {
-  for (let i = from; i < to; i++) {
-    let punkOwner = await this.state.cryptoBoysContract.methods
-      .ownerOf(i)
-      .call();
-    this.state.cryptoBoys[i]=punkOwner;
-  }
-  this.forceUpdate();
-};
-
-loadPunksForSale = async () => {
-
-//  const mintBtn = document.getElementById("mintBtn25");
-//  mintBtn.disabled = true;
-  for (let i = this.state.cryptoPunksBuyLoadCount; i < 10000; i++) {
-    this.state.punksforsalebuttonhtml = "Loading " + i + " of 9999";
-    let punkOwner = await this.state.cryptoBoysContract.methods
-      .punksOfferedForSale(i)
-      .call();
-      const price = window.web3.utils.fromWei(punkOwner.minValue +'', "Ether");
-        this.state.cryptoBoysForSale[i]=price;
-        this.forceUpdate();
+  loadPunksForSale = async () => {
+    //  const mintBtn = document.getElementById("mintBtn25");
+    //  mintBtn.disabled = true;
+    for (let i = this.state.cryptoPunksBuyLoadCount; i < 10000; i++) {
+      this.state.punksforsalebuttonhtml = "Loading " + i + " of 9999";
+      let punkOwner = await this.state.cryptoBoysContract.methods
+        .punksOfferedForSale(i)
+        .call();
+      const price = window.web3.utils.fromWei(punkOwner.minValue + "", "Ether");
+      this.state.cryptoBoysForSale[i] = price;
+      this.forceUpdate();
       this.state.cryptoPunksBuyLoadCount += 1;
-  }
-  this.state.punksforsalebuttonhtml = "Done Loading";
+    }
+    this.state.punksforsalebuttonhtml = "Done Loading";
+  };
 
-};
-
-loadPunksForSale = async (from, to) => {
-
-//  const mintBtn = document.getElementById("mintBtn25");
-//  mintBtn.disabled = true;
-  for (let i = from; i < to; i++) {
-    let punkOwner = await this.state.cryptoBoysContract.methods
-      .punksOfferedForSale(i)
-      .call();
-      const price = window.web3.utils.fromWei(punkOwner.minValue +'', "Ether");
-      if(price != 0x00){
-        this.state.cryptoBoysForSale[i]=price;
+  loadPunksForSale = async (from, to) => {
+    //  const mintBtn = document.getElementById("mintBtn25");
+    //  mintBtn.disabled = true;
+    for (let i = from; i < to; i++) {
+      let punkOwner = await this.state.cryptoBoysContract.methods
+        .punksOfferedForSale(i)
+        .call();
+      const price = window.web3.utils.fromWei(punkOwner.minValue + "", "Ether");
+      if (price != 0x00) {
+        this.state.cryptoBoysForSale[i] = price;
         this.forceUpdate();
       }
-  }
-  this.forceUpdate();
-
-};
-getPunkOwner = async (punkIndex) => {
+    }
+    this.forceUpdate();
+  };
+  getPunkOwner = async (punkIndex) => {
     let punkOwner = await this.state.cryptoBoysContract.methods
       .punkIndexToAddress(punkIndex)
       .call();
-  return punkOwner;
-};
-
+    return punkOwner;
+  };
 
   render() {
     return (
-      <div className="container">
-        {!this.state.metamaskConnected ? (
-          <ConnectToMetamask connectToMetamask={this.connectToMetamask} />
-        ) : !this.state.contractDetected ? (
-          <ContractNotDeployed />
-        ) : this.state.loading ? (
-          <Loading />
-        ) : (
-          <>
-            <HashRouter basename="/">
-              <Navbar />
-              <Route
-                path="/"
-                exact
-                render={() => (
-                  <AccountDetails
-                    accountAddress={this.state.accountAddress}
-                    accountBalance={this.state.accountBalance}
-                  />
-                )}
-              />
-              <Route
-                path="/mint"
-                render={(props) => (
-                  <FormAndPreview
-                    {...props}
-                    mintMyNFT={this.mintMyNFT}
-                    buyPunk={this.buyPunk}
-                    reservePunksForOwner={this.reservePunksForOwner}
-                    offerPunkForSale={this.offerPunkForSale}
-                    claimPunk={this.claimPunk}
-                    transferPunk={this.transferPunk}
-                    nameIsUsed={this.state.nameIsUsed}
-                    colorIsUsed={this.state.colorIsUsed}
-                    colorsUsed={this.state.colorsUsed}
-                    setMintBtnTimer={this.setMintBtnTimer}
-                    punksOfferedForSale={this.punksOfferedForSale}
-                    cryptoBoyPrice={this.state.cryptoBoyPrice}
-                    getPunkOwner={this.getPunkOwner}
-                    getMyPunks={this.getMyPunks}
-                    punkOwner={this.state.punkOwner}
-                    lotSize={this.state.lotSize}
-                    homeSize={this.state.homeSize}
-                    homeUrl={this.state.homeUrl}
-                    homeAddress={this.state.homeAddress}
+      <wrapper>
+        <div className="inline-box">
+          {!this.state.metamaskConnected ? (
+            <ConnectToMetamask connectToMetamask={this.connectToMetamask} />
+          ) : !this.state.contractDetected ? (
+            <ContractNotDeployed />
+          ) : this.state.loading ? (
+            <Loading />
+          ) : (
+            <>
+              <HashRouter basename="/">
+                <Navbar />
+                <Route
+                  path="/"
+                  exact
+                  render={() => (
+                    <AccountDetails
+                      accountAddress={this.state.accountAddress}
+                      accountBalance={this.state.accountBalance}
                     />
                   )}
-              />
-              <Route
-                path="/marketplace"
-                render={(props) => (
-                  <AllCryptoBoys
-                    {...props}
-                    accountAddress={this.state.accountAddress}
-                    cryptoBoys={this.state.cryptoBoys}
-                    totalTokensMinted={this.state.totalTokensMinted}
-                    changeTokenPrice={this.changeTokenPrice}
-                    toggleForSale={this.toggleForSale}
-                    buyCryptoBoy={this.buyCryptoBoy}
-                    loadMorePunks={this.loadMorePunks}
-                    currentPage={this.state.currentPage}
-                  />
-                )}
-              />
-              <Route
-                path="/my-tokens"
-                render={() => (
-                  <MyCryptoBoys
-                    loadMorePunks={this.state.loadMorePunks}
-                    accountAddress={this.state.accountAddress}
-                    cryptoBoys={this.state.cryptoBoys}
-                    balanceOf={this.state.balanceOf}
-                    selectedpunkid={this.state.selectedpunkid}
-                    totalTokensOwnedByAccount={
-                      this.state.totalTokensOwnedByAccount
-                    }
-                  />
-                )}
-              />
-              <Route
-                path="/forsale"
-                render={() => (
-                  <PunksForSale
-                    accountAddress={this.state.accountAddress}
-                    cryptoBoysForSale={this.state.cryptoBoysForSale}
-                    totalTokensMinted={this.state.totalTokensMinted}
-                    changeTokenPrice={this.changeTokenPrice}
-                    toggleForSale={this.toggleForSale}
-                    buyCryptoBoy={this.buyCryptoBoy}
-                    loadMorePunks={this.loadMorePunks}
-                    loadPunksForSale={this.loadPunksForSale}
-                    punksforsalebuttonhtml={this.state.punksforsalebuttonhtml}
-                  />
-                )}
-              />
-              <Route
-                path="/buypunk"
-                render={(props) => (
-                  <BuyPunk
-                    {...props}
-                    mintMyNFT={this.mintMyNFT}
-                    buyPunk={this.buyPunk}
-                    reservePunksForOwner={this.reservePunksForOwner}
-                    offerPunkForSale={this.offerPunkForSale}
-                    claimPunk={this.claimPunk}
-                    transferPunk={this.transferPunk}
-                    nameIsUsed={this.state.nameIsUsed}
-                    colorIsUsed={this.state.colorIsUsed}
-                    colorsUsed={this.state.colorsUsed}
-                    setMintBtnTimer={this.setMintBtnTimer}
-                    punksOfferedForSale={this.punksOfferedForSale}
-                    cryptoBoyPrice={this.state.cryptoBoyPrice}
-                    getPunkOwner={this.getPunkOwner}
-                    getMyPunks={this.getMyPunks}
+                />
+                <Route
+                  path="/mint"
+                  render={(props) => (
+                    <FormAndPreview
+                      {...props}
+                      mintMyNFT={this.mintMyNFT}
+                      buyPunk={this.buyPunk}
+                      reservePunksForOwner={this.reservePunksForOwner}
+                      offerPunkForSale={this.offerPunkForSale}
+                      claimPunk={this.claimPunk}
+                      transferPunk={this.transferPunk}
+                      nameIsUsed={this.state.nameIsUsed}
+                      colorIsUsed={this.state.colorIsUsed}
+                      colorsUsed={this.state.colorsUsed}
+                      setMintBtnTimer={this.setMintBtnTimer}
+                      punksOfferedForSale={this.punksOfferedForSale}
+                      cryptoBoyPrice={this.state.cryptoBoyPrice}
+                      getPunkOwner={this.getPunkOwner}
+                      getMyPunks={this.getMyPunks}
+                      punkOwner={this.state.punkOwner}
+                      lotSize={this.state.lotSize}
+                      homeSize={this.state.homeSize}
+                      homeUrl={this.state.homeUrl}
+                      homeAddress={this.state.homeAddress}
                     />
                   )}
-              />
-              <Route path='/nftrade' component={() => {
-                   window.location.href = 'https://opensea.io/collection/metagascar-eth';
-                   return null;
-              }}/>
-		</HashRouter>
-	  </>
-        )}
-      </div>
+                />
+                <Route
+                  path="/marketplace"
+                  render={(props) => (
+                    <AllCryptoBoys
+                      {...props}
+                      accountAddress={this.state.accountAddress}
+                      cryptoBoys={this.state.cryptoBoys}
+                      totalTokensMinted={this.state.totalTokensMinted}
+                      changeTokenPrice={this.changeTokenPrice}
+                      toggleForSale={this.toggleForSale}
+                      buyCryptoBoy={this.buyCryptoBoy}
+                      loadMorePunks={this.loadMorePunks}
+                      currentPage={this.state.currentPage}
+                    />
+                  )}
+                />
+                <Route
+                  path="/my-tokens"
+                  render={() => (
+                    <MyCryptoBoys
+                      loadMorePunks={this.state.loadMorePunks}
+                      accountAddress={this.state.accountAddress}
+                      cryptoBoys={this.state.cryptoBoys}
+                      balanceOf={this.state.balanceOf}
+                      selectedpunkid={this.state.selectedpunkid}
+                      totalTokensOwnedByAccount={
+                        this.state.totalTokensOwnedByAccount
+                      }
+                    />
+                  )}
+                />
+                <Route
+                  path="/forsale"
+                  render={() => (
+                    <PunksForSale
+                      accountAddress={this.state.accountAddress}
+                      cryptoBoysForSale={this.state.cryptoBoysForSale}
+                      totalTokensMinted={this.state.totalTokensMinted}
+                      changeTokenPrice={this.changeTokenPrice}
+                      toggleForSale={this.toggleForSale}
+                      buyCryptoBoy={this.buyCryptoBoy}
+                      loadMorePunks={this.loadMorePunks}
+                      loadPunksForSale={this.loadPunksForSale}
+                      punksforsalebuttonhtml={this.state.punksforsalebuttonhtml}
+                    />
+                  )}
+                />
+                <Route
+                  path="/buypunk"
+                  render={(props) => (
+                    <BuyPunk
+                      {...props}
+                      mintMyNFT={this.mintMyNFT}
+                      buyPunk={this.buyPunk}
+                      reservePunksForOwner={this.reservePunksForOwner}
+                      offerPunkForSale={this.offerPunkForSale}
+                      claimPunk={this.claimPunk}
+                      transferPunk={this.transferPunk}
+                      nameIsUsed={this.state.nameIsUsed}
+                      colorIsUsed={this.state.colorIsUsed}
+                      colorsUsed={this.state.colorsUsed}
+                      setMintBtnTimer={this.setMintBtnTimer}
+                      punksOfferedForSale={this.punksOfferedForSale}
+                      cryptoBoyPrice={this.state.cryptoBoyPrice}
+                      getPunkOwner={this.getPunkOwner}
+                      getMyPunks={this.getMyPunks}
+                    />
+                  )}
+                />
+                <Route
+                  path="/nftrade"
+                  component={() => {
+                    window.location.href =
+                      "https://opensea.io/collection/metagascar-eth";
+                    return null;
+                  }}
+                />
+              </HashRouter>
+            </>
+          )}
+        </div>
+      </wrapper>
     );
   }
 }
-
+const wrapper = styled.div`
+  display: inline-block;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
+`;
 export default App;

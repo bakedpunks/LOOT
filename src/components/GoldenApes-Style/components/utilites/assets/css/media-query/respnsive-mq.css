@@ -1,0 +1,290 @@
+/* RESPONSIVE MEDIA QUERY */
+/* THIS ALLOWS TO CHANGE THE DISPLAY OF YOUR PAGE BASE ON DISPLAY SIZED */
+/* EXAMPLE ARE FROM PC TO TABLET TO CELLPHONE */
+
+
+
+
+@media (max-width: 1200px) {
+    .home .max-width {
+        margin-left: 8%;
+
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 1070px) {
+        .max-width {
+            padding: 0% 2%;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+    /* .menu-btn i.active:before {
+        content: "\f00d"; } */
+
+
+    @media (max-width: 1050px) {
+
+        .max-width {
+            padding: 0% 6%;
+
+        }
+
+        .menu-btn {
+            display: block;
+            z-index: 999;
+        }
+
+
+        .navbar .menu {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            left: 100%;
+            top: 100%;
+            background: none;
+            text-align: center;
+            padding-right: 100%;
+            transition: all 0.3s ease;
+            line-height: 530%;
+            transform: translateX(80%);
+            transition: transform 1s ease-in;
+
+        }
+
+        .navbar .menu.active {
+            left: 0;
+        }
+
+        .navbar .menu li {
+            display: block;
+        }
+
+        .navbar .menu li a {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 550%;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 180%;
+        }
+
+        .home .home-content a {
+            font-size: 200%;
+            padding: 2% 2%;
+            margin-top: 4%;
+
+        }
+
+        .nav-active {
+            transform: translateX(0%);
+        }
+
+
+    }
+
+
+    @media (max-width: 924px) {
+        .home .home-content .text-1 {
+            font-size: 300%;
+            margin-left: 27.5%;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 540%;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 200%;
+            margin-top: 2%;
+            margin-left: 28%;
+            margin-right: 20%;
+        }
+
+        .home .home-content .text-3 span {
+            font-size: 231.5%;
+            margin-left: -18%;
+            margin-right: -18%;
+            padding-left: -20%;
+        }
+    }
+
+
+
+    @media (max-width: 900px) {
+
+        home .home-content .text-1 {
+            font-size: 300%;
+            margin-left: 27.5%;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 540%;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 180%;
+        }
+
+        .home .home-content .text-3 span {
+            font-size: 180%;
+        }
+
+    }
+
+
+    @media (max-width: 868px) {
+        .home .home-content .text-2 {
+            font-size: 500%;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 180%;
+        }
+    }
+
+
+
+
+
+
+
+    @media (max-width: 787px) {
+        .home .home-content .text-2 {
+            font-size: 475%;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 180%;
+        }
+
+        @media (max-width: 752px) {
+            .max-width {
+                padding: 0 10%;
+            }
+
+            .home .home-content .text-2 {
+                font-size: 410%
+            }
+
+            .home .home-content .text-3 {
+                font-size: 160%;
+            }
+
+            .home .home-content a {
+                font-size: 160%;
+                padding: 2% 6%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        @media (max-width: 729px) {
+            .max-width {
+                padding: 0 1%;
+            }
+
+            .home .home-content .text-1 {
+                font-size: 150%
+            }
+
+            .home .home-content .text-2 {
+                font-size: 360%
+            }
+
+            .home .home-content .text-3 {
+                font-size: 140%;
+            }
+
+            .home .home-content a {
+                font-size: 140%;
+                padding: 2% 6%;
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: 590px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .max-width {
+                padding: 0 8%;
+                margin: -1%;
+            }
+
+            .home .home-content .text-1 {
+                font-size: 200%;
+                margin-top: 10%;
+                margin-left: 17%;
+            }
+
+            .home .home-content .text-2 {
+                font-size: 330%;
+                padding-top: 6%;
+                padding-bottom: 5%;
+                margin-left: -9.5%;
+            }
+
+            .home .home-content .text-3 {
+                font-size: 190%;
+                padding-top: 0;
+                margin-top: 0;
+                margin-left: 3%;
+            }
+
+            .home .home-content .text-3 span {
+                font-size: 150%;
+                margin-left: 30%;
+                margin-right: 0%;
+            }
+
+            .home .home-content a {
+                font-size: 140%;
+                padding: 2% 6%;
+            }
+
+        }
+    }
+}
