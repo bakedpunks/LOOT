@@ -27156,7 +27156,7 @@ module.exports = {
     "drivewayType": "Oyster Shells Driveway",
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 16643 Square Feet",
-    "homeurl": "Undeveloped"
+    "homeurl": "https://hub.link/DNjE5DG"
   },
   "2470": {
     "name": "Metagascar 2470",
