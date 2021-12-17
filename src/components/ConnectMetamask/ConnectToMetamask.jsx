@@ -63,7 +63,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         &nbsp;
         <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Whitepaper</a>
         <hr className="my-4" />
-        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://view.metagascar.com/export/embed.html?bbox=-116.15503205917777%2C35.19712527898393%2C-116.12615003250541%2C35.20804863002454&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://view.metagascar.com/#map=16/35.2026/-116.1406">View Larger Map</a></small>
+        <a href="https://view.metagascar.com/#map=16/35.2026/-116.1401" ><img class="img-fluid" src="/images/mapview.osm.png" /></a>
         <hr className="my-4" />
 
         Metagascar <a href="https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c" >$GAS </a> Token on Binance Smart Chain available at <a href="https://pancakeswap.finance/" >Pancake Swap Exchange</a> &nbsp;
