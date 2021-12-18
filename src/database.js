@@ -921,7 +921,7 @@ module.exports = {
     "drivewayType": "Basic Driveway",
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 18121 Square Feet",
-    "homeurl": "Undeveloped"
+    "homeurl": "https://hub.link/WVkuBV5"
   },
   "85": {
     "name": "Metagascar 85",
