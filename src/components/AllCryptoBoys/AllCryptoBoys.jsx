@@ -168,9 +168,9 @@ class AllCryptoBoys extends Component {
             <div class="col-sm m-0 p-0 bottom bg-primary text-center" ><img width="100%" src="/images/metaLand.link.center.middle.middle.png"  /></div>
       </div>
       </div>
-           
+
       <hr className="my-4" />
-      <a href="https://view.metagascar.com/#map=16/35.2026/-116.1401&layers=D" ><img class="img-fluid" src="/images/mapview.osm.png" /></a>
+      <a href="https://map.metagascar.com/#map=16/35.2026/-116.1401" ><img class="img-fluid" src="/images/mapview.osm.png" /></a>
       <hr className="my-4" />
 
         <hr className="my-4" />
