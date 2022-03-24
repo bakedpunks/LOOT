@@ -58,8 +58,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         >
           Connect Wallet
         </button>
-        <hr className="my-4" />
-        Metagascar
 
       </div>
 
