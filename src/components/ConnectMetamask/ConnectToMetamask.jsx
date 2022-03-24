@@ -60,21 +60,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         </button>
         <hr className="my-4" />
         Metagascar
-        &nbsp;
-        <a href="https://docs.google.com/document/d/1pQIoe_Saw1J1oodGq48i6YIHLbvEv8a_yJnKjw523Vc/edit?usp=sharing" >Whitepaper</a>
-        <hr className="my-4" />
-        <a href="https://map.metagascar.com/#map=16/35.2026/-116.1401" ><img class="img-fluid" src="/images/mapview.osm.png" /></a>
-        <hr className="my-4" />
 
-        Metagascar <a href="https://bscscan.com/token/0x9183278e4c99bf2178c9ec0c06897d06e579f82c" >$GAS </a> Token on Binance Smart Chain available at <a href="https://pancakeswap.finance/" >Pancake Swap Exchange</a> &nbsp;
-        <a href="https://charts.bogged.finance/0x9183278e4c99bf2178c9Ec0C06897D06e579F82C" >Charts</a> &nbsp;
-        BEP-20 : 0x9183278e4c99bf2178c9ec0c06897d06e579f82c
-        <hr className="my-4" />
-        Social Media
-        <hr className="my-1" />
-         <a href="https://twitter.com/metagascarnft" >Metagascar Twitter</a>&nbsp;|&nbsp;
-         <a href="https://twitter.com/metagascar_" >President Twitter</a>&nbsp;|&nbsp;
-         <a href="https://discord.gg/p6y2v8xQp3" >Metagascar Discord</a>&nbsp;|&nbsp;
       </div>
 
       <div className="container">

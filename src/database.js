@@ -12955,7 +12955,7 @@ module.exports = {
     "drivewayType": "Valet Style Driveway",
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 90210 Square Feet",
-    "homeurl": "Undeveloped"
+    "homeurl": "https://hub.link/29cfk4a"
   },
   "1179": {
     "name": "Metagascar 1179",
