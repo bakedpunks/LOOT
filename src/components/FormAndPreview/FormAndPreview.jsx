@@ -270,7 +270,7 @@ class FormAndPreview extends Component {
       this.Load_New_URLOpensea(e)
     }
   >
-    Opensea Owner
+    Opensea
   </button>
 </p>
 <p >
@@ -284,7 +284,7 @@ class FormAndPreview extends Component {
       this.Load_New_URLOSM(e)
     }
   >
-    Map View
+    Map
   </button>
 </p>
 
