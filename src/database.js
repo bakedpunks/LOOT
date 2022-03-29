@@ -69,7 +69,7 @@ module.exports = {
     "drivewayStyle": "Crushed Stone Driveway",
     "lotsize": "Lot Size 21823 Square Feet",
     "homeurl": "https://hub.link/SDHWvi6",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/27"
   },
   "7": {
     "name": "Metagascar 7",
@@ -81,7 +81,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 19555 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/28"
   },
   "8": {
     "name": "Metagascar 8",
@@ -93,7 +93,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 19555 Square Feet",
     "homeurl": "https://hub.link/zgyBj2N",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/29"
   },
   "9": {
     "name": "Metagascar 9",
@@ -105,7 +105,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 19217 Square Feet",
     "homeurl": "https://hub.link/LvN9NGG",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/30"
   },
   "10": {
     "name": "Metagascar 10",
@@ -117,7 +117,7 @@ module.exports = {
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 16072 Square Feet",
     "homeurl": "https://hub.link/dKypSsh",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/31"
   },
   "11": {
     "name": "Metagascar 11",
@@ -129,7 +129,7 @@ module.exports = {
     "drivewayStyle": "Asphalt Driveway",
     "lotsize": "Lot Size 22165 Square Feet",
     "homeurl": "https://hub.link/HFBseQy",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/41"
   },
   "12": {
     "name": "Metagascar 12",
@@ -141,7 +141,7 @@ module.exports = {
     "drivewayStyle": "Asphalt Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/40"
   },
   "13": {
     "name": "Metagascar 13",
@@ -153,7 +153,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 16072 Square Feet",
     "homeurl": "https://hub.link/z3PtGAH",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/39"
   },
   "14": {
     "name": "Metagascar 14",
@@ -165,7 +165,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 15899 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/38"
   },
   "15": {
     "name": "Metagascar 15",
@@ -177,7 +177,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 90210 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/37"
   },
   "16": {
     "name": "Metagascar 16",
@@ -189,7 +189,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 16072 Square Feet",
     "homeurl": "https://hub.link/seTcJdt",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/36"
   },
   "17": {
     "name": "Metagascar 17",
@@ -201,7 +201,7 @@ module.exports = {
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 15899 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/35"
   },
   "18": {
     "name": "Metagascar 18",
@@ -213,7 +213,7 @@ module.exports = {
     "drivewayStyle": "Basalt Driveway",
     "lotsize": "Lot Size 16005 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/34"
   },
   "19": {
     "name": "Metagascar 19",
@@ -225,7 +225,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 16072 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/33"
   },
   "20": {
     "name": "Metagascar 20",
@@ -237,7 +237,7 @@ module.exports = {
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 19217 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/32"
   },
   "21": {
     "name": "Metagascar 21",
@@ -249,7 +249,7 @@ module.exports = {
     "drivewayStyle": "Concrete Driveway",
     "lotsize": "Lot Size 15899 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/51"
   },
   "22": {
     "name": "Metagascar 22",
@@ -261,7 +261,7 @@ module.exports = {
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/50"
   },
   "23": {
     "name": "Metagascar 23",
@@ -273,7 +273,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 90210 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/49"
   },
   "24": {
     "name": "Metagascar 24",
@@ -285,7 +285,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 18172 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/48"
   },
   "25": {
     "name": "Metagascar 25",
@@ -297,7 +297,7 @@ module.exports = {
     "drivewayStyle": "Crushed Stone Driveway",
     "lotsize": "Lot Size 16005 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/47"
   },
   "26": {
     "name": "Metagascar 26",
@@ -309,7 +309,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 17707 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/46"
   },
   "27": {
     "name": "Metagascar 27",
@@ -321,7 +321,7 @@ module.exports = {
     "drivewayStyle": "Asphalt Driveway",
     "lotsize": "Lot Size 16072 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/45"
   },
   "28": {
     "name": "Metagascar 28",
@@ -333,7 +333,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 17707 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/44"
   },
   "29": {
     "name": "Metagascar 29",
@@ -345,7 +345,7 @@ module.exports = {
     "drivewayStyle": "Basalt Driveway",
     "lotsize": "Lot Size 21300 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/43"
   },
   "30": {
     "name": "Metagascar 30",
@@ -357,7 +357,7 @@ module.exports = {
     "drivewayStyle": "Basalt Driveway",
     "lotsize": "Lot Size 22284 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/42"
   },
   "31": {
     "name": "Metagascar 31",
@@ -369,7 +369,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/52"
   },
   "32": {
     "name": "Metagascar 32",
@@ -381,7 +381,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 19217 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/53"
   },
   "33": {
     "name": "Metagascar 33",
@@ -393,7 +393,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 20857 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/54"
   },
   "34": {
     "name": "Metagascar 34",
@@ -405,7 +405,7 @@ module.exports = {
     "drivewayStyle": "Crushed Stone Driveway",
     "lotsize": "Lot Size 22165 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/55"
   },
   "35": {
     "name": "Metagascar 35",
@@ -417,7 +417,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 20857 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/56"
   },
   "36": {
     "name": "Metagascar 36",
@@ -429,7 +429,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 90210 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/57"
   },
   "37": {
     "name": "Metagascar 37",
@@ -441,7 +441,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 21823 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/58"
   },
   "38": {
     "name": "Metagascar 38",
@@ -453,7 +453,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 18060 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/59"
   },
   "39": {
     "name": "Metagascar 39",
@@ -465,7 +465,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 22165 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/60"
   },
   "40": {
     "name": "Metagascar 40",
@@ -477,7 +477,7 @@ module.exports = {
     "drivewayStyle": "Concrete Driveway",
     "lotsize": "Lot Size 21823 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/61"
   },
   "41": {
     "name": "Metagascar 41",
@@ -489,7 +489,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 17707 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/71"
   },
   "42": {
     "name": "Metagascar 42",
@@ -501,7 +501,7 @@ module.exports = {
     "drivewayStyle": "Concrete Driveway",
     "lotsize": "Lot Size 21231 Square Feet",
     "homeurl": "https://hub.link/wh5xB5w",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/70"
   },
   "43": {
     "name": "Metagascar 43",
@@ -513,7 +513,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 19217 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/69"
   },
   "44": {
     "name": "Metagascar 44",
@@ -525,7 +525,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 20857 Square Feet",
     "homeurl": "https://hub.link/GLAvf9N",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/68"
   },
   "45": {
     "name": "Metagascar 45",
@@ -537,7 +537,7 @@ module.exports = {
     "drivewayStyle": "Asphalt Driveway",
     "lotsize": "Lot Size 17707 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/67"
   },
   "46": {
     "name": "Metagascar 46",
@@ -549,7 +549,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 20205 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/66"
   },
   "47": {
     "name": "Metagascar 47",
@@ -561,7 +561,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 22165 Square Feet",
     "homeurl": "https://hub.link/wqK35jU",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/65"
   },
   "48": {
     "name": "Metagascar 48",
@@ -573,7 +573,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 21300 Square Feet",
     "homeurl": "https://hub.link/ynFaMWQ",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/64"
   },
   "49": {
     "name": "Metagascar 49",
@@ -585,7 +585,7 @@ module.exports = {
     "drivewayStyle": "Gravel Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/63"
   },
   "50": {
     "name": "Metagascar 50",
@@ -597,7 +597,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 18121 Square Feet",
     "homeurl": "https://hub.link/MhgrGU8",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/62"
   },
   "51": {
     "name": "Metagascar 51",
@@ -609,7 +609,7 @@ module.exports = {
     "drivewayStyle": "Concrete Driveway",
     "lotsize": "Lot Size 16005 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/72"
   },
   "52": {
     "name": "Metagascar 52",
@@ -621,7 +621,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/73"
   },
   "53": {
     "name": "Metagascar 53",
@@ -633,7 +633,7 @@ module.exports = {
     "drivewayStyle": "Crushed Stone Driveway",
     "lotsize": "Lot Size 19555 Square Feet",
     "homeurl": "https://hub.link/b4PNcYJ",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/74"
   },
   "54": {
     "name": "Metagascar 54",
@@ -645,7 +645,7 @@ module.exports = {
     "drivewayStyle": "Tar and Chip Driveway",
     "lotsize": "Lot Size 16643 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/75"
   },
   "55": {
     "name": "Metagascar 55",
@@ -657,7 +657,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 22284 Square Feet",
     "homeurl": "https://hub.link/UoYdvAF",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/76"
   },
   "56": {
     "name": "Metagascar 56",
@@ -669,7 +669,7 @@ module.exports = {
     "drivewayStyle": "Basalt Driveway",
     "lotsize": "Lot Size 15899 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/77"
   },
   "57": {
     "name": "Metagascar 57",
@@ -681,7 +681,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 20205 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/78"
   },
   "58": {
     "name": "Metagascar 58",
@@ -693,7 +693,7 @@ module.exports = {
     "drivewayStyle": "Cobblestone Driveway",
     "lotsize": "Lot Size 19217 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/79"
   },
   "59": {
     "name": "Metagascar 59",
@@ -705,7 +705,7 @@ module.exports = {
     "drivewayStyle": "Paver Driveway",
     "lotsize": "Lot Size 16643 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/80"
   },
   "60": {
     "name": "Metagascar 60",
@@ -717,7 +717,7 @@ module.exports = {
     "drivewayStyle": "Brick Driveway",
     "lotsize": "Lot Size 15617 Square Feet",
     "homeurl": "Undeveloped",
-    "mapurl": "Undeveloped"
+    "mapurl": "https://map.metagascar.com/way/81"
   },
   "61": {
     "name": "Metagascar 61",
