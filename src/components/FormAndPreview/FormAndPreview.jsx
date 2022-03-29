@@ -45,7 +45,15 @@ class FormAndPreview extends Component {
       if (newWindow) newWindow.opener = null
     }
   }
-
+  Load_New_URLOSM= async (e)=>{
+    var newUrl  = e.target.value;
+    if(newUrl == "Unassigned"){
+      window.alert('Home Owner Unassigned');
+    }else{
+      const newWindow = window.open(newUrl, '_blank', 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
+    }
+  }
   Load_New_Image= async (e)=>{
       this.state.punkid =e.target.value;
       if (e.target.value ==undefined) {
@@ -259,7 +267,7 @@ class FormAndPreview extends Component {
     className="btn mt-4 btn-block btn-outline-primary"
     value={this.props.punkOwner}
     onClick={(e) =>
-      this.Load_New_URLOpensea(e)
+      this.Load_New_URLOSM(e)
     }
   >
     Opensea Owner
