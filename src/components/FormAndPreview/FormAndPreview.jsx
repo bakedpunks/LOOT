@@ -267,7 +267,7 @@ class FormAndPreview extends Component {
     className="btn mt-4 btn-block btn-outline-primary"
     value={this.props.punkOwner}
     onClick={(e) =>
-      this.Load_New_URLOSM(e)
+      this.Load_New_URLOpensea(e)
     }
   >
     Opensea Owner
@@ -281,7 +281,7 @@ class FormAndPreview extends Component {
     className="btn mt-4 btn-block btn-outline-primary"
     value={this.props.mapUrl}
     onClick={(e) =>
-      this.Load_New_URLOpensea(e)
+      this.Load_New_URLOSM(e)
     }
   >
     Map View
