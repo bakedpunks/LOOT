@@ -58,6 +58,7 @@ class App extends Component {
       lotSize: "",
       homeSize: "",
       homeUrl: "",
+      mapUrl: "",
       homeAddress: "",
     };
   }
@@ -272,6 +273,7 @@ punksOfferedForSale = async (punkIndex) => {
 
     const home = db[punkIndex]
     this.setState({ homeUrl: home.homeurl});
+    this.setState({ mapUrl: home.mapurl});
     this.setState({ homeAddress: home.address});
 
     let punkOwner = await this.state.cryptoBoysContract.methods
@@ -421,6 +423,7 @@ getPunkOwner = async (punkIndex) => {
                     homeSize={this.state.homeSize}
                     homeUrl={this.state.homeUrl}
                     homeAddress={this.state.homeAddress}
+                    mapUrl={this.state.mapUrl}
                     />
                   )}
               />

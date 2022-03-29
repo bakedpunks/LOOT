@@ -229,6 +229,7 @@ class FormAndPreview extends Component {
 <h5 class="card-title">{this.state.homeStyle}</h5>
 <p >Metaverse Link {this.props.homeUrl}</p>
 <p >Home Owner {this.props.punkOwner}</p>
+<p >Map Url {this.props.mapUrl}</p>
 <hr className="my-4" />
 <h5 class="card-title">Metagascar $GAS Rewards</h5>
 <hr className="my-4" />
@@ -262,6 +263,20 @@ class FormAndPreview extends Component {
     }
   >
     Opensea Owner
+  </button>
+</p>
+<p >
+  <button
+    id="mintBtn22"
+    style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
+    type="submit"
+    className="btn mt-4 btn-block btn-outline-primary"
+    value={this.props.mapUrl}
+    onClick={(e) =>
+      this.Load_New_URLOpensea(e)
+    }
+  >
+    Map View
   </button>
 </p>
 
