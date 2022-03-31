@@ -288,9 +288,6 @@ class FormAndPreview extends Component {
   </button>
 </p>
 
-                    </div>
-        </div>
-        </div>
 
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
@@ -309,6 +306,10 @@ class FormAndPreview extends Component {
             </div>
           </div>
         </form>
+                    </div>
+        </div>
+        </div>
+
           <hr className="my-4" />
               Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
           <hr className="my-4" />
