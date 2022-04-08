@@ -39,7 +39,6 @@ for (let i = 1; i < 4; i++) {
         itemsonchainmma.push(<div class="card col-md-4" ><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" ><img class="img-fluid" src={newImageUrl} /></a><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
 }
 
-const [isHovered, setIsHovered] = useState(false)
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
