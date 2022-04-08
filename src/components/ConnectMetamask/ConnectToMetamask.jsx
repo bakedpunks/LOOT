@@ -40,6 +40,7 @@ for (let i = 1; i < 4; i++) {
 }
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
+  const [isHovered, setIsHovered] = useState(false)
   return (
     <div>
       <div className="jumbotron">
@@ -70,10 +71,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
       </div>
       <hr className="my-4" />
-      <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
-        <Box />
-      </Interactive>
     </div>
+    <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+      <Box />
+    </Interactive>
   );
 };
 
