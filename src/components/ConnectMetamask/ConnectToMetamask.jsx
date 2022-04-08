@@ -41,7 +41,7 @@ for (let i = 1; i < 4; i++) {
 
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
-const [isHovered, setIsHovered] = useState(false)
+const [isHovered, setIsHovered] = useState(false);
   return (
     <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
       <Box />
