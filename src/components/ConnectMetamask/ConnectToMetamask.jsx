@@ -71,10 +71,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
       </div>
       <hr className="my-4" />
+      <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+        <Box />
+      </Interactive>
     </div>
-    <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
-      <Box />
-    </Interactive>
   );
 };
 
