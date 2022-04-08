@@ -2,7 +2,7 @@ import React from "react";
 import metamaskIcon from "./metamask.svg";
 
 import Web3 from 'web3';
-import { VRCanvas } from '@react-three/xr'
+import { VRCanvas, DefaultXRControllers } from '@react-three/xr'
 
 const items = []
 const itemsonchain = []
@@ -38,8 +38,10 @@ for (let i = 1; i < 4; i++) {
         itemsonchainmma.push(<div class="card col-md-4" ><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" ><img class="img-fluid" src={newImageUrl} /></a><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
 }
 
+const [isHovered, setIsHovered] = useState(false)
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
+
   return (
     <div>
       <div className="jumbotron">
@@ -72,7 +74,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
       <VRCanvas>
            {/* All your regular react-three-fiber elements go here */}
+
+  <DefaultXRControllers />
          </VRCanvas>
+         <Box />
     </div>
   );
 };
