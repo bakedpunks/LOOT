@@ -69,8 +69,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
         <hr className="my-4" />
       </div>
+      <hr className="my-4" />
+      <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+        <Box />
+      </Interactive>
     </div>
-
   );
 };
 
