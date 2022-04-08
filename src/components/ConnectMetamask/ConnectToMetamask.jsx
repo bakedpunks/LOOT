@@ -2,7 +2,6 @@ import React from "react";
 import metamaskIcon from "./metamask.svg";
 
 import Web3 from 'web3';
-import { VRCanvas } from '@react-three/xr'
 
 const items = []
 const itemsonchain = []
@@ -70,10 +69,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
       </div>
       <hr className="my-4" />
-      <VRCanvas>
-           {/* All your regular react-three-fiber elements go here */}
-
-         </VRCanvas>
     </div>
   );
 };
