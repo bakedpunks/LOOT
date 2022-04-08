@@ -73,7 +73,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <VRCanvas>
            {/* All your regular react-three-fiber elements go here */}
 
-  <DefaultXRControllers />
          </VRCanvas>
     </div>
   );
