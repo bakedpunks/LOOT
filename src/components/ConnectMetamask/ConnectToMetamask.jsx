@@ -70,7 +70,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <hr className="my-4" />
       </div>
       <hr className="my-4" />
-
+      <VRCanvas>
+           {/* All your regular react-three-fiber elements go here */}
+         </VRCanvas>
     </div>
   );
 };
