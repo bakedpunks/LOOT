@@ -76,8 +76,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
            {/* All your regular react-three-fiber elements go here */}
 
            <DefaultXRControllers />
+           <Interactive onSelect={() => console.log('clicked!')} onHover={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
+  <Box />
+</Interactive>
          </VRCanvas>
-         <Box />
     </div>
   );
 };
