@@ -6,10 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
-import 'aframe';
-import 'aframe-particle-system-component';
-import {Entity, Scene} from 'aframe-react';
-import ReactDOM from 'react-dom';
+
 
 import db  from "../../database";
 
