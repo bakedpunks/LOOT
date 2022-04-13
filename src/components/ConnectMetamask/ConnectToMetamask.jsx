@@ -68,7 +68,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
       <a-scene class="aframebox" embedded>
           <a-assets>
-            <a-asset-item id="earth" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvillahouse.v8.glb"></a-asset-item>
+            <a-asset-item id="earth" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/skatepark.v3.glb"></a-asset-item>
           </a-assets>
 
           <a-box color="red" depth="2" height="4" width="0.5" position="0 0 -2"></a-box>
