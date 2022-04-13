@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "Crypto Punks Marketplace",
   "author": "devpavan04",
-  "homepage": "https://devpavan04.github.io/cryptoboys-nft-marketplace",
+  "homepage": "https://devpavan04.github.io/cryptoboys-nft-marketplace",,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schteppe/cannon.js.git"
+  },
   "dependencies": {
     "react": "16.3.0",
     "react-dom": "16.3.0",
@@ -61,9 +65,5 @@
   },
   "engines": {
     "node": "12.22.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/schteppe/cannon.js.git"
   }
 }
