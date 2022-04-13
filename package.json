@@ -6,7 +6,7 @@
   "homepage": "https://devpavan04.github.io/cryptoboys-nft-marketplace",
   "repository": {
     "type": "git",
-    "url": "https://github.com/donmccurdy/cannon.js.git"
+    "url": "git+https://github.com/aframevr/aframe-react.git"
   },
   "dependencies": {
     "react": "16.3.0",
