@@ -6,6 +6,22 @@ import Web3 from 'web3';
 import { Entity, Scene } from "aframe-react";
 import "./styles.css";
 import "aframe";
+
+import { Engine, Scene, HostRegistrationStore } from "react-babylonjs";
+import {
+  Vector3,
+  Color3,
+  Mesh,
+  Nullable,
+  Scene as BabylonScene
+} from "@babylonjs/core";
+
+import { GridMaterial } from "@babylonjs/materials";
+import { FiberGridMaterial } from "./GridMaterialRegister";
+
+import "./styles.css";
+
+
 const items = []
 const itemsonchain = []
 const itemschar = []
@@ -71,7 +87,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             <a-asset-item id="astronaut" src="https://cdn.glitch.com/ac5eecac-40b2-4897-8f67-28c497a19b47%2FAstronaut.glb"></a-asset-item>
           </a-assets>
           <a-entity gltf-model="#astronaut" position="0 0 -2"></a-entity>
-
+s
           <a-box color="red" depth="2" height="4" width="0.5" position="0 0 -2"></a-box>
 
           <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
