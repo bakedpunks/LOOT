@@ -66,19 +66,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
       </div>
-
-      <div className="container">
-        <hr className="my-4" />
-            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
-        <hr className="my-4" />
-      </div>
       <hr className="my-4" />
-
-      Don McCurdy, Thank you for pointing me in the right direction. I was able to finally change the scene window size.
-      Here is the code to accomplish this.
-
-      HTML:
-
       <a-scene class="aframebox" embedded>
 
           <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
@@ -90,7 +78,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           <a-entity position="0 0 3.8">
               <a-camera></a-camera>
           </a-entity>
-      </a-scene>      
+      </a-scene>
+
+      <div className="container">
+        <hr className="my-4" />
+            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
+        <hr className="my-4" />
+      </div>
     </div>
   );
 };
