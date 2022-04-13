@@ -5,8 +5,8 @@
   "author": "devpavan04",
   "homepage": "https://devpavan04.github.io/cryptoboys-nft-marketplace",
   "dependencies": {
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "16.3.0",
+    "react-dom": "16.3.0",
     "react-scripts": "1.1.0",
     "aframe": "0.7.1",
     "aframe-react": "4.3.0",
@@ -61,5 +61,9 @@
   },
   "engines": {
     "node": "12.22.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schteppe/cannon.js.git"
   }
 }
