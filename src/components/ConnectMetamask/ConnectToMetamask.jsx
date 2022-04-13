@@ -7,21 +7,6 @@ import Web3 from 'web3';
 import "./styles.css";
 import "aframe";
 
-import { Engine, Scene, HostRegistrationStore } from "react-babylonjs";
-import {
-  Vector3,
-  Color3,
-  Mesh,
-  Nullable,
-  Scene as BabylonScene
-} from "@babylonjs/core";
-
-import { GridMaterial } from "@babylonjs/materials";
-import { FiberGridMaterial } from "./GridMaterialRegister";
-
-import "./styles.css";
-
-
 const items = []
 const itemsonchain = []
 const itemschar = []
@@ -82,6 +67,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       </div>
       <hr className="my-4" />
+
 
       <div className="container">
         <hr className="my-4" />
