@@ -80,20 +80,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded
-        environment={{
-          preset: 'starry',
-          seed: 2,
-          lightPosition: { x: 0.0, y: 0.03, z: -0.5 },
-          fog: 0.8,
-          ground: 'canyon',
-          groundYScale: 6.31,
-          groundTexture: 'walkernoise',
-          groundColor: '#8a7f8a',
-          grid: 'none'
-        }}
-        >
+      <a-scene class="aframebox" embedded>
 
+              <Environment preset="starry" />
               {/*<Snow />*/}
          <AutoDetectControllers />
 
@@ -112,7 +101,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               </a-camera>
           </a-entity>
       </a-scene>
-    
+
       <div className="container">
         <hr className="my-4" />
             Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
