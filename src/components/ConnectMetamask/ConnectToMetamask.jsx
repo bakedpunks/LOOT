@@ -41,7 +41,13 @@ for (let i = 1; i < 4; i++) {
         var newImageUrl = '/images/mmaloot' + s + '.png';
         itemsonchainmma.push(<div class="card col-md-4" ><a href="https://app.nftrade.com/assets/bsc/0x48bf76b0dcc1326ae962b9301c40ee1ea399e186" ><img class="img-fluid" src={newImageUrl} /></a><div class="card-body"> <h5 class="card-title">NO {index} </h5></div></div>)
 }
+function mouseEnter(control) {
+  console.log("mouseEnter: ", control);
+}
 
+function mouseLeave(control) {
+  console.log("mouseLeave: ", control);
+}
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
@@ -70,7 +76,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
 
       <a-scene class="aframebox" embedded>
-          <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
+          <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"
+          events={{
+            click: () => alert("Box clicked"),
+            mouseenter: () => mouseEnter(this),
+            mouseleave: () => mouseLeave(this)
+          }}
+          ></a-box>
           <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
           <a-entity id="ocean" ocean="density: 20; width: 50; depth: 50; speed: 4"
                     material="color: #9CE3F9; opacity: 0.75; metalness: 0; roughness: 1"
