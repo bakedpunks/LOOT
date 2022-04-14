@@ -86,7 +86,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               {/*<Snow />*/}
          <AutoDetectControllers />
          <a-box color="green"
-                event-set__click="material.color: red; scale: 2 2 2"
+                event-set__click={connectToMetamask}
                 event-set__mouseenter="material.color: blue; scale: 1 1 1">
 
          </a-box>
