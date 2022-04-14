@@ -87,7 +87,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <AutoDetectControllers />
          <a-box color="green"
                 event-set__click="material.color: red; scale: 2 2 2"
-                event-set__mouseenter="material.color: blue"></a-box>
+                event-set__mouseenter="material.color: blue; scale: 1 1 1">
+
+         </a-box>
 
         <InteractiveBox position="0.5 1.5 -5" />
 
