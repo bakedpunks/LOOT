@@ -69,7 +69,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene cursor="rayOrigin: mouse" background="color: #FAFAFA" embedded >
+      <a-scene embedded >
         <a-assets>
           <a-asset-item
             id="model"
