@@ -89,18 +89,22 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
                 event-set__click="material.color: red; scale: 2 2 2"
                 event-set__mouseenter="material.color: blue"></a-box>
 
-          <a-box
-            primitive="a-box"
-            color="red"
-            position="0 0.5 -5"
-            events={{
-              click: () => alert("Box clicked"),
-              mouseenter: () => mouseEnter(this),
-              mouseleave: () => mouseLeave(this)
-            }}
-          />
+        <InteractiveBox position="0.5 1.5 -5" />
+
+        <Entity
+          primitive="a-box"
+          color="red"
+          position="0 0.5 -5"
+          events={{
+            click: () => alert("Box clicked"),
+            mouseenter: () => mouseEnter(this),
+            mouseleave: () => mouseLeave(this)
+          }}
+        />
           <a-entity position="0 0 3.8">
-              <a-camera></a-camera>
+              <a-camera>
+                <a-cursor />
+              </a-camera>
           </a-entity>
       </a-scene>
       <div className="container">
