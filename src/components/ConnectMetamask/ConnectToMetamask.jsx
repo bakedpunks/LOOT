@@ -88,8 +88,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
-         // renders
-         <a-entity>
+         <Entity primitive='a-box' color="red" position="0 0 -5"/>
+         <Entity primitive='a-sphere' color="green" position="-2 0 -3"/>
+         <Entity primitive='a-cylinder' color="blue" position="2 0 -3"/>
 
         <InteractiveBox position="1 2 -1" />
 
