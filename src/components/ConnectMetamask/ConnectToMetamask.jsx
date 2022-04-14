@@ -83,12 +83,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <a-scene class="aframebox" embedded>
 
               <Environment preset="tron" />
-              {/*<Snow />*/}      
+              {/*<Snow />*/}
          <AutoDetectControllers />
 
-          <InteractiveBox position="0.5 1.5 -5" />
 
-          <Entity
+          <a-box
             primitive="a-box"
             color="red"
             position="0 0.5 -5"
@@ -98,7 +97,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               mouseleave: () => mouseLeave(this)
             }}
           />
-          <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
           <a-entity position="0 0 3.8">
               <a-camera></a-camera>
           </a-entity>
