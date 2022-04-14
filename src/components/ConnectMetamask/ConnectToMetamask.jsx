@@ -85,6 +85,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               <Environment preset="forest" />
               {/*<Snow />*/}
          <AutoDetectControllers />
+         // aframe-react's <Entity/> React Component
+         <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
+
+         // renders
+         <a-entity>
 
         <InteractiveBox position="1 2 -1" />
 
