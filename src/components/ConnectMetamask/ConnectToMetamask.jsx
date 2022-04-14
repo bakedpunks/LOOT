@@ -86,13 +86,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               {/*<Snow />*/}
          <AutoDetectControllers />
 
-        <InteractiveBox position="0.5 1.5 -5" />
+        <InteractiveBox position="1 2 -1" />
 
         <Entity
           primitive="a-box"
           color="red"
           position="0 0.5 -5"
-          event-set__click="{connectToMetamask}"
+          event-set__click={connectToMetamask}
           event-set__mouseenter="material.color: blue"
         />
           <a-entity position="0 0 3.8">
