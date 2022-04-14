@@ -8,6 +8,8 @@ import "./styles.css";
 import "aframe";
 import {Entity, Scene} from 'aframe-react';
 
+import InteractiveBox from "./InteractiveBox";
+
 const items = []
 const itemsonchain = []
 const itemschar = []
