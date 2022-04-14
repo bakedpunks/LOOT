@@ -92,11 +92,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           primitive="a-box"
           color="red"
           position="0 0.5 -5"
-          events={{
-            click: () => connectToMetamask(),
-            mouseenter: () => mouseEnter(this),
-            mouseleave: () => mouseLeave(this)
-          }}
+          event-set__click={ connectToMetamask }
         />
           <a-entity position="0 0 3.8">
               <a-camera>
