@@ -8,6 +8,7 @@ import "./styles.css";
 import "aframe";
 import {Entity, Scene} from 'aframe-react';
 
+import Environment from "./Environment";
 import InteractiveBox from "./InteractiveBox";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import AutoDetectControllers from "./AutoDetectControllers";
@@ -80,6 +81,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
 
       <a-scene class="aframebox" embedded>
+
+              <Environment preset="tron" />
+              {/*<Snow />*/}      
          <AutoDetectControllers />
 
           <InteractiveBox position="0.5 1.5 -5" />
