@@ -72,7 +72,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <a-scene class="aframebox" embedded>
           <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
           <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-          <a-sky color="#ECECEC"></a-sky>
+          <a-entity id="ocean" ocean="density: 20; width: 50; depth: 50; speed: 4"
+                    material="color: #9CE3F9; opacity: 0.75; metalness: 0; roughness: 1"
+                    rotation="-90 0 0"></a-entity>
+
+          <a-entity id="sky" geometry="primitive: sphere; radius: 5000"
+                    material="shader: gradient; topColor: 235 235 245; bottomColor: 185 185 210"
+                    scale="-1 1 1"></a-entity>
           <a-entity position="0 0 3.8">
               <a-camera></a-camera>
           </a-entity>
