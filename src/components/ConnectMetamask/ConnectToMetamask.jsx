@@ -79,6 +79,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <a-scene class="aframebox" embedded>
 
+          <InteractiveBox position="0.5 1.5 -5" />
           <Entity
             primitive="a-box"
             color="red"
