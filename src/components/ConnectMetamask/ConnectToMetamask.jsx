@@ -85,11 +85,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               <Environment preset="tron" />
               {/*<Snow />*/}
          <AutoDetectControllers />
-         <a-box color="green"
-                event-set__click={connectToMetamask}
-                event-set__mouseenter={connectToMetamask}>
-
-         </a-box>
 
         <InteractiveBox position="0.5 1.5 -5" />
 
@@ -98,7 +93,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           color="red"
           position="0 0.5 -5"
           events={{
-            click: () => alert("Box clicked"),
+            click: () => connectToMetamask(),
             mouseenter: () => mouseEnter(this),
             mouseleave: () => mouseLeave(this)
           }}
