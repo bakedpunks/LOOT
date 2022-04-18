@@ -53,6 +53,12 @@ function mouseEnter(control) {
 function mouseLeave(control) {
   console.log("mouseLeave: ", control);
 }
+events={{
+click: this.handleClick,}}
+
+events={{
+click: connectToMetamask
+}}
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
