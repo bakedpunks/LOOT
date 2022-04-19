@@ -94,7 +94,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
             <template id="avatar-template">
-               <a-sphere></a-sphere>
+               <a-sphere color="#f00"></a-sphere>
             </template>
           </a-assets>
          <AutoDetectControllers />
