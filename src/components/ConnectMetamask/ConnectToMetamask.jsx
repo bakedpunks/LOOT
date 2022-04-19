@@ -97,7 +97,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#my-image" width="3" height="3" position="5 0 0" ></a-image>
          <a-image src="#my-image" width="3" height="3" position="0 0 0" ></a-image>
 
-         <a-entity environment="preset: trone"></a-entity>
+         <a-entity environment="preset: tron"></a-entity>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
