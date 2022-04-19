@@ -76,7 +76,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+      <a-scene class="aframebox" embedded >
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
@@ -108,8 +108,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
 
-         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="20 0 0" scale="0.5 0.5 0.5"></a-obj-model>
-         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="-20 0 0" scale="0.5 0.5 0.5"></a-obj-model>
+         <a-entity position="-1 1 -9" obj-model="obj:#crate-obj"
+                   material="color: green" position="20 0 0" scale="0.1 0.1 0.2">
+         </a-entity>
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
