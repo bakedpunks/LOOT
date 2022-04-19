@@ -110,6 +110,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <a-entity environment="lightPosition: : 1 5 -2;preset: tron; groundColor: #445; grid: 1x1;"></a-entity>
 
+         <a-entity gltf-model="url(https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/9176d098/1.0/Duck/glTF/Duck.gltf)" position="27 0.02 -1.5" ></a-entity>
+         
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
          <Entity primitive='a-box' color="red" position="0 0 -15"
