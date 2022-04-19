@@ -6,6 +6,6 @@ import "aframe-environment-component";
 export default props => {
   var environment = props.environment || {};
   environment.preset = environment.preset || "default";
-  var environmentString = "{preset: forest}";
+  var environmentString = "{preset: tron}";
   return <a-entity environment={environmentString} />;
 };
