@@ -83,13 +83,13 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <a-scene class="aframebox" embedded>
           <a-assets>
-            <img id="my-image" src="brick.wall.png" />
+            <img id="my-image" src="https://view.metagascar.com/images/brick.wall.png" />
           </a-assets>
               <Environment preset="forest" />
               {/*<Snow />*/}
          <AutoDetectControllers />
 
-         <a-image src="#my-image" width="3" height="1.5" position="0 0 -7" ></a-image>
+         <a-image src="#my-image" width="3" height="1.5" position="0 0 1" ></a-image>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
