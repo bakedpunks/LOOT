@@ -89,7 +89,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
-         <a-entity environment="preset: goldmine; sunPosition: 1 5 -2; groundColor: #742"><a-entity>
+         <a-entity environment="preset: goldmine; sunPosition: 1 5 -2; groundColor: #742"></a-entity>
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="21 0.02 -1.5" rotation="90 0 0" ></a-image>
@@ -112,8 +112,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
 
-         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="20 0 0" ></a-obj-model>
-         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="-20 0 0" ></a-obj-model>
+         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="20 0 0" scale="0.5 0.5 0.5"></a-obj-model>
+         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="-20 0 0" scale="0.5 0.5 0.5"></a-obj-model>
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
