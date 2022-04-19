@@ -85,8 +85,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
-            <a-asset-item id="crate-obj" src="url(https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.obj)"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="url(https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.mtl)"></a-asset-item>
+            <a-asset-item id="crate-obj" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.mtl"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
 
@@ -113,9 +113,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-entity environment="lightPosition: : 1 5 -2;preset: tron; groundColor: #445; grid: 1x1;"></a-entity>
 
 
-         <a-obj-model src="crate-obj" mtl="crate-mtl" ></a-obj-model>
+         <a-obj-model src="crate-obj" mtl="crate-mtl" scale="0.05 0.05 0.05" ></a-obj-model>
 
-         <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 -30" scale="0.05 0.05 0.05" material="side: double"></a-entity>
+         <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 -30" scale="0.05 0.05 0.05" ></a-entity>
 
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
