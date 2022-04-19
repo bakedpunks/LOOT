@@ -90,7 +90,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <a-image src="#my-image" width="3" height="1.5" position="0 0 1" ></a-image>
 
-         <a-entity gltf-model="#cityModel" ></a-entity>
+         <a-entity gltf-model="#cityModel" position="0 0 10"  ></a-entity>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
