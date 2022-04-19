@@ -5,7 +5,7 @@ import "aframe-environment-component";
 
 export default props => {
   var environment = props.environment || {};
-  environment.preset = environment.preset || "default";
+  environment.preset = environment.preset || "tron";
   var environmentString = "{preset: tron}";
   return <a-entity environment={environmentString} />;
 };
