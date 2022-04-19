@@ -72,16 +72,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           Connect Wallet
         </button>
         <hr className="my-4" />
-        <img class="img-fluid" src="/images/main.logo.png" />
-        <hr className="my-4" />
-        <img class="img-fluid" src="/images/map.view.png" />
-
-
 
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded >
+      <a-scene class="aframebox" embedded environment>
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
@@ -89,7 +84,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
-         <a-entity environment="skyType: gradient; skyColor: #1d7444; horizonColor: #7ae0e0; groundTexture: checkerboard; groundColor: #523c60; groundColor2: #544264; dressing: cubes; dressingAmount: 15; dressingColor: #7c5c45"></a-entity>
 
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
