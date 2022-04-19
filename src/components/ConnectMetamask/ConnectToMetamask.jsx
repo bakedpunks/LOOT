@@ -88,7 +88,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <AutoDetectControllers />
 
          <a-image src="#my-image" width="3" height="3" position="25 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="25 0 0" rotation="0 90 0" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="30 0 0" rotation="0 90 0" ></a-image>
          <a-image src="#my-image" width="3" height="3" position="25 0 0" rotation="90 0 0" ></a-image>
 
          <a-image src="#my-image" width="3" height="3" position="20 0 0" ></a-image>
@@ -97,7 +97,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#my-image" width="3" height="3" position="5 0 0" ></a-image>
          <a-image src="#my-image" width="3" height="3" position="0 0 0" ></a-image>
 
-         <a-entity environment="preset: forest"></a-entity>
+         <a-entity environment="preset: trone"></a-entity>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
