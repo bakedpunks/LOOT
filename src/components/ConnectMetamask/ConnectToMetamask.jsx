@@ -87,8 +87,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-assets>
          <AutoDetectControllers />
 
-         <a-image src="#my-image" width="3" height="3" position="0 0 1" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="1 1 1" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="5 0 0" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="0 0 0" ></a-image>
 
          <a-entity environment="preset: forest"></a-entity>
          // aframe-react's <Entity/> React Component
