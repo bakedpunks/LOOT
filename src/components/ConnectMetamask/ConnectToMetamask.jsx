@@ -89,7 +89,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <a-image src="#my-image" width="3" height="1.5" position="0 0 1" ></a-image>
 
-         <a-entity gltf-model="url(https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf)"></a-entity>
+         <a-entity gltf-model="url(https://browniecoins-downloads.s3.us-east-2.amazonaws.com/80warehouse.glb)"></a-entity>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
