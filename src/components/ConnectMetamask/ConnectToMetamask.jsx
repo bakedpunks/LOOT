@@ -82,10 +82,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
 
       <a-scene class="aframebox" embedded>
-
+          <a-assets>
+            <img id="my-image" src="brick.wall.png">
+          </a-assets>
               <Environment preset="forest" />
               {/*<Snow />*/}
          <AutoDetectControllers />
+
+         <a-image src="#my-image" width="3" height="1.5" position="0 0 -7" ></a-image>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
@@ -100,13 +104,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           primitive="a-box"
           color="red"
           position="0 0.5 -5"
-          event-set__mouseenter={{
+          events={{
             click: connectToMetamask
           }}
+          event-set__mouseenter="material.color: green"
           event-set__mouseleave="material.color: red"
         />
           <a-entity position="0 0 3.8">
-              <a-camera>
+              <a-camera >
                 <a-cursor />
               </a-camera>
           </a-entity>
