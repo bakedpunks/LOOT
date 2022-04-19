@@ -110,14 +110,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
          <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
 
-         <a-entity environment="lightPosition: : 1 5 -2;preset: tron; groundColor: #445; grid: 1x1;"></a-entity>
 
 
-         <a-obj-model src="crate-obj" mtl="crate-mtl" scale="0.05 0.05 0.05" ></a-obj-model>
-
-         <a-entity obj-model="obj: #crate-obj; mtl: #crate-mtl" position="0 0 -30" scale="0.05 0.05 0.05" ></a-entity>
-
-
+         <a-obj-model src="crate-obj" mtl="crate-mtl" position="20 0 0" scale="0.05 0.05 0.05" ></a-obj-model>
+         
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
          <Entity primitive='a-box' color="red" position="0 0 -15"
