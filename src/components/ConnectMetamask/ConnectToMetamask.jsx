@@ -83,19 +83,19 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <a-scene class="aframebox" embedded>
           <a-assets>
-            <img id="my-image" src="https://view.metagascar.com/images/brick.wall.png" />
+            <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
+            <img id="street" src="https://view.metagascar.com/images/line.street.png" />
           </a-assets>
          <AutoDetectControllers />
 
-         <a-image src="#my-image" width="3" height="3" position="25 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="25 0 1.5" rotation="0 90 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="25 0.01 0" rotation="90 0 0" ></a-image>
-
-         <a-image src="#my-image" width="3" height="3" position="20 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="15 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="10 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="5 0 0" ></a-image>
-         <a-image src="#my-image" width="3" height="3" position="0 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="25 0.01 0" rotation="90 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="20 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="15 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="10 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
 
          <a-entity environment="preset: tron"></a-entity>
          // aframe-react's <Entity/> React Component
