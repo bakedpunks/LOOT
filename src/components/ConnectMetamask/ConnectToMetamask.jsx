@@ -76,7 +76,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded >
+      <a-scene class="aframebox" embedded inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
