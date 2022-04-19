@@ -83,7 +83,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <a-scene class="aframebox" embedded>
           <a-assets>
-            <img id="my-image" src="brick.wall.png">
+            <img id="my-image" src="brick.wall.png" />
           </a-assets>
               <Environment preset="forest" />
               {/*<Snow />*/}
