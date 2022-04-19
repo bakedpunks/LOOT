@@ -108,7 +108,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
          <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
 
-         <a-entity environment="preset: forest; groundColor: #445; grid: cross"></a-entity>
+         <a-entity environment="preset: tron; groundColor: #445; grid: cross; lightPosition: 0.3;"></a-entity>
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
