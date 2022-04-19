@@ -90,7 +90,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-assets>
          <AutoDetectControllers />
          <a-entity environment="skyType: gradient; skyColor: #1d7444; horizonColor: #7ae0e0; groundTexture: checkerboard; groundColor: #523c60; groundColor2: #544264; dressing: cubes; dressingAmount: 15; dressingColor: #7c5c45"></a-entity>
-         </a-entity>
+
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="21 0.02 -1.5" rotation="90 0 0" ></a-image>
