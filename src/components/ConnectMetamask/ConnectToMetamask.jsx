@@ -87,7 +87,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
             <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
-            <a-asset-item id="house-gltf" src="https://view.metagascar.com/images/obj/modernvilla.gltf"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
 
@@ -113,8 +112,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
 
-
-         <a-entity gltf-model="#house-gltf" position="0 0 -5"></a-entity>
+         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="20 0 0" ></a-obj-model>
+         <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="-20 0 0" ></a-obj-model>
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
