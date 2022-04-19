@@ -85,8 +85,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
-            <a-asset-item id="crate-obj" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.obj"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="https://browniecoins-downloads.s3.us-east-2.amazonaws.com/modernvilla.mtl"></a-asset-item>
+            <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
 
