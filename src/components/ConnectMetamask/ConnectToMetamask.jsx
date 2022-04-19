@@ -87,6 +87,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-assets>
          <AutoDetectControllers />
 
+         <a-image src="#my-image" width="3" height="3" position="25 0 0" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="20 0 0" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="15 0 0" ></a-image>
+         <a-image src="#my-image" width="3" height="3" position="10 0 0" ></a-image>
          <a-image src="#my-image" width="3" height="3" position="5 0 0" ></a-image>
          <a-image src="#my-image" width="3" height="3" position="0 0 0" ></a-image>
 
