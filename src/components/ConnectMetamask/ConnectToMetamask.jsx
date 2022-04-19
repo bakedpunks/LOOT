@@ -88,16 +88,16 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-assets>
          <AutoDetectControllers />
 
-         <a-image src="#street" width="3" height="3" position="27 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="24 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="21 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="18 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="15 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="12 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="9 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="6 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="3 0.01 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="0 0.01 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="21 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="18 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="15 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="12 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="9 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="6 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="3 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="0 0.02 -1.5" rotation="90 0 0" ></a-image>
 
          <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
          <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
