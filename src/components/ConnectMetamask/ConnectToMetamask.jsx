@@ -84,13 +84,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <a-scene class="aframebox" embedded>
           <a-assets>
             <img id="my-image" src="https://view.metagascar.com/images/brick.wall.png" />
-            <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
           </a-assets>
          <AutoDetectControllers />
 
          <a-image src="#my-image" width="3" height="1.5" position="0 0 1" ></a-image>
 
-         <a-entity gltf-model="#cityModel" position="0 0 10" scale="0.01 0.01 0.01" ></a-entity>
+         <a-entity gltf-model="url(https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf)"></a-entity>
          // aframe-react's <Entity/> React Component
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
