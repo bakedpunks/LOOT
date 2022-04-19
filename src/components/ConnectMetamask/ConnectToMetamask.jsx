@@ -81,7 +81,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded>
+      <a-scene class="aframebox" embedded stats>
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
@@ -113,7 +113,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
          <a-obj-model src="crate-obj" mtl="crate-mtl" position="20 0 0" scale="0.05 0.05 0.05" ></a-obj-model>
-         
+
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
 
          <Entity primitive='a-box' color="red" position="0 0 -15"
