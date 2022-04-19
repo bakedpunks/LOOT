@@ -12,6 +12,7 @@ import Environment from "./Environment";
 import InteractiveBox from "./InteractiveBox";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import AutoDetectControllers from "./AutoDetectControllers";
+import "networked-aframe";
 
 const items = []
 const itemsonchain = []
@@ -76,15 +77,22 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded >
+      <a-scene class="aframebox" embedded networked-scene>
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
             <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
+            <template id="avatar-template">
+               <a-sphere></a-sphere>
+            </template>
           </a-assets>
          <AutoDetectControllers />
          <a-entity environment="skyType: gradient; skyColor: #1d7444; horizonColor: #7ae0e0; groundTexture: checkerboard; groundColor: #523c60; groundColor2: #544264; dressing: cubes; dressingAmount: 15; dressingColor: #7c5c45"></a-entity>
+
+
+         <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
+         </a-entity>
 
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
