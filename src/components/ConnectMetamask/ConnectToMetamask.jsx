@@ -117,13 +117,15 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#street" width="3" height="3" position="6 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="3 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="0 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-3 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-6 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-9 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-12 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-15 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-18 0.02 -1.5" rotation="90 0 0" ></a-image>
 
 
 
-         <a-image src="#wall" width="3" height="3" position="45 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="40 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="35 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="30 0 0" ></a-image>
 
          <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
          <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
