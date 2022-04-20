@@ -98,7 +98,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
             </template>
           </a-assets>
          <AutoDetectControllers />
-         <a-entity environment="skyType: gradient; skyColor: #1d7444; horizonColor: #7ae0e0; groundTexture: checkerboard; groundColor: #523c60; groundColor2: #544264; dressing: cubes; dressingAmount: 15; dressingColor: #7c5c45"></a-entity>
 
 
          <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
@@ -163,11 +162,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           event-set__mouseenter="material.color: green"
           event-set__mouseleave="material.color: red"
         />
-          <a-entity position="0 0 3.8">
-              <a-camera >
-                <a-cursor />
-              </a-camera>
-          </a-entity>
       </a-scene>
 
       <div className="container">
