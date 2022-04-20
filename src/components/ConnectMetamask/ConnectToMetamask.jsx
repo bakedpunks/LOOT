@@ -77,7 +77,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene embedded
+      <a-scene class="aframebox" embedded 
 networked-scene={{
 serverURL: "/",
 app: "metagascar",
