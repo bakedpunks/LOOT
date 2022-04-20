@@ -58,28 +58,9 @@ function mouseLeave(control) {
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
-    <div>
-      <div className="jumbotron">
-        <h1 className="display-5">
-          Metagascar
-        </h1>
-        The Metaverse is open, and the rocketships of explorers have been dispatched! The first MetaIsland to be discovered by the Alpha Explorer "Meta" has been dubbed Metagascar. Here you will find a thriving community of unique MetaHumans who reside in their equally unique MetaHomes. On the island of Metagascar you will find various facet's of social activity including friendship, dating, and of course what island would be complete without messages in a bottle!
-        <hr className="my-4" />
-        <button
-          onClick={connectToMetamask}
-          className="btn btn-primary d-flex align-items-center"
-          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
-        >
-          Connect Wallet
-        </button>
-        <hr className="my-4" />
-
-      </div>
-      <hr className="my-4" />
 
       <Scene
       class="aframebox"
-      embedded
       networked-scene={{
       serverURL: "/",
       app: "metagascar",
@@ -173,13 +154,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
               </a-camera>
           </a-entity>
       </Scene>
-
-      <div className="container">
-        <hr className="my-4" />
-            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
-        <hr className="my-4" />
-      </div>
-    </div>
   );
 };
 
