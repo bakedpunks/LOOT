@@ -166,7 +166,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
                 <a-cursor />
               </a-camera>
           </a-entity>
-      </Scene>
+      </a-scene>
 
       <div className="container">
         <hr className="my-4" />
