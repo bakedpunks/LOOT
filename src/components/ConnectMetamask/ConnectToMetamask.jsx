@@ -100,8 +100,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <AutoDetectControllers />
 
 
-         <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
-         </a-entity>
 
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
@@ -162,6 +160,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           event-set__mouseenter="material.color: green"
           event-set__mouseleave="material.color: red"
         />
+          <a-entity position="0 0 3.8">
+              <a-camera >
+                <a-cursor />
+              </a-camera>
+          </a-entity>
       </a-scene>
 
       <div className="container">
