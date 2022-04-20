@@ -77,19 +77,21 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <Scene class="aframebox" embedded
-networked-scene={{
-serverURL: "/",
-app: "metagascar",
-room: "metagascar",
-connectOnLoad: true,
-onConnect: "onConnect",
-adapter: "wseasyrtc",
-audio: false,
-video: false,
-debug: false,
-}}
->
+      <Scene
+      class="aframebox"
+      embedded
+      networked-scene={{
+      serverURL: "/",
+      app: "metagascar",
+      room: "metagascar",
+      connectOnLoad: true,
+      onConnect: "onConnect",
+      adapter: "wseasyrtc",
+      audio: false,
+      video: false,
+      debug: false,
+      }}
+      >
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
