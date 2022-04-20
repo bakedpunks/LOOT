@@ -59,8 +59,7 @@ function mouseLeave(control) {
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
 
-      <Scene
-      class="aframebox"
+      <Scene 
       networked-scene={{
       serverURL: "/",
       app: "metagascar",
