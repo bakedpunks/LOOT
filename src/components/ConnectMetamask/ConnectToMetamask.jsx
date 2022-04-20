@@ -105,7 +105,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-assets>
          <AutoDetectControllers />
 
-
+         <a-entity environment="preset: tron"></a-entity>
 
          <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
