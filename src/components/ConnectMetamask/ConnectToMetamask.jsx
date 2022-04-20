@@ -78,14 +78,14 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <hr className="my-4" />
 
       <a-scene class="aframebox" embedded networked-scene="
-  serverURL: view.metagascar.com;
+  serverURL: /;
   app: metagascar;
   room: metagascar;
   connectOnLoad: true;
   onConnect: onConnect;
   adapter: wseasyrtc;
-  audio: true;
-  video: true;
+  audio: false;
+  video: false;
   debug: true;
 ">
           <a-assets>
