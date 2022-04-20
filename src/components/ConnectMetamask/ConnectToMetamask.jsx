@@ -84,9 +84,9 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
   connectOnLoad: true;
   onConnect: onConnect;
   adapter: wseasyrtc;
-  audio: false;
-  video: false;
-  debug: false;
+  audio: true;
+  video: true;
+  debug: true;
 ">
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
@@ -161,7 +161,12 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           event-set__mouseleave="material.color: red"
         />
 
-          <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls position="0 0 3.8">
+          <a-entity id="player" networked="template:#avatar-template;attachTemplateToLocal:false;" camera wasd-controls look-controls>
+          </a-entity>
+          <a-entity position="0 0 3.8">
+              <a-camera >
+                <a-cursor />
+              </a-camera>
           </a-entity>
       </a-scene>
 
