@@ -77,7 +77,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded 
+      <a-scene class="aframebox" embedded
 networked-scene={{
 serverURL: "/",
 app: "metagascar",
@@ -95,8 +95,10 @@ debug: false,
             <img id="street" src="https://view.metagascar.com/images/line.street.png" />
             <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
             <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
-            <template id="avatar-template">
-               <a-sphere color="#f00" scale="1 1 1"></a-sphere>
+            <template id="my-template">
+              <a-entity>
+                <a-sphere color="#f00"></a-sphere>
+              </a-entity>
             </template>
           </a-assets>
          <AutoDetectControllers />
@@ -163,7 +165,7 @@ debug: false,
           event-set__mouseleave="material.color: red"
         />
 
-          <a-entity position="0 0 3.8" networked="template:#avatar-template;attachTemplateToLocal:false;" >
+          <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
               <a-camera >
                 <a-cursor />
               </a-camera>
