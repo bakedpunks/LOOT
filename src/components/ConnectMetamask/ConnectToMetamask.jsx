@@ -161,7 +161,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           event-set__mouseleave="material.color: red"
         />
 
-          <a-entity position="0 0 3.8">
+          <a-entity position="0 0 3.8" networked="template:#avatar-template;attachTemplateToLocal:false;" >
               <a-camera >
                 <a-cursor />
               </a-camera>
