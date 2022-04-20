@@ -77,7 +77,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene class="aframebox" embedded
+      <Scene class="aframebox" embedded
 networked-scene={{
 serverURL: "/",
 app: "metagascar",
@@ -170,7 +170,7 @@ debug: false,
                 <a-cursor />
               </a-camera>
           </a-entity>
-      </a-scene>
+      </Scene>
 
       <div className="container">
         <hr className="my-4" />
