@@ -58,75 +58,124 @@ function mouseLeave(control) {
 
 const ConnectToMetamask = ({ connectToMetamask }) => {
   return (
-    <a-scene networked-scene="
-      room: dev;
-      debug: true;
-      adapter: wseasyrtc;
-    ">
-      <a-assets>
-
-        <img id="grid" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" crossorigin="anonymous" />
-        <img id="sky" src="https://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
-
-        <template id="avatar-template">
-          <a-entity class="avatar">
-            <a-sphere class="head"
-              scale="0.45 0.5 0.4"
-            ></a-sphere>
-            <a-entity class="face"
-              position="0 0.05 0"
-            >
-              <a-sphere class="eye"
-                color="#efefef"
-                position="0.16 0.1 -0.35"
-                scale="0.12 0.12 0.12"
-              >
-                <a-sphere class="pupil"
-                  color="#000"
-                  position="0 0 -1"
-                  scale="0.2 0.2 0.2"
-                ></a-sphere>
-              </a-sphere>
-              <a-sphere class="eye"
-                color="#efefef"
-                position="-0.16 0.1 -0.35"
-                scale="0.12 0.12 0.12"
-              >
-                <a-sphere class="pupil"
-                  color="#000"
-                  position="0 0 -1"
-                  scale="0.2 0.2 0.2"
-                ></a-sphere>
-              </a-sphere>
-            </a-entity>
-          </a-entity>
-        </template>
-
-      </a-assets>
-
-      <a-entity id="player"
-        networked="template:#avatar-template;attachTemplateToLocal:false;"
-        camera
-        position="0 1.6 0"
-        spawn-in-circle="radius:3"
-        wasd-controls look-controls
+    <div>
+      <div className="jumbotron">
+        <h1 className="display-5">
+          Metagascar
+        </h1>
+        The Metaverse is open, and the rocketships of explorers have been dispatched! The first MetaIsland to be discovered by the Alpha Explorer "Meta" has been dubbed Metagascar. Here you will find a thriving community of unique MetaHumans who reside in their equally unique MetaHomes. On the island of Metagascar you will find various facet's of social activity including friendship, dating, and of course what island would be complete without messages in a bottle!
+        <hr className="my-4" />
+        <button
+          onClick={connectToMetamask}
+          className="btn btn-primary d-flex align-items-center"
+          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
         >
-        <a-sphere class="head"
-          visible="false"
-          random-color
-        ></a-sphere>
-      </a-entity>
+          Connect Wallet
+        </button>
+        <hr className="my-4" />
 
-      <a-entity position="0 0 0"
-        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+      </div>
+      <hr className="my-4" />
 
-      <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
-      <a-entity light="color: #ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+      <a-scene
+      class="aframebox"
+      embedded
+      networked-scene="
+            room: dev;
+            debug: true;
+            adapter: wseasyrtc;
+     "
+      >
+          <a-assets>
+            <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
+            <img id="street" src="https://view.metagascar.com/images/line.street.png" />
+            <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
+            <template id="my-template">
+              <a-entity>
+                <a-sphere color="#f00"></a-sphere>
+              </a-entity>
+            </template>
+          </a-assets>
+         <AutoDetectControllers />
 
-      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
-      <a-entity id="particles" particle-system="preset: snow"></a-entity>
-    </a-scene>  
+         <a-entity environment="preset: tron"></a-entity>
+
+         <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="21 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="18 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="15 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="12 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="9 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="6 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="3 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="0 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-3 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-6 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-9 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-12 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-15 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-18 0.02 -1.5" rotation="90 0 0" ></a-image>
+
+
+
+
+         <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
+
+         <a-image src="#wall" width="3" height="3" position="20 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="15 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="10 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
+
+         <a-image src="#wall" width="3" height="3" position="-5 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="-10 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="-15 0 0" ></a-image>
+         <a-image src="#wall" width="3" height="3" position="-20 0 0" ></a-image>
+
+
+         <a-entity obj-model="obj:#crate-obj"
+                   material="color: green" position="20 1 -5" scale="0.02 0.02 0.04">
+         </a-entity>
+         <a-entity obj-model="obj:#crate-obj"
+                   material="color: green" position="40 1 -5" scale="0.02 0.02 0.04">
+         </a-entity>
+
+         <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
+
+         <Entity primitive='a-box' color="red" position="0 0 -15"
+         />
+         <Entity primitive='a-sphere' color="green" position="-2 0 -3"/>
+         <Entity primitive='a-cylinder' color="blue" position="2 0 -6"/>
+
+        <InteractiveBox position="1 2 -1" />
+
+        <Entity
+          primitive="a-box"
+          color="red"
+          position="0 0.5 -5"
+          events={{
+            click: connectToMetamask
+          }}
+          event-set__mouseenter="material.color: green"
+          event-set__mouseleave="material.color: red"
+        />
+
+          <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
+              <a-camera >
+                <a-cursor />
+              </a-camera>
+          </a-entity>
+      </a-scene>
+
+      <div className="container">
+        <hr className="my-4" />
+            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
+        <hr className="my-4" />
+      </div>
+    </div>
   );
 };
 
