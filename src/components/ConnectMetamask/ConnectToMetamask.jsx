@@ -132,10 +132,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
          <a-entity obj-model="obj:#crate-obj"
-                   material="color: green" position="20 1 -5" scale="0.02 0.02 0.04" rotation="0 45 0" >
+                   material="color: green" position="20 1 -5" scale="0.02 0.02 0.04" rotation="0 -45 0" >
          </a-entity>
          <a-entity obj-model="obj:#crate-obj"
-                   material="color: green" position="40 1 -5" scale="0.02 0.02 0.04" rotation="0 45 0" >
+                   material="color: green" position="40 1 -5" scale="0.02 0.02 0.04" rotation="0 -45 0" >
          </a-entity>
 
          <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
