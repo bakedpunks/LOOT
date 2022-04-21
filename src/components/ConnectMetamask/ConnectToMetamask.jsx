@@ -68,9 +68,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         <img id="grid" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" crossorigin="anonymous">
         <img id="sky" src="https://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
 
-        <!-- Templates -->
-
-        <!-- Avatar -->
         <template id="avatar-template">
           <a-entity class="avatar">
             <a-sphere class="head"
