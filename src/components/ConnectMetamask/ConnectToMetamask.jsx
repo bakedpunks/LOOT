@@ -80,11 +80,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       <a-scene
       class="aframebox"
       embedded
-      networked-scene="
-            room: dev;
-            debug: true;
-            adapter: wseasyrtc;
-     "
       >
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
