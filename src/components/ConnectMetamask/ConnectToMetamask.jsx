@@ -115,7 +115,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
 
-
+         <a-image src="#wall" width="3" height="3" position="25 0 3" ></a-image>
          <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
          <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
 
