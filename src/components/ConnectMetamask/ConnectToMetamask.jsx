@@ -126,39 +126,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <a-sky src="#sky" rotation="0 -90 0"></a-sky>
       <a-entity id="particles" particle-system="preset: snow"></a-entity>
-    </a-scene>
-
-
-    <script>
-      // On mobile remove elements that are resource heavy
-      var isMobile = AFRAME.utils.device.isMobile();
-
-      if (isMobile) {
-        var particles = document.getElementById('particles');
-        particles.parentNode.removeChild(particles);
-      }
-    </script>
-
-    <script>
-      // Define custom schema for syncing avatar color, set by random-color
-      // NAF.schemas.add({
-      //   template: '#avatar-template',
-      //   components: [
-      //     'position',
-      //     'rotation',
-      //     {
-      //       selector: '.head',
-      //       component: 'material',
-      //       property: 'color'
-      //     }
-      //   ]
-      // });
-
-      // Called by Networked-Aframe when connected to server
-      function onConnect () {
-        console.log("onConnect", new Date());
-      }
-    </script>
+    </a-scene>  
   );
 };
 
