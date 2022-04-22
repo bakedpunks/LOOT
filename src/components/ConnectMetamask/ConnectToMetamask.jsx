@@ -96,7 +96,6 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <a-entity environment="preset: tron"></a-entity>
 
-         <a-image src="#street" width="3" height="3" position="27 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="24 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="21 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="18 0.02 -3" rotation="90 0 0" ></a-image>
@@ -104,6 +103,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-image src="#street" width="3" height="3" position="12 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="9 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="6 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="3 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="0 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="-3 0.02 -3" rotation="90 0 0" ></a-image>
          <a-image src="#street" width="3" height="3" position="-6 0.02 -3" rotation="90 0 0" ></a-image>
