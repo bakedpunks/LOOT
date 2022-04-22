@@ -96,22 +96,22 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <a-entity environment="preset: tron"></a-entity>
 
-         <a-image src="#street" width="3" height="3" position="27 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="24 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="21 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="18 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="15 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="12 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="9 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="6 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="3 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="0 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-3 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-6 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-9 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-12 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-15 0.02 -1.5" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-18 0.02 -1.5" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="27 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="24 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="21 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="18 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="15 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="12 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="9 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="6 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="3 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="0 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-3 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-6 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-9 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-12 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-15 0.02 -3" rotation="90 0 0" ></a-image>
+         <a-image src="#street" width="3" height="3" position="-18 0.02 -3" rotation="90 0 0" ></a-image>
 
 
 
@@ -132,10 +132,10 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
 
          <a-entity obj-model="obj:#crate-obj"
-                   material="color: green" position="0 0 -1.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
+                   material="color: green" position="0 0 3" scale="0.02 0.02 0.04" rotation="0 -82 0" >
          </a-entity>
          <a-entity obj-model="obj:#crate-obj"
-                   material="color: blue" position="15 0 -1.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
+                   material="color: blue" position="15 0 3" scale="0.02 0.02 0.04" rotation="0 -82 0" >
          </a-entity>
 
           <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
