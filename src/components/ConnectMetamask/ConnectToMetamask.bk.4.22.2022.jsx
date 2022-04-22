@@ -138,6 +138,26 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
                    material="color: green" position="20 1 -5" scale="0.02 0.02 0.04" rotation="0 -65 0" >
          </a-entity>
 
+         <Entity geometry={{primitive: 'box', width: 5}} position="4 4 -5"/>
+
+         <Entity primitive='a-box' color="red" position="0 0 -15"
+         />
+         <Entity primitive='a-sphere' color="green" position="-2 0 -3"/>
+         <Entity primitive='a-cylinder' color="blue" position="2 0 -6"/>
+
+        <InteractiveBox position="1 2 -1" />
+
+        <Entity
+          primitive="a-box"
+          color="red"
+          position="0 0.5 -5"
+          events={{
+            click: connectToMetamask
+          }}
+          event-set__mouseenter="material.color: green"
+          event-set__mouseleave="material.color: red"
+        />
+
           <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
               <a-camera >
                 <a-cursor />
