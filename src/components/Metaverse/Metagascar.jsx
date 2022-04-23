@@ -54,34 +54,78 @@ function mouseLeave(control) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene background="color:#fff;">
+    <a-scene >
+        <a-assets>
+          <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
+          <img id="street" src="https://view.metagascar.com/images/line.street.png" />
+          <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
+          <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
+          <template id="my-template">
+            <a-entity>
+              <a-sphere color="#f00"></a-sphere>
+            </a-entity>
+          </template>
+        </a-assets>
 
-      <a-entity id="camera_main" camera look-controls wasd-controls position="0 1.5 0">
-        <a-entity position="0 0 -0.5" geometry="primitive:torus; radius:0.3; radiusTubular: 0.03;" material="color:rgb(30, 230, 30);"></a-entity>
-      </a-entity>
+       <a-entity environment="preset: tron"></a-entity>
 
-      <a-entity id="mirror"
-                scale="1.0 1.0 1.0"
-                rotation="0 0 0"
-                position="0.0 1.5 -0.75"
-                geometry="primitive:plane; width:1.6; height:2.0"
-                aframe-mirror="color:#777; textureWidth:512; textureHeight:512;">
-      </a-entity>
+       <a-image src="#street" width="3" height="3" position="24 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="21 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="18 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="15 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="12 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="9 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="6 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="3 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="0 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-3 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-6 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-9 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-12 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-15 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-18 0.02 -3" rotation="90 0 0" ></a-image>
+       <a-image src="#street" width="3" height="3" position="-21 0.02 -3" rotation="90 0 0" ></a-image>
 
-      <a-entity id="box"
-                position="0.0 0.5 3"
-                material="color:blue;"
-                animation="property:position; to:0 2.5 3; loop:true; dur:1000; dir:alternate; easing:easeInOutQuad;"
-                geometry="primitive:box; width:0.5; height:0.5; depth:0.5;">
-      </a-entity>
 
-      <a-entity id="ground"
-                scale="1.0 1.0 1.0"
-                rotation="-90 0 0"
-                position="0.0 0.0 0.0"
-                geometry="primitive:circle; radius:10;"
-                material="color:rgb(255, 76, 64);">
-      </a-entity>
+
+       <a-image src="#wall" width="3" height="3" position="25 0 3" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
+
+       <a-image src="#wall" width="3" height="3" position="20 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="15 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="10 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
+
+       <a-image src="#wall" width="3" height="3" position="-5 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="-10 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="-15 0 0" ></a-image>
+       <a-image src="#wall" width="3" height="3" position="-20 0 0" ></a-image>
+
+
+       <a-entity obj-model="obj:#crate-obj"
+                 material="color: green" position="0 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
+       </a-entity>
+       <a-entity obj-model="obj:#crate-obj"
+                 material="color: blue" position="15 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
+       </a-entity>
+
+       <a-sphere aframe-mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
+
+       <a-entity id="mirror"
+                 scale="1.0 1.0 1.0"
+                 rotation="0 0 0"
+                 position="0.0 1.5 -0.75"
+                 geometry="primitive:plane; width:1.6; height:2.0"
+                 aframe-mirror="color:#777; textureWidth:512; textureHeight:512;">
+       </a-entity>
+
+        <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
+            <a-camera >
+              <a-cursor />
+            </a-camera>
+        </a-entity>
     </a-scene>
 
   );
