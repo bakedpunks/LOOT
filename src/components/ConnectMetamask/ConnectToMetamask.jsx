@@ -13,6 +13,7 @@ import InteractiveBox from "./InteractiveBox";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import AutoDetectControllers from "./AutoDetectControllers";
 import "networked-aframe";
+import "aframe-mirror-component"
 
 const items = []
 const itemsonchain = []
@@ -137,6 +138,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <a-entity obj-model="obj:#crate-obj"
                    material="color: blue" position="15 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
          </a-entity>
+
+         <a-box mirror position="-20 0 0"  scale="1 1 1"></a-box>
 
           <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
               <a-camera >
