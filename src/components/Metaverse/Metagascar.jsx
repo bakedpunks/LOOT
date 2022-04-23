@@ -56,8 +56,8 @@ const Metagascar = ({ connectToMetamask }) => {
 
     <a-scene>
       <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" />
         <a-asset-item id="ball" src="./discoball.obj"></a-asset-item>
       </a-assets>
 
