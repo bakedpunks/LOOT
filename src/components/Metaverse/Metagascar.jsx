@@ -54,72 +54,39 @@ function mouseLeave(control) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-      <a-scene
-      >
-          <a-assets>
-            <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
-            <img id="street" src="https://view.metagascar.com/images/line.street.png" />
-            <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
-            <template id="my-template">
-              <a-entity>
-                <a-sphere color="#f00"></a-sphere>
-              </a-entity>
-            </template>
-          </a-assets>
+    <a-scene>
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <a-asset-item id="ball" src="./discoball.obj"></a-asset-item>
+      </a-assets>
 
-         <a-entity environment="preset: tron"></a-entity>
+      <a-box position="-5 20 5" height="40"></a-box>
+      <a-cone mirror position="4 2.5 -4" height="5" ></a-cone>
+      <a-box position="10 10 -8" height="20" color="#FF0000"></a-box>
+      <a-box position="-10 10 16" height="20" color="#0000FF"></a-box>
 
-         <a-image src="#street" width="3" height="3" position="24 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="21 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="18 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="15 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="12 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="9 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="6 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="3 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="0 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-3 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-6 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-9 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-12 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-15 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-18 0.02 -3" rotation="90 0 0" ></a-image>
-         <a-image src="#street" width="3" height="3" position="-21 0.02 -3" rotation="90 0 0" ></a-image>
+      <a-entity position="5 5 5">
+        <a-sphere position="5 5 5" mirror="resolution: 16; distance: 1000; interval: 250; repeat: true"></a-sphere>
+        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="forever" dur="5000" easing="linear"></a-animation>
+      </a-entity>
 
+      <a-entity position="5 5 5">
+        <a-sphere position="5 5 5" color="#CA54B2"></a-sphere>
+        <a-animation attribute="rotation" from="0 0 0" to="360 0 360" repeat="forever" dur="2000" easing="linear"></a-animation>
+      </a-entity>
 
+      <a-obj-model src="#ball" mirror="repeat:true; resolution: 32;" position="3 2 0">
+        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="forever" dur="10000" easing="linear">
+    </a-obj-model>
 
-         <a-image src="#wall" width="3" height="3" position="25 0 3" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
+      <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
 
-         <a-image src="#wall" width="3" height="3" position="20 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="15 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="10 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
-
-         <a-image src="#wall" width="3" height="3" position="-5 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="-10 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="-15 0 0" ></a-image>
-         <a-image src="#wall" width="3" height="3" position="-20 0 0" ></a-image>
-
-
-         <a-entity obj-model="obj:#crate-obj"
-                   material="color: green" position="0 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
-         </a-entity>
-         <a-entity obj-model="obj:#crate-obj"
-                   material="color: blue" position="15 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
-         </a-entity>
-
-         <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
-
-          <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
-              <a-camera >
-                <a-cursor />
-              </a-camera>
-          </a-entity>
-      </a-scene>
+      <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+    </a-scene>
 
   );
 };
