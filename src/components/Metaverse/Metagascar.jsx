@@ -3,8 +3,7 @@ import React, { PureComponent } from "react";
 import Web3 from 'web3';
 
 
-import mirror from 'aframe-mirror-component';
-
+require('aframe-mirror-component');
 //import { Entity, Scene } from "aframe-react";
 
 import 'aframe';
@@ -121,7 +120,7 @@ const Metagascar = ({ connectToMetamask }) => {
                  rotation="0 0 0"
                  position="0.0 1.5 -0.75"
                  geometry="primitive:plane; width:1.6; height:2.0"
-                 mirror="resolution: 64; distance: 1000; interval: 200; repeat: true">
+                 mirror >
        </a-entity>
 
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
