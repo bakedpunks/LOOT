@@ -77,7 +77,7 @@ const Metagascar = ({ connectToMetamask }) => {
       </a-entity>
 
       <a-obj-model src="#ball" mirror="repeat:true; resolution: 32;" position="3 2 0">
-        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="forever" dur="10000" easing="linear">
+        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="forever" dur="10000" easing="linear" />
     </a-obj-model>
 
       <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
