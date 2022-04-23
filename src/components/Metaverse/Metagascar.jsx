@@ -8,7 +8,7 @@ import "aframe-event-set-component"; // NB: This enables event-set__click and su
 import "networked-aframe";
 
 import {
-  aframe-mirror
+  mirror
 } from 'aframe-react-mirror';
 
 const items = []
