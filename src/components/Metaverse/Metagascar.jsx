@@ -58,6 +58,11 @@ const Metagascar = ({ connectToMetamask }) => {
       <a-assets>
         <img id="groundTexture" src="http://149.248.10.154:3000/images/floor.jpg" />
         <img id="skyTexture" src="http://149.248.10.154:3000/images/sky.jpg" />
+        <template id="my-template">
+          <a-entity>
+            <a-sphere color="#f00"></a-sphere>
+          </a-entity>
+        </template>        
       </a-assets>
 
       <a-box position="-5 20 5" height="40"></a-box>
@@ -82,6 +87,11 @@ const Metagascar = ({ connectToMetamask }) => {
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="2" position="2 4 4"></a-light>
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+      <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
+          <a-camera >
+            <a-cursor />
+          </a-camera>
+      </a-entity>
     </a-scene>
 
   );
