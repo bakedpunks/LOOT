@@ -54,10 +54,7 @@ function mouseLeave(control) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene
-    class="aframebox"
-    embedded
-    >
+    <a-scene >
         <a-assets>
           <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
