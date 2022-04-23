@@ -114,14 +114,14 @@ const Metagascar = ({ connectToMetamask }) => {
                  material="color: blue" position="15 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
        </a-entity>
 
-       <a-sphere mirror="resolution: 64; refraction: 1; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
+       <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
 
        <a-entity id="mirror"
                  scale="1.0 1.0 1.0"
                  rotation="0 0 0"
                  position="0.0 1.5 -0.75"
                  geometry="primitive:plane; width:1.6; height:2.0"
-                 mirror="esolution: 64; refraction: 1; distance: 1000; interval: 200; repeat: true">
+                 mirror="resolution: 64; distance: 1000; interval: 200; repeat: true">
        </a-entity>
 
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
