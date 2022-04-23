@@ -140,6 +140,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          </a-entity>
 
          <a-box mirror position="-20 0 0"  scale="1 1 1"></a-box>
+         <a-sphere mirror position="-30 0 0"  scale="1 1 1"></a-sphere>
 
           <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
               <a-camera >
