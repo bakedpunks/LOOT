@@ -2,12 +2,15 @@ import React, { PureComponent } from "react";
 
 import Web3 from 'web3';
 
+
+import {Mirror} from 'aframe-mirror-component';
+
 //import { Entity, Scene } from "aframe-react";
+
 import "aframe";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import "networked-aframe";
 
-import Mirror from 'aframe-mirror-component';
 
 const items = []
 const itemsonchain = []
@@ -118,8 +121,7 @@ const Metagascar = ({ connectToMetamask }) => {
                  rotation="0 0 0"
                  position="0.0 1.5 -0.75"
                  geometry="primitive:plane; width:1.6; height:2.0"
-                 >
-                 <Mirror color="#777" textureWidth="512" textureHeight="512" />
+                 mirror="color:#777; textureWidth:512; textureHeight:512;">
        </a-entity>
 
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
