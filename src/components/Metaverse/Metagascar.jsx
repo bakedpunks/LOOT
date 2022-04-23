@@ -56,10 +56,10 @@ const Metagascar = ({ connectToMetamask }) => {
 
     <a-scene >
         <a-assets>
-          <img id="wall" src="http://149.248.10.154:3000/images/brick.wall.png" />
-          <img id="street" src="http://149.248.10.154:3000/images/line.street.png" />
-          <a-asset-item id="crate-obj" src="http://149.248.10.154:3000/images/obj/modernvilla.obj"></a-asset-item>
-          <a-asset-item id="crate-mtl" src="http://149.248.10.154:3000/images/obj/modernvilla.mtl"></a-asset-item>
+          <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
+          <img id="street" src="https://view.metagascar.com/images/line.street.png" />
+          <a-asset-item id="crate-obj" src="https://view.metagascar.com/images/obj/modernvilla.obj"></a-asset-item>
+          <a-asset-item id="crate-mtl" src="https://view.metagascar.com/images/obj/modernvilla.mtl"></a-asset-item>
           <template id="my-template">
             <a-entity>
               <a-sphere color="#f00"></a-sphere>
