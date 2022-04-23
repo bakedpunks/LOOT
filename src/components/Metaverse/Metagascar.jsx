@@ -122,6 +122,7 @@ const Metagascar = ({ connectToMetamask }) => {
                  position="0.0 1.5 -0.75"
                  geometry="primitive:plane; width:1.6; height:2.0"
                  mirror>
+                 <a-mirror/>
        </a-entity>
 
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
