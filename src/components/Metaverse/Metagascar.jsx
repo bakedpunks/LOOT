@@ -56,8 +56,8 @@ const Metagascar = ({ connectToMetamask }) => {
 
     <a-scene>
       <a-assets>
-        <img id="groundTexture" src="https://view.metagascar.com/images/floor.jpg" />
-        <img id="skyTexture" src="https://view.metagascar.com/images/sky.jpg" />
+        <img id="groundTexture" src="http://149.248.10.154:3000/images/floor.jpg" />
+        <img id="skyTexture" src="http://149.248.10.154:3000/images/sky.jpg" />
       </a-assets>
 
       <a-box position="-5 20 5" height="40"></a-box>
