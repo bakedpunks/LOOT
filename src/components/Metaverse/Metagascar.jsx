@@ -113,6 +113,14 @@ const Metagascar = ({ connectToMetamask }) => {
 
        <a-sphere aframe-mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
 
+       <a-entity id="mirror"
+                 scale="1.0 1.0 1.0"
+                 rotation="0 0 0"
+                 position="0.0 1.5 -0.75"
+                 geometry="primitive:plane; width:1.6; height:2.0"
+                 aframe-mirror="color:#777; textureWidth:512; textureHeight:512;">
+       </a-entity>
+       
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
             <a-camera >
               <a-cursor />
