@@ -15,6 +15,7 @@ import Loading from "./Loading/Loading";
 import Navbar from "./Navbar/Navbar";
 import MyCryptoBoys from "./MyCryptoBoys/MyCryptoBoys";
 import PunksForSale from "./PunksForSale/PunksForSale";
+import Metagascar from "./Metaverse/Metagascar";
 import BuyPunk from "./BuyPunk/BuyPunk";
 
 import {Contract} from "@ethersproject/contracts";
@@ -500,6 +501,16 @@ getPunkOwner = async (punkIndex) => {
                    window.location.href = 'https://opensea.io/collection/metagascar-eth';
                    return null;
               }}/>
+
+              <Route
+                path="/vr"
+                render={() => (
+                  <Metagascar
+                    accountAddress={this.state.accountAddress}
+                    balanceOf={this.state.balanceOf}
+                  />
+                )}
+              />
 		</HashRouter>
 	  </>
         )}

@@ -1,17 +1,11 @@
 import React, { PureComponent } from "react";
-import metamaskIcon from "./metamask.svg";
 
 import Web3 from 'web3';
 
 //import { Entity, Scene } from "aframe-react";
 import "./styles.css";
 import "aframe";
-import {Entity, Scene} from 'aframe-react';
-
-import Environment from "./Environment";
-import InteractiveBox from "./InteractiveBox";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
-import AutoDetectControllers from "./AutoDetectControllers";
 import "networked-aframe";
 
 require('aframe-mirror-component');
@@ -58,30 +52,10 @@ function mouseLeave(control) {
 }
 
 
-const ConnectToMetamask = ({ connectToMetamask }) => {
+const Metagascar = ({ connectToMetamask }) => {
   return (
-    <div>
-      <div className="jumbotron">
-        <h1 className="display-5">
-          Metagascar
-        </h1>
-        The Metaverse is open, and the rocketships of explorers have been dispatched! The first MetaIsland to be discovered by the Alpha Explorer "Meta" has been dubbed Metagascar. Here you will find a thriving community of unique MetaHumans who reside in their equally unique MetaHomes. On the island of Metagascar you will find various facet's of social activity including friendship, dating, and of course what island would be complete without messages in a bottle!
-        <hr className="my-4" />
-        <button
-          onClick={connectToMetamask}
-          className="btn btn-primary d-flex align-items-center"
-          style={{ fontSize: "0.9rem", letterSpacing: "0.14rem" }}
-        >
-          Connect Wallet
-        </button>
-        <hr className="my-4" />
-
-      </div>
-      <hr className="my-4" />
 
       <a-scene
-      class="aframebox"
-      embedded
       >
           <a-assets>
             <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
@@ -149,13 +123,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
           </a-entity>
       </a-scene>
 
-      <div className="container">
-        <hr className="my-4" />
-            Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
-        <hr className="my-4" />
-      </div>
-    </div>
   );
 };
 
-export default ConnectToMetamask;
+export default Metagascar;

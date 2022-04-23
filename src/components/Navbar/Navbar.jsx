@@ -15,6 +15,11 @@ const Navbar = () => {
             className="navbar-nav ml-auto"
           >
             <li className="nav-item">
+              <Link to="/vr" className="nav-link">
+                Virtual Reality
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/mint" className="nav-link">
                 View Property
               </Link>
