@@ -118,7 +118,7 @@ const Metagascar = ({ connectToMetamask }) => {
                  rotation="0 0 0"
                  position="0.0 1.5 -0.75"
                  geometry="primitive:plane; width:1.6; height:2.0"
-                 mirror="color:#777; textureWidth:512; textureHeight:512;">
+                 aframe-mirror-component="color:#777; textureWidth:512; textureHeight:512;">
        </a-entity>
 
         <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
