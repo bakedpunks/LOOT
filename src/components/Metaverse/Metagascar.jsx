@@ -68,7 +68,6 @@ const Metagascar = ({ connectToMetamask }) => {
               </a-entity>
             </template>
           </a-assets>
-         <AutoDetectControllers />
 
          <a-entity environment="preset: tron"></a-entity>
 
