@@ -56,9 +56,8 @@ const Metagascar = ({ connectToMetamask }) => {
 
     <a-scene>
       <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" />
-        <a-asset-item id="ball" src="./discoball.obj"></a-asset-item>
+        <img id="groundTexture" src="https://view.metagascar.com/images/floor.jpg" />
+        <img id="skyTexture" src="https://view.metagascar.com/images/sky.jpg" />
       </a-assets>
 
       <a-box position="-5 20 5" height="40"></a-box>
@@ -76,9 +75,6 @@ const Metagascar = ({ connectToMetamask }) => {
         <a-animation attribute="rotation" from="0 0 0" to="360 0 360" repeat="forever" dur="2000" easing="linear"></a-animation>
       </a-entity>
 
-      <a-obj-model src="#ball" mirror="repeat:true; resolution: 32;" position="3 2 0">
-        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="forever" dur="10000" easing="linear" />
-    </a-obj-model>
 
       <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
 
