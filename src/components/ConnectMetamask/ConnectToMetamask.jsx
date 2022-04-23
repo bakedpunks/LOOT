@@ -140,8 +140,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
                    material="color: blue" position="15 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
          </a-entity>
 
-         <a-box mirror position="-20 0 0"  scale="1 1 1"></a-box>
-         <a-sphere mirror position="-30 0 0"  scale="1 1 1"></a-sphere>
+         <a-sphere mirror="resolution: 64; distance: 1000; interval: 200; repeat: true" segments-radius="24" segments-height="24" radius="1.5" position="0 2.5 4" ></a-sphere>
 
           <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
               <a-camera >
