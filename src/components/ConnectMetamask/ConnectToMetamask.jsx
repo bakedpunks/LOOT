@@ -13,7 +13,8 @@ import InteractiveBox from "./InteractiveBox";
 import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import AutoDetectControllers from "./AutoDetectControllers";
 import "networked-aframe";
-import "aframe-mirror-component"
+
+require('aframe-mirror-component');
 
 const items = []
 const itemsonchain = []
