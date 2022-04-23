@@ -79,8 +79,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
       </div>
       <hr className="my-4" />
 
-      <a-scene
-      class="aframebox"
+      <a-scene 
       embedded
       >
           <a-assets>
