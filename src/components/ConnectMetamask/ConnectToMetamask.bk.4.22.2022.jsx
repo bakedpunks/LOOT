@@ -143,7 +143,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
          <Entity primitive='a-box' color="red" position="0 0 -15"
          />
          <Entity primitive='a-sphere' color="green" position="-2 0 -3"/>
-         <Entity primitive='a-cylinder' color="blue" position="2 0 -6"/>
+         <Entity primitive='a-cylinder' color="blue" position="2 0 -6" />
 
         <InteractiveBox position="1 2 -1" />
 
