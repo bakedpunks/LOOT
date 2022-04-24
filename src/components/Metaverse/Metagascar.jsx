@@ -123,7 +123,7 @@ const Metagascar = ({ connectToMetamask }) => {
                  mirror >
        </a-entity>
 
-        <a-entity position="0 0 3.8" networked="template:#my-template;attachTemplateToLocal:false;" >
+        <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" >
             <a-camera >
               <a-cursor />
             </a-camera>
