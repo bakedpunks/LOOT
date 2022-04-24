@@ -22,6 +22,7 @@ function mouseLeave(control) {
 
 const items = []
 const items_walls = []
+const items_houses = []
 
 for (let k = 0; k < 400; k++) {
   var index_street = (k*6);
@@ -36,9 +37,12 @@ for (let k = 0; k < 400; k++) {
   var index_street = (k*6) -1.5;
   for (let i = 0; i < 16; i++) {
           var index = (i*3);
-          var position = index + " 0.02 " + index_street;
-          if(i==0 || i%2==0)
-          items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
+          var position = index + " 0 " + index_street;
+          var text_value = "value: Hello World " + position + ";" ;
+          if(i==0 || i%2==0){
+            items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
+            items_houses.push(<a-entity text={text_value} position={position} scale="3 3 3" ></a-entity>)
+          }
   }
 }
 
@@ -60,8 +64,7 @@ const Metagascar = ({ connectToMetamask }) => {
         <a-entity environment="preset: tron"></a-entity>
        {items}
 
-       {items_walls}
-
+       {items_houses}
 
        <a-entity obj-model="obj:#crate-obj"
                  material="color: green" position="0 0 -4.5" scale="0.02 0.02 0.04" rotation="0 -82 0" >
