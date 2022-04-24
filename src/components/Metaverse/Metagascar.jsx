@@ -43,7 +43,7 @@ for (let k = 0; k < 400; k++) {
           var index = (i*3);
           var position = index + " 1.5 " + index_street;
           var position_text_value = index + " 4 " + index_street;
-          var text_value = "value: " + home[k].address + " " + position + ";" ;
+          var text_value = "value: " + home.address + " " + position + ";" ;
           if(i==0 || i%2==0){
             items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
             items_houses.push(<a-entity text={text_value} position={position_text_value} scale="3 3 3" ></a-entity>)
