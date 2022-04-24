@@ -23,7 +23,7 @@ function mouseLeave(control) {
 const items = []
 const items_walls = []
 
-for (let k = 0; k < 6; k++) {
+for (let k = 0; k < 400; k++) {
   var index_street = (k*6);
   for (let i = 0; i < 16; i++) {
           var index = (i*3);
