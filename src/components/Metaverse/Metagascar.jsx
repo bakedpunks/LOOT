@@ -9,12 +9,15 @@ import 'aframe';
 import 'aframe-event-set-component'; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import 'networked-aframe';
 
+import * as THREE from 'three';
 import {mirror} from "./mirror.js";
 
 const items = []
 const itemsonchain = []
 const itemschar = []
 const itemsonchainmma = []
+
+const AFRAME = window.AFRAME;
 
 for (let i = 0; i < 3; i++) {
         const rand = Math.floor(Math.random() * 2000);;
