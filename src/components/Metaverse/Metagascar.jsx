@@ -37,6 +37,7 @@ for (let k = 0; k < 6; k++) {
   for (let i = 0; i < 16; i++) {
           var index = (i*3);
           var position = index + " 0.02 " + index_street;
+          if(i==0 || i%2==0)
           items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
   }
 }
@@ -58,22 +59,8 @@ const Metagascar = ({ connectToMetamask }) => {
         </a-assets>
         <a-entity environment="preset: tron"></a-entity>
        {items}
+
        {items_walls}
-
-       <a-image src="#wall" width="3" height="3" position="25 0 3" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="26.5 0 1.5" rotation="0 90 0" ></a-image>
-
-       <a-image src="#wall" width="3" height="3" position="20 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="15 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="10 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="5 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="0 0 0" ></a-image>
-
-       <a-image src="#wall" width="3" height="3" position="-5 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="-10 0 0" ></a-image>
-       <a-image src="#wall" width="3" height="3" position="-15 0 0" ></a-image>
-
 
 
        <a-entity obj-model="obj:#crate-obj"
