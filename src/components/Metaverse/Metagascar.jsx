@@ -32,21 +32,21 @@ for (let k = 0; k < 400; k++) {
   for (let i = 0; i < 16; i++) {
           var index = (i*3);
           var position = index + " 0.02 " + index_street;
-          items.push(<a-image src="#street" width="3" height="3" position={position} rotation="90 0 0" ></a-image>)
+          items.push(<a-image src="#street" width="2" height="2" position={position} rotation="90 0 0" ></a-image>)
   }
 }
 
 for (let k = 0; k < 400; k++) {
   var index_street = (k*6) -1.5;
   for (let i = 0; i < 16; i++) {
-          let nftNumber = (index_street + i + 1).valueOf();
+          let nftNumber = ((k*20) + 1).valueOf();
           const home = db[nftNumber];
           var index = (i*3);
-          var position = index + " 1.5 " + index_street;
+          var position = index + " 1 " + index_street;
           var position_text_value = index + " 4 " + index_street;
           var text_value = "value: " + home.address + " " + position + ";" ;
           if(i==0 || i%2==0){
-            items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
+            items_walls.push(<a-image src="#wall" width="2" height="2" position={position} ></a-image>)
             items_houses.push(<a-entity text={text_value} position={position_text_value} scale="3 3 3" ></a-entity>)
           }
   }
