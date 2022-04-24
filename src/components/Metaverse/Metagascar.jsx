@@ -21,11 +21,16 @@ function mouseLeave(control) {
 
 
 const items = []
-for (let i = 0; i < 16; i++) {
-        var index = (i*3) -21;
-        var position = index + " 0.02 6";
-        items.push(<a-image src="#street" width="3" height="3" position={position} rotation="90 0 0" ></a-image>)
+
+for (let k = 0; k < 6; k++) {
+  var index_street = (k*6);
+  for (let i = 0; i < 16; i++) {
+          var index = (i*3) -21;
+          var position = index + " 0 " + index_street;
+          items.push(<a-image src="#street" width="3" height="3" position={position} rotation="90 0 0" ></a-image>)
+  }
 }
+
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
@@ -41,27 +46,8 @@ const Metagascar = ({ connectToMetamask }) => {
             </a-entity>
           </template>
         </a-assets>
+        <a-entity environment="preset: tron"></a-entity>
        {items}
-       <a-entity environment="preset: tron"></a-entity>
-
-       <a-image src="#street" width="3" height="3" position="24 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="21 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="18 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="15 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="12 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="9 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="6 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="3 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="0 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-3 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-6 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-9 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-12 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-15 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-18 0.02 -3" rotation="90 0 0" ></a-image>
-       <a-image src="#street" width="3" height="3" position="-21 0.02 -3" rotation="90 0 0" ></a-image>
-
-
 
        <a-image src="#wall" width="3" height="3" position="25 0 3" ></a-image>
        <a-image src="#wall" width="3" height="3" position="25 0 0" ></a-image>
