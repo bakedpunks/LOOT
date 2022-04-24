@@ -9,7 +9,7 @@ import 'aframe';
 import 'aframe-event-set-component'; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import 'networked-aframe';
 
-import {mirror} from "aframe-mirror-component";
+import {mirror} from "./mirror.js";
 
 const items = []
 const itemsonchain = []
