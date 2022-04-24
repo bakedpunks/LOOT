@@ -11,6 +11,9 @@ import 'networked-aframe';
 
 import {mirror} from "aframe-mirror-component";
 
+
+import db  from "../../database";
+
 function mouseEnter(control) {
   console.log("mouseEnter: ", control);
 }
@@ -36,10 +39,11 @@ for (let k = 0; k < 400; k++) {
 for (let k = 0; k < 400; k++) {
   var index_street = (k*6) -1.5;
   for (let i = 0; i < 16; i++) {
+          const home = db[index_street + i + 1];
           var index = (i*3);
           var position = index + " 1.5 " + index_street;
           var position_text_value = index + " 4 " + index_street;
-          var text_value = "value: Hello World " + position + ";" ;
+          var text_value = "value: " + home[k].address + " + position + ";" ;
           if(i==0 || i%2==0){
             items_walls.push(<a-image src="#wall" width="3" height="3" position={position} ></a-image>)
             items_houses.push(<a-entity text={text_value} position={position_text_value} scale="3 3 3" ></a-entity>)
