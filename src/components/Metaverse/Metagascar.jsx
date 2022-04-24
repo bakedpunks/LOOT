@@ -21,9 +21,9 @@ function mouseLeave(control) {
 
 
 const items = []
-for (let i = 0; i < 3; i++) {
-        var index = 0 + (i*3);
-        var position = index + " 0.02 3";
+for (let i = 0; i < 10; i++) {
+        var index = (i*3) -21;
+        var position = index + " 0.02 6";
         items.push(<a-image src="#street" width="3" height="3" position={position} rotation="90 0 0" ></a-image>)
 }
 const Metagascar = ({ connectToMetamask }) => {
