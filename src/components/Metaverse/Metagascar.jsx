@@ -31,10 +31,11 @@ for (let k = 1; k < 8001; k++) {
     let nftNumber = (k).valueOf();
     const home = db[nftNumber];
     var text_value = "value: " + home.address + " " + position + ";" ;
-    var position = (k/20) + " 0.02 " + (k%20);
+    var position = (k%20) + " 0.02 " + (k/20);
+    var position_text = (k%20) + " 3 " + (k/20);
     items.push(<a-image src="#street" width="1" height="1" position={position} rotation="90 0 0" ></a-image>)
     items_walls.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-    items_houses.push(<a-entity text={text_value} position={position} scale="1 1 1" ></a-entity>)
+    items_houses.push(<a-entity text={text_value} position={position_text} scale="1 1 1" ></a-entity>)
 }
 
 const Metagascar = ({ connectToMetamask }) => {
