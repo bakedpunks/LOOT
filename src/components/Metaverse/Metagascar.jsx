@@ -27,29 +27,14 @@ const items = []
 const items_walls = []
 const items_houses = []
 
-for (let k = 0; k < 400; k++) {
-  var index_street = (k*6);
-  for (let i = 0; i < 16; i++) {
-          var index = (i*3);
-          var position = index + " 0.02 " + index_street;
-          items.push(<a-image src="#street" width="2" height="2" position={position} rotation="90 0 0" ></a-image>)
-  }
-}
-
-for (let k = 0; k < 400; k++) {
-  var index_street = (k*6) -1.5;
-  for (let i = 0; i < 16; i++) {
-          let nftNumber = ((k*20) + 1).valueOf();
-          const home = db[nftNumber];
-          var index = (i*3);
-          var position = index + " 1 " + index_street;
-          var position_text_value = index + " 4 " + index_street;
-          var text_value = "value: " + home.address + " " + position + ";" ;
-          if(i==0 || i%2==0){
-            items_walls.push(<a-image src="#wall" width="2" height="2" position={position} ></a-image>)
-            items_houses.push(<a-entity text={text_value} position={position_text_value} scale="3 3 3" ></a-entity>)
-          }
-  }
+for (let k = 1; k < 8001; k++) {
+    let nftNumber = (k).valueOf();
+    const home = db[nftNumber];
+    var text_value = "value: " + home.address + " " + position + ";" ;
+    var position = (k/20) + " 0.02 " + (k%20);
+    items.push(<a-image src="#street" width="1" height="1" position={position} rotation="90 0 0" ></a-image>)
+    items_walls.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
+    items_houses.push(<a-entity text={text_value} position={position} scale="1 1 1" ></a-entity>)
 }
 
 const Metagascar = ({ connectToMetamask }) => {
