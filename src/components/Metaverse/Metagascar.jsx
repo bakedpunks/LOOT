@@ -58,7 +58,7 @@ const Metagascar = ({ connectToMetamask }) => {
             </a-entity>
           </template>
         </a-assets>
-        <a-entity environment="lightPosition: 1 5 -2; groundColor: green"></a-entity>
+        <a-entity environment="lightPosition: 1 5 -2; groundColor: green; ground: flat; groundTexture: walkernoise;"></a-entity>
        {items}
 
         <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" scale="0.1 0.1 0.1" >
