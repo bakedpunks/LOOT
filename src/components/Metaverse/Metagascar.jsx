@@ -25,9 +25,9 @@ function mouseLeave(control) {
 
 const items = []
 
-for (let j = 0; j < 2; j++) {
-  for (let k = (j*20)+1; k < (j*20)+11; k++) {
-      let nftNumber = (k).valueOf();
+for (let j = 0; j < 12; j++) {
+  for (let k = 1; k < 11; k++) {
+      let nftNumber = ((j*20)+k).valueOf();
       const home = db[nftNumber];
       var text_value = "value: " + home.address + "; side: front" ;
       var position = (k) + " 0.5 " + (j*2);
