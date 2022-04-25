@@ -40,7 +40,7 @@ for (let k = 1; k < 11; k++) {
     home = db[nftNumber + 10];
     text_value = "value: " + home.address + "; side: front" ;
     items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" rotation="0 90 0" ></a-entity>)
+    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" rotation="0 180 0" ></a-entity>)
 }
 
 const Metagascar = ({ connectToMetamask }) => {
