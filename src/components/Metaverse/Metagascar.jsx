@@ -34,7 +34,7 @@ for (let k = 1; k < 11; k++) {
     var position_text = (k) + " 1 " + (0);
     items.push(<a-image src="#street" width="1" height="1" position={position_street} rotation="90 0 0" ></a-image>)
     items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" ></a-entity>)
+    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" side="double" ></a-entity>)
     position = (k) + " 0.5 " + (1);
     position_text = (k) + " 1 " + (1);
     home = db[nftNumber + 10];
