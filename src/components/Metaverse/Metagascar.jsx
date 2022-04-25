@@ -30,7 +30,7 @@ for (let j = 0; j < 400; j++) {
       let nftNumber = ((j*20)+k).valueOf();
       const home = db[nftNumber];
       var text_value = "value: " + home.address + "; side: front" ;
-      var position = (k) + " 0.5 " + (j*2);
+      var position = (k*2) + " 0.5 " + (j*2);
       var position_street = (k) + " 0.02 " + ((j*2) + 0.5);
       var position_text = (k) + " 1 " + (j*2);
 
