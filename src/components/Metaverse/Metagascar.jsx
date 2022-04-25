@@ -52,7 +52,7 @@ for (let j = 0; j < 400; j++) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene >
+    <a-scene networked-scene >
         <a-assets>
           <img id="wall" src="https://view.metagascar.com/images/house.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
@@ -65,10 +65,7 @@ const Metagascar = ({ connectToMetamask }) => {
         <a-entity environment="ground: noise; preset: forest; lightPosition: 1 5 -2; groundColor: green; ground: flat; groundTexture: walkernoise;dressing: mushrooms; dressingAmount: 100; playArea: 440;"></a-entity>
        {items}
 
-        <a-entity position="0 0 0" network="template:#my-template;attachTemplateToLocal:false;" scale="0.2 0.2 0.2" >
-            <a-camera >
-              <a-cursor />
-            </a-camera>
+        <a-entity id="player" network="template:#my-template;attachTemplateToLocal:false;" camera wasd-controls look-controls >
         </a-entity>
     </a-scene>
 
