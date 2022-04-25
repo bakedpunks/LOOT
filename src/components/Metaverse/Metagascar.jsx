@@ -59,7 +59,7 @@ const Metagascar = ({ connectToMetamask }) => {
         <a-entity environment="preset: tron"></a-entity>
        {items}
 
-        <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" >
+        <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" scale="0.1 0.1 0.1" >
             <a-camera >
               <a-cursor />
             </a-camera>
