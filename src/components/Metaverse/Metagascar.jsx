@@ -24,8 +24,6 @@ function mouseLeave(control) {
 
 
 const items = []
-const items_walls = []
-const items_houses = []
 
 for (let k = 1; k < 11; k++) {
     let nftNumber = (k).valueOf();
@@ -35,8 +33,14 @@ for (let k = 1; k < 11; k++) {
     var position_street = (k) + " 0.02 " + (0.5);
     var position_text = (k) + " 1 " + (0);
     items.push(<a-image src="#street" width="1" height="1" position={position_street} rotation="90 0 0" ></a-image>)
-    items_walls.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-    items_houses.push(<a-entity text={text_value} position={position_text} scale="1 1 1" ></a-entity>)
+    items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
+    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" ></a-entity>)
+    position = (k) + " 0.5 " + (1);
+    position_text = (k) + " 1 " + (1);
+    home = db[nftNumber + 10];
+    text_value = "value: " + home.address + ";" ;
+    items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
+    items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" ></a-entity>)
 }
 
 const Metagascar = ({ connectToMetamask }) => {
@@ -54,9 +58,6 @@ const Metagascar = ({ connectToMetamask }) => {
         </a-assets>
         <a-entity environment="preset: tron"></a-entity>
        {items}
-
-       {items_walls}
-       {items_houses}
 
         <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" >
             <a-camera >
