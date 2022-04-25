@@ -48,7 +48,7 @@ const Metagascar = ({ connectToMetamask }) => {
 
     <a-scene >
         <a-assets>
-          <img id="wall" src="https://view.metagascar.com/images/brick.wall.png" />
+          <img id="wall" src="https://view.metagascar.com/images/house.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
           <template id="my-template">
             <a-entity>
