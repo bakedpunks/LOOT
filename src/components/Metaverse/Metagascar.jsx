@@ -27,11 +27,11 @@ const items = []
 const items_walls = []
 const items_houses = []
 
-for (let k = 1; k < 10; k++) {
+for (let k = 1; k < 11; k++) {
     let nftNumber = (k).valueOf();
     const home = db[nftNumber];
-    var text_value = "value: " + home.address + " " + position + ";" ;
-    var position = (k) + " 0.02 " + (0);
+    var text_value = "value: " + home.address + ";" ;
+    var position = (k) + " 0.5 " + (0);
     var position_street = (k) + " 0.02 " + (0.5);
     var position_text = (k) + " 1 " + (0);
     items.push(<a-image src="#street" width="1" height="1" position={position_street} rotation="90 0 0" ></a-image>)
