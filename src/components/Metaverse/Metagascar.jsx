@@ -25,7 +25,7 @@ function mouseLeave(control) {
 
 const items = []
 
-for (let j = 0; j < 12; j++) {
+for (let j = 0; j < 400; j++) {
   for (let k = 1; k < 11; k++) {
       let nftNumber = ((j*20)+k).valueOf();
       const home = db[nftNumber];
@@ -58,7 +58,6 @@ const Metagascar = ({ connectToMetamask }) => {
             </a-entity>
           </template>
         </a-assets>
-        <a-entity environment="preset: tron"></a-entity>
        {items}
 
         <a-entity position="0 0 3.8" network="template:#my-template;attachTemplateToLocal:false;" scale="0.1 0.1 0.1" >
