@@ -24,7 +24,8 @@ function mouseLeave(control) {
 
 
 const items = []
-for (let j = 0; j < 10; j++) {
+
+for (let j = 0; j < 2; j++) {
   for (let k = (j*20)+1; k < (j*20)+11; k++) {
       let nftNumber = (k).valueOf();
       const home = db[nftNumber];
@@ -32,15 +33,15 @@ for (let j = 0; j < 10; j++) {
       var position = (k) + " 0.5 " + (j*2);
       var position_street = (k) + " 0.02 " + ((j*2) + 0.5);
       var position_text = (k) + " 1 " + (j*2);
-      items.push(<a-image src="#street" width="1" height="1" position={position_street} rotation="90 0 0" ></a-image>)
-      items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-      items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" side="double" ></a-entity>)
+      items.push(<a-image src="#street" width="1" height="1" position={position_street} rotation="90 0 0" ></a-image>);
+      items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>);
+      items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" side="double" ></a-entity>);
       position = (k) + " 0.5 " + (1);
       position_text = (k) + " 1 " + (1);
       home = db[nftNumber + 10];
       text_value = "value: " + home.address + "; side: front; align: right" ;
-      items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>)
-      items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" rotation="0 180 0" ></a-entity>)
+      items.push(<a-image src="#wall" width="1" height="1" position={position} ></a-image>);
+      items.push(<a-entity text={text_value} position={position_text} scale="1 1 1" rotation="0 180 0" ></a-entity>);
   }
 }
 
