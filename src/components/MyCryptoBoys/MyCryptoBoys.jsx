@@ -19,7 +19,7 @@ const MyCryptoBoys = ({
   loadMorePunks,
   myPunks,
 }) => {
-  const [loading, setLoading] = useState(0);
+  const [loading, setLoading] = useState(1);
   const [myCryptoBoys, setMyCryptoBoys] = useState([]);
   const [state, setState] = useState(0);
   //const [items, setItems] = useState([]);
