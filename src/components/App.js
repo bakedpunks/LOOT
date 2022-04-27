@@ -183,7 +183,7 @@ class App extends Component {
           this.setState({cryptoBoysForSale:this.state.cryptoBoysForSale});
           this.setState({punksforsalebuttonhtml:this.state.punksforsalebuttonhtml});
           this.setState({currentPage:this.state.currentPage});
-  	       this.setState({ loading: false });
+  	      this.setState({ loading: false });
 
 
 

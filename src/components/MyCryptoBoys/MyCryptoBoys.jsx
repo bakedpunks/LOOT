@@ -10,6 +10,8 @@ import {
 
 import Web3 from "web3";
 
+import { useContext } from 'react';
+
 const MyCryptoBoys = ({
   accountAddress,
   cryptoBoys,
