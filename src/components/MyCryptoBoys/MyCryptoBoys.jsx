@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CryptoBoyNFTImage from "../CryptoBoyNFTImage/CryptoBoyNFTImage";
 import MyCryptoBoyNFTDetails from "../MyCryptoBoyNFTDetails/MyCryptoBoyNFTDetails";
 import Loading from "../Loading/Loading";
@@ -10,6 +10,7 @@ import {
 
 import Web3 from "web3";
 
+import { useContext } from 'react';
 
 const MyCryptoBoys = ({
   accountAddress,
