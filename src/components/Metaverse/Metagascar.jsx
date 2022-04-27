@@ -53,7 +53,7 @@ for (let j = 0; j < 20; j++) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene networked-scene="serverURL: ws://149.248.10.154:8080; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: native-webrtc; audio: false; video: false; debug: true;" >
+    <a-scene networked-scene="serverURL: https://wsrtcmetagascar.herokuapp.com; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: native-webrtc; audio: false; video: false; debug: true;" >
         <a-assets>
           <img id="wall" src="https://view.metagascar.com/images/house.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
