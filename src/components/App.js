@@ -446,7 +446,7 @@ getPunkOwner = async (punkIndex) => {
               />
               <Route
                 path="/my-tokens"
-                render={() => (
+                render={(props) => (
                   <MyCryptoBoys
                     {...props}
                     loadMorePunks={this.state.loadMorePunks}
