@@ -19,7 +19,7 @@ const MyCryptoBoys = ({
   loadMorePunks,
   myPunks,
 }) => {
-  const [loading, setLoading] = useState(1);
+//  const [loading, setLoading] = useState(1);
   const [myCryptoBoys, setMyCryptoBoys] = useState([]);
   const [state, setState] = useState(0);
   //const [items, setItems] = useState([]);
@@ -34,9 +34,9 @@ const MyCryptoBoys = ({
   useEffect(() => {
     if (cryptoBoys.length !== 0) {
       if (cryptoBoys[0].metaData !== undefined) {
-        setLoading(loading);
+       //  setLoading(loading);
       } else {
-        setLoading(false);
+       //  setLoading(false);
       }
     }
     const my_crypto_boys = cryptoBoys.filter(
