@@ -17,7 +17,7 @@ const MyCryptoBoys = ({
   selectedpunkid,
   totalTokensOwnedByAccount,
   loadMorePunks,
-  myPunks,
+  myPunks
 }) => {
   const [loading, setLoading] = useState(false);
   const [myCryptoBoys, setMyCryptoBoys] = useState([]);
