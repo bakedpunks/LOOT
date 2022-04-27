@@ -64,7 +64,7 @@ const MyCryptoBoys = ({
 
 
 
-  const totalTokensOwnedByAccountLoot = loot.methods.totalSupply();
+//  const totalTokensOwnedByAccountLoot = totalTokensOwnedByAccount;
 
   return (
     <div >
