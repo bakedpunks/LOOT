@@ -448,6 +448,7 @@ getPunkOwner = async (punkIndex) => {
                 path="/my-tokens"
                 render={() => (
                   <MyCryptoBoys
+                    {...props}
                     loadMorePunks={this.state.loadMorePunks}
                     accountAddress={this.state.accountAddress}
                     cryptoBoys={this.state.cryptoBoys}

@@ -18,8 +18,9 @@ const MyCryptoBoys = ({
   totalTokensOwnedByAccount,
   loadMorePunks,
   myPunks,
+  loading,
 }) => {
-//  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [myCryptoBoys, setMyCryptoBoys] = useState([]);
   const [state, setState] = useState(0);
   //const [items, setItems] = useState([]);
