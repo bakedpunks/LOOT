@@ -8,6 +8,7 @@ import Web3 from 'web3';
 import 'aframe';
 import 'aframe-event-set-component'; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
 import 'networked-aframe';
+import adapter from 'webrtc-adapter';
 
 import {mirror} from "aframe-mirror-component";
 
