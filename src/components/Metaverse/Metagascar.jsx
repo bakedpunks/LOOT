@@ -26,7 +26,7 @@ function mouseLeave(control) {
 
 const items = []
 
-for (let j = 0; j < 400; j++) {
+for (let j = 0; j < 20; j++) {
   for (let k = 1; k < 11; k++) {
       let nftNumber = ((j*20)+k).valueOf();
       const home = db[nftNumber];
@@ -53,7 +53,7 @@ for (let j = 0; j < 400; j++) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene networked-scene="serverURL: ws://view.metagascar.com; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: wseasyrtc; audio: false; video: false; debug: true;" >
+    <a-scene networked-scene="serverURL: /; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: wseasyrtc; audio: false; video: false; debug: true;" >
         <a-assets>
           <img id="wall" src="https://view.metagascar.com/images/house.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
