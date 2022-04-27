@@ -50,14 +50,6 @@ const MyCryptoBoys = ({
   const items = []
 //  const items = []
 
-  for (const [index, value] of elements.entries()) {
-    if(accountAddress == value){
-          var s = index+"";
-          var newImageUrl = '/images/loot-characters/' + s + '.png';
-          var newLinkUrl = '/mint?punkid=' + index;
-      items.push(<div class="card col-md-4" ><img src={newImageUrl} /><div class="card-body"> <h5 class="card-title">NO {index}</h5><p class="card-text">OWNER {value}</p></div></div>)
-    }
-  }
 
   let query = useQuery();
 
