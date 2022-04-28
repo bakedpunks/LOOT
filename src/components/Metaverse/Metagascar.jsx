@@ -15,7 +15,7 @@ import {mirror} from "aframe-mirror-component";
 
 import db  from "../../database";
 
-const io = new Server(server);
+const io = require('socket.io')();
 
 function mouseEnter(control) {
   console.log("mouseEnter: ", control);
