@@ -55,7 +55,7 @@ for (let j = 0; j < 20; j++) {
 const Metagascar = ({ connectToMetamask }) => {
   return (
 
-    <a-scene networked-scene="serverURL:  ws://view.metagascar.com/wsapp ; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: easyrtc; audio: false; video: false; debug: true;" >
+    <a-scene networked-scene="serverURL:  https://view.metagascar.com/wsapp ; app: metagascar; room: metagascar; connectOnLoad: true; onConnect: onConnect; adapter: easyrtc; audio: false; video: false; debug: true;" >
         <a-assets>
           <img id="wall" src="https://view.metagascar.com/images/house.png" />
           <img id="street" src="https://view.metagascar.com/images/line.street.png" />
