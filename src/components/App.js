@@ -390,7 +390,6 @@ getPunkOwner = async (punkIndex) => {
           <>
             <HashRouter basename="/">
               <Navbar />
-              <Routes>
               <Route
                 path="/"
                 exact
@@ -512,7 +511,6 @@ getPunkOwner = async (punkIndex) => {
                   />
                 )}
               />
-              </Routes>
 		</HashRouter>
 	  </>
         )}
